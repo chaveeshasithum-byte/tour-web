@@ -1,318 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact &amp; Book | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="Get in touch with Heritage Travels Sri Lanka to plan your bespoke tour. Book online, call us, WhatsApp us, or fill in our enquiry form — we respond within 24 hours." />
+  <meta name="description"
+    content="Get in touch with Heritage Travels Sri Lanka to plan your bespoke tour. Book online, call us, WhatsApp us, or fill in our enquiry form — we respond within 24 hours." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
     /* ── Contact layout ── */
-    .contact-layout { display: grid; grid-template-columns: 1fr 420px; gap: var(--space-xl); }
-    /* ── Form card ── */
-    .form-card { background: white; border-radius: var(--radius-lg); padding: var(--space-xl); box-shadow: var(--shadow-lg); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
-    .form-group { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1.2rem; }
-    .form-label { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--color-green); }
-    .form-input, .form-select, .form-textarea {
-      border: 1.5px solid var(--color-ivory-dark); border-radius: var(--radius-sm);
-      padding: .75rem 1rem; font-family: var(--font-sans); font-size: .9rem;
-      color: var(--color-charcoal); background: var(--color-ivory);
-      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-      outline: none; width: 100%; resize: vertical;
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: var(--space-xl);
     }
-    .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--color-green); box-shadow: 0 0 0 3px rgba(22,90,52,.1); background: white; }
-    .form-input:user-invalid, .form-select:user-invalid, .form-textarea:user-invalid { border-color: var(--color-terracotta); }
-    .form-textarea { min-height: 130px; }
-    .form-select { cursor: pointer; }
-    .checkbox-group { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin-bottom: 1.2rem; }
-    .checkbox-label { display: flex; align-items: center; gap: .5rem; font-size: .82rem; color: var(--color-charcoal-mid); cursor: pointer; }
-    .checkbox-label input[type="checkbox"] { accent-color: var(--color-green); width: 15px; height: 15px; }
-    .form-success { display: none; background: rgba(22,90,52,.08); border: 1.5px solid var(--color-green); border-radius: var(--radius-md); padding: 1.2rem 1.4rem; text-align: center; }
-    .form-success.show { display: block; }
+
+    /* ── Form card ── */
+    .form-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .form-label {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--color-green);
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      border: 1.5px solid var(--color-ivory-dark);
+      border-radius: var(--radius-sm);
+      padding: .75rem 1rem;
+      font-family: var(--font-sans);
+      font-size: .9rem;
+      color: var(--color-charcoal);
+      background: var(--color-ivory);
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+      outline: none;
+      width: 100%;
+      resize: vertical;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--color-green);
+      box-shadow: 0 0 0 3px rgba(22, 90, 52, .1);
+      background: white;
+    }
+
+    .form-input:user-invalid,
+    .form-select:user-invalid,
+    .form-textarea:user-invalid {
+      border-color: var(--color-terracotta);
+    }
+
+    .form-textarea {
+      min-height: 130px;
+    }
+
+    .form-select {
+      cursor: pointer;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .82rem;
+      color: var(--color-charcoal-mid);
+      cursor: pointer;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+      accent-color: var(--color-green);
+      width: 15px;
+      height: 15px;
+    }
+
+    .form-success {
+      display: none;
+      background: rgba(22, 90, 52, .08);
+      border: 1.5px solid var(--color-green);
+      border-radius: var(--radius-md);
+      padding: 1.2rem 1.4rem;
+      text-align: center;
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
     /* ── Info sidebar ── */
-    .contact-info-box { background: var(--color-green); border-radius: var(--radius-lg); padding: var(--space-xl); color: white; position: sticky; top: 100px; }
-    .contact-info-box h3 { color: white; margin-bottom: 1.5rem; }
-    .contact-item { display: flex; gap: 1rem; margin-bottom: 1.4rem; }
-    .contact-item__icon { width: 42px; height: 42px; background: rgba(255,255,255,.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--color-gold); font-size: 1rem; }
-    .contact-item__label { font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-bottom: .2rem; }
-    .contact-item__value { font-size: .92rem; color: white; font-weight: 500; }
-    .contact-social { display: flex; gap: .8rem; margin-top: 1.5rem; }
-    .contact-social-link { width: 38px; height: 38px; background: rgba(255,255,255,.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: background var(--transition-fast); }
-    .contact-social-link:hover { background: var(--color-gold); }
-    @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .checkbox-group { grid-template-columns: repeat(2, 1fr); } }
+    .contact-info-box {
+      background: var(--color-green);
+      border-radius: var(--radius-lg);
+      padding: var(--space-xl);
+      color: white;
+      position: sticky;
+      top: 100px;
+    }
+
+    .contact-info-box h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .contact-item__icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-gold);
+      font-size: 1rem;
+    }
+
+    .contact-item__label {
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .55);
+      margin-bottom: .2rem;
+    }
+
+    .contact-item__value {
+      font-size: .92rem;
+      color: white;
+      font-weight: 500;
+    }
+
+    .contact-social {
+      display: flex;
+      gap: .8rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-social-link {
+      width: 38px;
+      height: 38px;
+      background: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      transition: background var(--transition-fast);
+    }
+
+    .contact-social-link:hover {
+      background: var(--color-gold);
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .checkbox-group {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link">Tours</a></li><li><a href="about.html" class="nav__link">About</a></li><li><a href="gallery.html" class="nav__link">Gallery</a></li><li><a href="blog.html" class="nav__link">Stories</a></li><li><a href="contact.html" class="nav__link active">Contact</a></li></ul>
-    <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta" style="background:var(--color-gold);color:white;">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
-  </div>
-</nav>
-<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="faq.html" class="nav__mobile-link">FAQ</a><a href="contact.html" class="nav__mobile-link">Contact &amp; Book</a></div>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link">Places</a></li>
+        <li><a href="tours.html" class="nav__link">Tours</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="contact.html" class="nav__link active">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta"
+          style="background:var(--color-gold);color:white;">Book Now</a><button class="nav__hamburger"
+          aria-label="Open menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+  <div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html"
+      class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html"
+      class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html"
+      class="nav__mobile-link">Stories</a><a href="faq.html" class="nav__mobile-link">FAQ</a><a href="contact.html"
+      class="nav__mobile-link">Contact &amp; Book</a></div>
 
-<section class="page-hero" style="background-image:url('images/adams-peak.jpg');background-size:cover;background-position:center 30%;">
-  <div class="page-hero__overlay"></div>
-  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact &amp; Book</span></nav><h1 class="page-hero__title">Plan Your Journey<br/><em style="color:var(--color-gold-light);">with Heritage Travels</em></h1></div></div>
-</section>
+  <section class="page-hero"
+    style="background-image:url('images/adams-peak.jpg');background-size:cover;background-position:center 30%;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact &amp; Book</span></nav>
+        <h1 class="page-hero__title">Plan Your Journey<br /><em style="color:var(--color-gold-light);">with Heritage
+            Travels</em></h1>
+      </div>
+    </div>
+  </section>
 
-<!-- Trust Strip -->
-<div style="background:var(--color-green);padding:1.2rem 0;">
-  <div class="container">
-    <div style="display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap;">
-      <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> No booking fees</div>
-      <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> Free consultation</div>
-      <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> Response within 24 hours</div>
-      <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> 100% private tours</div>
-      <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> 18+ years experience</div>
+  <!-- Trust Strip -->
+  <div style="background:var(--color-green);padding:1.2rem 0;">
+    <div class="container">
+      <div style="display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap;">
+        <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i
+            class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> No booking fees</div>
+        <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i
+            class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> Free consultation</div>
+        <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i
+            class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> Response within 24 hours
+        </div>
+        <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i
+            class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> 100% private tours</div>
+        <div style="display:flex;align-items:center;gap:.7rem;color:white;font-size:.82rem;"><i
+            class="fa fa-check-circle" style="color:var(--color-gold);font-size:1.1rem;"></i> 18+ years experience</div>
+      </div>
     </div>
   </div>
-</div>
 
-<section class="section" style="background:var(--color-cream);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">Get in Touch</p><h2>Let's Plan Something Extraordinary</h2><div class="divider"></div><p>Fill in as much or as little as you know — your dream trip starts with a simple conversation. Our travel designers respond within 24 hours, every day of the year.</p></div>
+  <section class="section" style="background:var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Get in Touch</p>
+        <h2>Let's Plan Something Extraordinary</h2>
+        <div class="divider"></div>
+        <p>Fill in as much or as little as you know — your dream trip starts with a simple conversation. Our travel
+          designers respond within 24 hours, every day of the year.</p>
+      </div>
 
-    <div class="contact-layout">
-      <!-- Enquiry Form -->
-      <div class="form-card reveal">
-        <h3 style="margin-bottom:1.5rem;">Send Us Your Enquiry</h3>
+      <div class="contact-layout">
+        <!-- Enquiry Form -->
+        <div class="form-card reveal">
+          <h3 style="margin-bottom:1.5rem;">Send Us Your Enquiry</h3>
 
-        <form id="contact-form" novalidate>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="first-name">First Name *</label>
-              <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Sophie" required autocomplete="given-name" />
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name *</label>
+                <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Sophie" required
+                  autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name *</label>
+                <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Laurent" required
+                  autocomplete="family-name" />
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="last-name">Last Name *</label>
-              <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Laurent" required autocomplete="family-name" />
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="email">Email Address *</label>
-              <input class="form-input" type="email" id="email" name="email" placeholder="sophie@example.com" required autocomplete="email" />
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="sophie@example.com" required
+                  autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone / WhatsApp</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78"
+                  autocomplete="tel" />
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="phone">Phone / WhatsApp</label>
-              <input class="form-input" type="tel" id="phone" name="phone" placeholder="+33 6 12 34 56 78" autocomplete="tel" />
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="nationality">Nationality / Country</label>
-              <input class="form-input" type="text" id="nationality" name="nationality" placeholder="France" autocomplete="country-name" />
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nationality">Nationality / Country</label>
+                <input class="form-input" type="text" id="nationality" name="nationality" placeholder="France"
+                  autocomplete="country-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="tour-type">Tour Type</label>
+                <select class="form-select" id="tour-type" name="tour_type">
+                  <option value="" disabled selected>Select a type…</option>
+                  <option>Cultural &amp; Heritage</option>
+                  <option>Wildlife &amp; Safari</option>
+                  <option>Beach &amp; Relaxation</option>
+                  <option>Honeymoon / Romantic</option>
+                  <option>Family Adventure</option>
+                  <option>Adventure &amp; Trekking</option>
+                  <option>Food &amp; Culture</option>
+                  <option>Custom / Mixed</option>
+                </select>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="tour-type">Tour Type</label>
-              <select class="form-select" id="tour-type" name="tour_type">
-                <option value="" disabled selected>Select a type…</option>
-                <option>Cultural &amp; Heritage</option>
-                <option>Wildlife &amp; Safari</option>
-                <option>Beach &amp; Relaxation</option>
-                <option>Honeymoon / Romantic</option>
-                <option>Family Adventure</option>
-                <option>Adventure &amp; Trekking</option>
-                <option>Food &amp; Culture</option>
-                <option>Custom / Mixed</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="arrival-date">Arrival Date</label>
-              <input class="form-input" type="date" id="arrival-date" name="arrival_date" />
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="arrival-date">Arrival Date</label>
+                <input class="form-input" type="date" id="arrival-date" name="arrival_date" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="duration">Duration (Days)</label>
+                <select class="form-select" id="duration" name="duration">
+                  <option value="" disabled selected>Select…</option>
+                  <option>1–3 Days (Short Break)</option>
+                  <option>4–7 Days (1 Week)</option>
+                  <option>8–14 Days (2 Weeks)</option>
+                  <option>15–21 Days (3 Weeks)</option>
+                  <option>21+ Days (Extended)</option>
+                  <option>Flexible / Not Sure Yet</option>
+                </select>
+              </div>
             </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="travellers">Number of Travellers</label>
+                <select class="form-select" id="travellers" name="travellers">
+                  <option value="" disabled selected>Select…</option>
+                  <option>Solo (1 person)</option>
+                  <option>Couple (2 people)</option>
+                  <option>Small Group (3–5)</option>
+                  <option>Group (6–10)</option>
+                  <option>Large Group (10+)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="budget">Budget Range (Per Person)</label>
+                <select class="form-select" id="budget" name="budget">
+                  <option value="" disabled selected>Select…</option>
+                  <option>Under $500</option>
+                  <option>$500 – $1,000</option>
+                  <option>$1,000 – $2,000</option>
+                  <option>$2,000 – $3,500</option>
+                  <option>$3,500 – $5,000</option>
+                  <option>$5,000+ (Luxury)</option>
+                  <option>Flexible / Not Sure</option>
+                </select>
+              </div>
+            </div>
+
             <div class="form-group">
-              <label class="form-label" for="duration">Duration (Days)</label>
-              <select class="form-select" id="duration" name="duration">
+              <label class="form-label">Destinations of Interest</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="sigiriya" />
+                  Sigiriya</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="kandy" /> Kandy</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="ella" /> Ella / Tea
+                  Country</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="galle" /> Galle
+                  Fort</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="yala" /> Yala
+                  (Safari)</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="mirissa" /> Mirissa
+                  Beach</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="anuradhapura" />
+                  Anuradhapura</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="adams-peak" /> Adam's
+                  Peak</label>
+                <label class="checkbox-label"><input type="checkbox" name="destinations" value="colombo" />
+                  Colombo</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="special-requests">Tell Us Your Dream *</label>
+              <textarea class="form-textarea" id="special-requests" name="message"
+                placeholder="Share any specific interests, experiences you'd love, places you've heard about, dietary requirements, mobility considerations, or just your general vision for the trip. The more you tell us, the better we can craft your perfect journey."
+                required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">How Did You Hear About Us?</label>
+              <select class="form-select" id="how-heard" name="how_heard">
                 <option value="" disabled selected>Select…</option>
-                <option>1–3 Days (Short Break)</option>
-                <option>4–7 Days (1 Week)</option>
-                <option>8–14 Days (2 Weeks)</option>
-                <option>15–21 Days (3 Weeks)</option>
-                <option>21+ Days (Extended)</option>
-                <option>Flexible / Not Sure Yet</option>
+                <option>Google Search</option>
+                <option>TripAdvisor</option>
+                <option>Instagram / Facebook</option>
+                <option>Friend / Family Recommendation</option>
+                <option>Travel Magazine / Blog</option>
+                <option>Travel Agent</option>
+                <option>Repeat Customer</option>
+                <option>Other</option>
               </select>
             </div>
-          </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="travellers">Number of Travellers</label>
-              <select class="form-select" id="travellers" name="travellers">
-                <option value="" disabled selected>Select…</option>
-                <option>Solo (1 person)</option>
-                <option>Couple (2 people)</option>
-                <option>Small Group (3–5)</option>
-                <option>Group (6–10)</option>
-                <option>Large Group (10+)</option>
-              </select>
+            <div class="form-group" style="flex-direction:row;align-items:flex-start;gap:.7rem;margin-bottom:1.5rem;">
+              <input type="checkbox" id="privacy-consent" name="privacy" required
+                style="margin-top:.15rem;accent-color:var(--color-green);flex-shrink:0;" />
+              <label for="privacy-consent" style="font-size:.82rem;color:var(--color-charcoal-mid);line-height:1.6;">I
+                agree to Heritage Travels storing my data for the purpose of processing this enquiry. I may withdraw my
+                consent at any time by emailing hello@heritagetravels.lk. View our <a href="#"
+                  style="color:var(--color-green);">Privacy Policy</a>. *</label>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="budget">Budget Range (Per Person)</label>
-              <select class="form-select" id="budget" name="budget">
-                <option value="" disabled selected>Select…</option>
-                <option>Under $500</option>
-                <option>$500 – $1,000</option>
-                <option>$1,000 – $2,000</option>
-                <option>$2,000 – $3,500</option>
-                <option>$3,500 – $5,000</option>
-                <option>$5,000+ (Luxury)</option>
-                <option>Flexible / Not Sure</option>
-              </select>
+
+            <button type="submit" class="btn btn-primary"
+              style="width:100%;justify-content:center;font-size:1rem;padding:1rem 2rem;" id="submit-btn">
+              <i class="fa fa-paper-plane" style="margin-right:.6rem;"></i> Send My Enquiry
+            </button>
+
+            <div class="form-success" id="form-success" role="alert">
+              <div style="font-size:2rem;margin-bottom:.7rem;">✅</div>
+              <strong style="font-family:var(--font-serif);font-size:1.1rem;color:var(--color-green);">Thank you, your
+                enquiry has been sent!</strong>
+              <p style="font-size:.85rem;color:var(--color-charcoal-mid);margin-top:.5rem;">Our travel designers will
+                contact you within 24 hours. In the meantime, feel free to <a href="https://wa.me/94771234567"
+                  target="_blank" style="color:var(--color-green);">WhatsApp us</a> for anything urgent.</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar Info -->
+        <div class="reveal reveal-delay-1">
+          <div class="contact-info-box">
+            <h3>Get in Touch Directly</h3>
+
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <div class="contact-item__label">Phone</div>
+                <div class="contact-item__value">+94 77 123 4567</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <div class="contact-item__label">WhatsApp</div>
+                <div class="contact-item__value"><a href="https://wa.me/94771234567" target="_blank" rel="noopener"
+                    style="color:white;">+94 77 123 4567</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <div class="contact-item__label">Email</div>
+                <div class="contact-item__value"><a href="mailto:hello@heritagetravels.lk"
+                    style="color:white;">hello@heritagetravels.lk</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-item__label">Address</div>
+                <div class="contact-item__value">42 Galle Road, Colombo 03, Sri Lanka</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><i class="fa fa-clock"></i></div>
+              <div>
+                <div class="contact-item__label">Office Hours</div>
+                <div class="contact-item__value">Mon–Sat · 8:00 am – 7:00 pm IST</div>
+              </div>
+            </div>
+
+            <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem;margin-top:.5rem;">
+              <div class="contact-item__label" style="margin-bottom:.7rem;">Follow Our Journey</div>
+              <div class="contact-social">
+                <a class="contact-social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="contact-social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="contact-social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                <a class="contact-social-link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
             </div>
           </div>
 
-          <div class="form-group">
-            <label class="form-label">Destinations of Interest</label>
-            <div class="checkbox-group">
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="sigiriya" /> Sigiriya</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="kandy" /> Kandy</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="ella" /> Ella / Tea Country</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="galle" /> Galle Fort</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="yala" /> Yala (Safari)</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="mirissa" /> Mirissa Beach</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="anuradhapura" /> Anuradhapura</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="adams-peak" /> Adam's Peak</label>
-              <label class="checkbox-label"><input type="checkbox" name="destinations" value="colombo" /> Colombo</label>
+          <!-- Quick-book buttons -->
+          <div
+            style="background:white;border-radius:var(--radius-lg);padding:1.5rem;margin-top:1.5rem;box-shadow:var(--shadow-sm);">
+            <h4 style="font-family:var(--font-serif);color:var(--color-green);margin-bottom:1rem;font-size:1.1rem;">
+              Popular Starting Points</h4>
+            <div style="display:flex;flex-direction:column;gap:.7rem;">
+              <a href="tours.html#cultural-triangle"
+                style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;"
+                onmouseover="this.style.background='var(--color-gold-pale)'"
+                onmouseout="this.style.background='var(--color-ivory)'">
+                <span>🏯 Cultural Triangle</span><span style="color:var(--color-gold);font-weight:600;">From
+                  $1,890</span>
+              </a>
+              <a href="tours.html#south-coast"
+                style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;"
+                onmouseover="this.style.background='var(--color-gold-pale)'"
+                onmouseout="this.style.background='var(--color-ivory)'">
+                <span>🌊 South Coast Honeymoon</span><span style="color:var(--color-gold);font-weight:600;">From
+                  $2,450</span>
+              </a>
+              <a href="tours.html#wild-safari"
+                style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;"
+                onmouseover="this.style.background='var(--color-gold-pale)'"
+                onmouseout="this.style.background='var(--color-ivory)'">
+                <span>🐆 Wild Sri Lanka Safari</span><span style="color:var(--color-gold);font-weight:600;">From
+                  $1,650</span>
+              </a>
+              <a href="contact.html"
+                style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;"
+                onmouseover="this.style.background='var(--color-gold-pale)'"
+                onmouseout="this.style.background='var(--color-ivory)'">
+                <span>✨ Custom Bespoke Journey</span><span
+                  style="color:var(--color-green);font-weight:600;">Enquire</span>
+              </a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="form-group">
-            <label class="form-label" for="special-requests">Tell Us Your Dream *</label>
-            <textarea class="form-textarea" id="special-requests" name="message" placeholder="Share any specific interests, experiences you'd love, places you've heard about, dietary requirements, mobility considerations, or just your general vision for the trip. The more you tell us, the better we can craft your perfect journey." required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label">How Did You Hear About Us?</label>
-            <select class="form-select" id="how-heard" name="how_heard">
-              <option value="" disabled selected>Select…</option>
-              <option>Google Search</option>
-              <option>TripAdvisor</option>
-              <option>Instagram / Facebook</option>
-              <option>Friend / Family Recommendation</option>
-              <option>Travel Magazine / Blog</option>
-              <option>Travel Agent</option>
-              <option>Repeat Customer</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="form-group" style="flex-direction:row;align-items:flex-start;gap:.7rem;margin-bottom:1.5rem;">
-            <input type="checkbox" id="privacy-consent" name="privacy" required style="margin-top:.15rem;accent-color:var(--color-green);flex-shrink:0;" />
-            <label for="privacy-consent" style="font-size:.82rem;color:var(--color-charcoal-mid);line-height:1.6;">I agree to Heritage Travels storing my data for the purpose of processing this enquiry. I may withdraw my consent at any time by emailing hello@heritagetravels.lk. View our <a href="#" style="color:var(--color-green);">Privacy Policy</a>. *</label>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem 2rem;" id="submit-btn">
-            <i class="fa fa-paper-plane" style="margin-right:.6rem;"></i> Send My Enquiry
-          </button>
-
-          <div class="form-success" id="form-success" role="alert">
-            <div style="font-size:2rem;margin-bottom:.7rem;">✅</div>
-            <strong style="font-family:var(--font-serif);font-size:1.1rem;color:var(--color-green);">Thank you, your enquiry has been sent!</strong>
-            <p style="font-size:.85rem;color:var(--color-charcoal-mid);margin-top:.5rem;">Our travel designers will contact you within 24 hours. In the meantime, feel free to <a href="https://wa.me/94771234567" target="_blank" style="color:var(--color-green);">WhatsApp us</a> for anything urgent.</p>
-          </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, gently delivered.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button>
         </form>
       </div>
-
-      <!-- Sidebar Info -->
-      <div class="reveal reveal-delay-1">
-        <div class="contact-info-box">
-          <h3>Get in Touch Directly</h3>
-
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa fa-phone"></i></div>
-            <div><div class="contact-item__label">Phone</div><div class="contact-item__value">+94 77 123 4567</div></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fab fa-whatsapp"></i></div>
-            <div><div class="contact-item__label">WhatsApp</div><div class="contact-item__value"><a href="https://wa.me/94771234567" target="_blank" rel="noopener" style="color:white;">+94 77 123 4567</a></div></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa fa-envelope"></i></div>
-            <div><div class="contact-item__label">Email</div><div class="contact-item__value"><a href="mailto:hello@heritagetravels.lk" style="color:white;">hello@heritagetravels.lk</a></div></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa fa-map-marker-alt"></i></div>
-            <div><div class="contact-item__label">Address</div><div class="contact-item__value">42 Galle Road, Colombo 03, Sri Lanka</div></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa fa-clock"></i></div>
-            <div><div class="contact-item__label">Office Hours</div><div class="contact-item__value">Mon–Sat · 8:00 am – 7:00 pm IST</div></div>
-          </div>
-
-          <div style="border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem;margin-top:.5rem;">
-            <div class="contact-item__label" style="margin-bottom:.7rem;">Follow Our Journey</div>
-            <div class="contact-social">
-              <a class="contact-social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a class="contact-social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a class="contact-social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
-              <a class="contact-social-link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean
+            since 2006.</p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a><a class="footer__social-link" href="#" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a></div>
         </div>
-
-        <!-- Quick-book buttons -->
-        <div style="background:white;border-radius:var(--radius-lg);padding:1.5rem;margin-top:1.5rem;box-shadow:var(--shadow-sm);">
-          <h4 style="font-family:var(--font-serif);color:var(--color-green);margin-bottom:1rem;font-size:1.1rem;">Popular Starting Points</h4>
-          <div style="display:flex;flex-direction:column;gap:.7rem;">
-            <a href="tours.html#cultural-triangle" style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;" onmouseover="this.style.background='var(--color-gold-pale)'" onmouseout="this.style.background='var(--color-ivory)'">
-              <span>🏯 Cultural Triangle</span><span style="color:var(--color-gold);font-weight:600;">From $1,890</span>
-            </a>
-            <a href="tours.html#south-coast" style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;" onmouseover="this.style.background='var(--color-gold-pale)'" onmouseout="this.style.background='var(--color-ivory)'">
-              <span>🌊 South Coast Honeymoon</span><span style="color:var(--color-gold);font-weight:600;">From $2,450</span>
-            </a>
-            <a href="tours.html#wild-safari" style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;" onmouseover="this.style.background='var(--color-gold-pale)'" onmouseout="this.style.background='var(--color-ivory)'">
-              <span>🐆 Wild Sri Lanka Safari</span><span style="color:var(--color-gold);font-weight:600;">From $1,650</span>
-            </a>
-            <a href="contact.html" style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem;background:var(--color-ivory);border-radius:var(--radius-sm);text-decoration:none;color:var(--color-charcoal);font-size:.85rem;transition:background .2s;" onmouseover="this.style.background='var(--color-gold-pale)'" onmouseout="this.style.background='var(--color-ivory)'">
-              <span>✨ Custom Bespoke Journey</span><span style="color:var(--color-green);font-weight:600;">Enquire</span>
-            </a>
+        <div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Places to Explore</a></li>
+            <li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Tour Packages</a></li>
+            <li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                About Us</a></li>
+            <li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Gallery</a></li>
+            <li><a class="footer__link" href="blog.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Travel Stories</a></li>
+            <li><a class="footer__link" href="testimonials.html"><i class="fa fa-chevron-right"
+                  style="font-size:.6rem;"></i> Reviews</a></li>
+            <li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> FAQ
+                &amp; Travel Info</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Destinations</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html#sigiriya">Sigiriya</a></li>
+            <li><a class="footer__link" href="places.html#kandy">Kandy</a></li>
+            <li><a class="footer__link" href="places.html#ella">Ella &amp; Tea Country</a></li>
+            <li><a class="footer__link" href="places.html#galle">Galle Fort</a></li>
+            <li><a class="footer__link" href="places.html#yala">Yala</a></li>
+            <li><a class="footer__link" href="places.html#mirissa">Mirissa</a></li>
+            <li><a class="footer__link" href="places.html#anuradhapura">Anuradhapura</a></li>
+            <li><a class="footer__link" href="places.html#adams-peak">Adam's Peak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-map-marker-alt footer__contact-icon"></i><span>42 Galle
+              Road, Colombo 03</span></div>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
           </div>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a
+            href="https://wa.me/94771234567" class="btn btn-gold btn-sm"
+            style="margin-top:1rem;display:inline-flex;gap:.4rem;" target="_blank" rel="noopener"><i
+              class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
       </div>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd. All rights reserved.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean since 2006.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a><a class="footer__social-link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Places to Explore</a></li><li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Tour Packages</a></li><li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> About Us</a></li><li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Gallery</a></li><li><a class="footer__link" href="blog.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Travel Stories</a></li><li><a class="footer__link" href="testimonials.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Reviews</a></li><li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> FAQ &amp; Travel Info</a></li></ul></div><div><h5 class="footer__col-title">Destinations</h5><ul class="footer__links"><li><a class="footer__link" href="places.html#sigiriya">Sigiriya</a></li><li><a class="footer__link" href="places.html#kandy">Kandy</a></li><li><a class="footer__link" href="places.html#ella">Ella &amp; Tea Country</a></li><li><a class="footer__link" href="places.html#galle">Galle Fort</a></li><li><a class="footer__link" href="places.html#yala">Yala</a></li><li><a class="footer__link" href="places.html#mirissa">Mirissa</a></li><li><a class="footer__link" href="places.html#anuradhapura">Anuradhapura</a></li><li><a class="footer__link" href="places.html#adams-peak">Adam's Peak</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-map-marker-alt footer__contact-icon"></i><span>42 Galle Road, Colombo 03</span></div><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;display:inline-flex;gap:.4rem;" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd. All rights reserved.</span><div class="footer__bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script>
+    // Contact form handler
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+    const submitBtn = document.getElementById('submit-btn');
 
-<script src="js/main.js"></script>
-<script>
-  // Contact form handler
-  const form = document.getElementById('contact-form');
-  const success = document.getElementById('form-success');
-  const submitBtn = document.getElementById('submit-btn');
-
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin" style="margin-right:.6rem;"></i> Sending…';
-      // Simulate API call (replace with your backend / FormSpree / Netlify Forms endpoint)
-      setTimeout(() => {
-        form.style.display = 'none';
-        success.classList.add('show');
-        window.scrollTo({ top: success.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
-      }, 1800);
-    });
-  }
-</script>
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fa fa-spinner fa-spin" style="margin-right:.6rem;"></i> Sending…';
+        // Simulate API call (replace with your backend / FormSpree / Netlify Forms endpoint)
+        setTimeout(() => {
+          form.style.display = 'none';
+          success.classList.add('show');
+          window.scrollTo({ top: success.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+        }, 1800);
+      });
+    }
+  </script>
 </body>
+
 </html>

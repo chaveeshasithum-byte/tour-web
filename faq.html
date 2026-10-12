@@ -1,162 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ &amp; Travel Info | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="Everything you need to know before visiting Sri Lanka — visas, best seasons, safety, payments, packing list, local etiquette and cancellation policies." />
+  <meta name="description"
+    content="Everything you need to know before visiting Sri Lanka — visas, best seasons, safety, payments, packing list, local etiquette and cancellation policies." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .faq-section-title { font-family: var(--font-serif); font-size: 1.5rem; color: var(--color-green); margin-bottom: 1.5rem; display: flex; align-items: center; gap: .8rem; }
-    .faq-section-title span { font-size: 1.3rem; }
-    .faq-group { background: white; border-radius: var(--radius-lg); padding: var(--space-lg); box-shadow: var(--shadow-sm); margin-bottom: var(--space-lg); }
-    .info-card { background: var(--color-green); border-radius: var(--radius-lg); padding: var(--space-lg); color: white; }
-    .info-card h4 { color: var(--color-gold-light); font-family: var(--font-serif); margin-bottom: 1rem; }
-    .info-card p, .info-card li { font-size: .88rem; color: rgba(255,255,255,.75); line-height: 1.75; }
-    .info-card ul { display: flex; flex-direction: column; gap: .4rem; list-style: none; }
-    .info-card ul li::before { content: '✦ '; color: var(--color-gold); font-size: .7rem; }
-    .season-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-    .season-card { background: white; border-radius: var(--radius-md); padding: 1.2rem; text-align: center; box-shadow: var(--shadow-sm); border-top: 3px solid var(--color-gold); }
-    .season-card__months { font-family: var(--font-serif); font-size: 1.1rem; color: var(--color-green); margin-bottom: .4rem; }
-    .season-card__desc { font-size: .8rem; color: var(--color-charcoal-light); line-height: 1.5; }
-    @media (max-width: 768px) { .season-grid { grid-template-columns: repeat(2, 1fr); } }
+    .faq-section-title {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--color-green);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: .8rem;
+    }
+
+    .faq-section-title span {
+      font-size: 1.3rem;
+    }
+
+    .faq-group {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: var(--space-lg);
+    }
+
+    .info-card {
+      background: var(--color-green);
+      border-radius: var(--radius-lg);
+      padding: var(--space-lg);
+      color: white;
+    }
+
+    .info-card h4 {
+      color: var(--color-gold-light);
+      font-family: var(--font-serif);
+      margin-bottom: 1rem;
+    }
+
+    .info-card p,
+    .info-card li {
+      font-size: .88rem;
+      color: rgba(255, 255, 255, .75);
+      line-height: 1.75;
+    }
+
+    .info-card ul {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+      list-style: none;
+    }
+
+    .info-card ul li::before {
+      content: '✦ ';
+      color: var(--color-gold);
+      font-size: .7rem;
+    }
+
+    .season-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+
+    .season-card {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 1.2rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border-top: 3px solid var(--color-gold);
+    }
+
+    .season-card__months {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--color-green);
+      margin-bottom: .4rem;
+    }
+
+    .season-card__desc {
+      font-size: .8rem;
+      color: var(--color-charcoal-light);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .season-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link">Tours</a></li><li><a href="about.html" class="nav__link">About</a></li><li><a href="gallery.html" class="nav__link">Gallery</a></li><li><a href="blog.html" class="nav__link">Stories</a></li><li><a href="faq.html" class="nav__link active">FAQ</a></li></ul>
-    <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
-  </div>
-</nav>
-<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="faq.html" class="nav__mobile-link">FAQ</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link">Places</a></li>
+        <li><a href="tours.html" class="nav__link">Tours</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="faq.html" class="nav__link active">FAQ</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book
+          Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html"
+      class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html"
+      class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html"
+      class="nav__mobile-link">Stories</a><a href="faq.html" class="nav__mobile-link">FAQ</a><a href="contact.html"
+      class="nav__mobile-link">Contact</a></div>
 
-<section class="page-hero" style="background-image:url('images/galle.jpg');background-size:cover;background-position:center;">
-  <div class="page-hero__overlay"></div>
-  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>FAQ &amp; Travel Info</span></nav><h1 class="page-hero__title">FAQ &amp;<br/><em style="color:var(--color-gold-light);">Travel Information</em></h1></div></div>
-</section>
+  <section class="page-hero"
+    style="background-image:url('images/galle.jpg');background-size:cover;background-position:center;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>FAQ &amp; Travel Info</span></nav>
+        <h1 class="page-hero__title">FAQ &amp;<br /><em style="color:var(--color-gold-light);">Travel Information</em>
+        </h1>
+      </div>
+    </div>
+  </section>
 
-<section class="section" style="background:var(--color-cream);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">Everything You Need to Know</p><h2>Before You Travel to Sri Lanka</h2><div class="divider"></div><p>We believe informed travellers are happy travellers. Find answers to every question below — and if something is missing, just ask us.</p></div>
-
-    <div style="display:grid;grid-template-columns:2fr 1fr;gap:var(--space-xl);" class="reveal">
-      <div>
-
-        <!-- VISAS -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>🛂</span> Visas &amp; Entry</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Do I need a visa to visit Sri Lanka? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Most nationalities require an Electronic Travel Authorisation (ETA) before arriving in Sri Lanka. It costs approximately USD $20–35 and can be obtained online at <strong>eta.gov.lk</strong> within minutes. Citizens of Singapore, Maldives and Seychelles are exempt. A few nationalities require a traditional visa from a Sri Lankan embassy. We will advise you specifically based on your passport.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How long can I stay on a tourist visa? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">The standard tourist ETA permits a stay of up to 30 days, extendable to 90 days by applying at the Department of Immigration in Colombo. We handle this process for our guests on longer itineraries.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is the ETA process complicated? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Not at all. The process takes around 10 minutes online at eta.gov.lk. You will need a valid passport (6 months minimum validity), a return flight booking, and a credit/debit card. Approval is usually instant or within a few hours. We will send you a step-by-step guide when you confirm your booking.</div></div></div>
-          </div>
-        </div>
-
-        <!-- BEST SEASONS -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>🌤️</span> Best Times to Visit</div>
-          <div class="season-grid" style="margin-bottom:1.5rem;">
-            <div class="season-card"><div style="font-size:1.5rem;margin-bottom:.4rem;">☀️</div><div class="season-card__months">Dec – Mar</div><div class="season-card__desc">Best for the South &amp; West Coast, Cultural Triangle, and wildlife (Yala, Udawalawe)</div></div>
-            <div class="season-card"><div style="font-size:1.5rem;margin-bottom:.4rem;">🌸</div><div class="season-card__months">Apr – May</div><div class="season-card__desc">Transitional season — good for tea country, birding at Sinharaja, Adam's Peak</div></div>
-            <div class="season-card"><div style="font-size:1.5rem;margin-bottom:.4rem;">🌿</div><div class="season-card__months">Jun – Sep</div><div class="season-card__desc">Best for the East Coast (Trincomalee, Arugam Bay), elephant gathering at Minneriya</div></div>
-            <div class="season-card"><div style="font-size:1.5rem;margin-bottom:.4rem;">🍃</div><div class="season-card__months">Oct – Nov</div><div class="season-card__desc">Transitional — whale watching begins, some areas quiet. Good value season.</div></div>
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I visit Sri Lanka year-round? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Yes — Sri Lanka is a year-round destination because the two monsoons affect different sides of the island at different times. When the southwest monsoon brings rain to Colombo and Galle (May–September), the east coast is sunny and calm. Our team will design your itinerary around the optimal weather windows for every destination you wish to visit.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">When is the best time to see the elephant gathering? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">The famous Minneriya elephant gathering — where hundreds of wild elephants congregate around the reservoir as it recedes — typically peaks between July and October, with August and September being the most spectacular months. We incorporate this into our Cultural Triangle tours during the season.</div></div></div>
-          </div>
-        </div>
-
-        <!-- SAFETY -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>🛡️</span> Safety &amp; Health</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is Sri Lanka safe for tourists? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Sri Lanka is generally a very safe destination for international travellers. The locals are famously warm and hospitable, and the country has an excellent reputation for visitor safety. Standard travel precautions apply — keep valuables secure, be mindful in busy markets, and follow your guide's advice in national parks. Our team provides a full safety briefing before every tour.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Do I need vaccinations to visit Sri Lanka? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">No vaccinations are legally required for entry. However, we recommend you are up to date on routine vaccinations (MMR, Tdap, flu). Hepatitis A and Typhoid vaccinations are advisable for those visiting rural areas or eating street food. Malaria prophylaxis may be considered for those spending extended time in the dry zone — consult your GP or a travel health clinic 6–8 weeks before departure.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is the tap water safe to drink? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">We recommend drinking only bottled or filtered water. All our partner hotels and eco-lodges provide safe drinking water, and we supply water on all guided days. To minimise plastic use, we encourage guests to carry a reusable bottle which can be refilled from filtered sources.</div></div></div>
-          </div>
-        </div>
-
-        <!-- PAYMENTS -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>💳</span> Payments &amp; Money</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What currency is used and how much cash should I carry? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">The Sri Lankan Rupee (LKR) is the local currency. US dollars and euros are widely accepted at hotels and larger restaurants. ATMs are available in all cities and most major towns. We recommend carrying some LKR for markets, small restaurants, and tips. A budget of approximately LKR 3,000–5,000 per day for personal expenses is comfortable for most travellers.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How do I pay for my tour? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">We accept bank transfers (USD, EUR, GBP), credit/debit cards (Visa, Mastercard) via our secure payment portal, and PayPal. A 30% deposit confirms your booking, with the balance due 45 days before departure. We never charge hidden fees.</div></div></div>
-          </div>
-        </div>
-
-        <!-- CANCELLATION -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>📋</span> Cancellation &amp; Booking</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What is your cancellation policy? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner"><strong>More than 60 days before departure:</strong> Full refund minus a 5% administrative fee.<br/><br/><strong>30–60 days before departure:</strong> 50% refund.<br/><br/><strong>Under 30 days before departure:</strong> Non-refundable, but fully transferable to another departure date within 12 months at no extra charge.<br/><br/>We strongly recommend travel insurance that covers cancellation for any reason.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I change my dates after booking? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Yes — date changes are free of charge up to 45 days before departure, subject to availability. Changes requested within 45 days may incur accommodation amendment fees charged by our hotel partners, which we pass on at cost with no markup.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How far in advance should I book? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">For peak season (December–March), we recommend booking at least 3–4 months in advance. Premium eco-lodges and boutique properties in Yala and Ella fill up very quickly. For shoulder season travel, 6–8 weeks is usually sufficient, though we always recommend early booking to secure your preferred accommodation.</div></div></div>
-          </div>
-        </div>
-
-        <!-- PACKING -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>🎒</span> Packing List</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What should I pack for a Sri Lanka trip? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner"><strong>Essentials:</strong> Lightweight, breathable clothing (cotton or moisture-wicking). Long sleeves and trousers for temple visits and wildlife safaris. A light rain jacket or poncho. Comfortable, sturdy walking shoes. Sandals for beach and temple visits (easily removed).<br/><br/><strong>Health:</strong> High-SPF sunscreen, insect repellent (DEET-based for jungle areas), personal medications, and a small first aid kit.<br/><br/><strong>Temples &amp; Culture:</strong> Pack a light sarong or shawl — useful for covering shoulders and legs at religious sites. Both men and women are required to cover up at most temples.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is there a dress code for temples? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Yes. All temples and religious sites in Sri Lanka require both men and women to cover their shoulders and knees. Many sites also require shoes to be removed. We provide guidance before each visit, and sarongs are available at the entrance of most major sites for a small fee. Wearing respectful clothing at all times in rural villages is also appreciated.</div></div></div>
-          </div>
-        </div>
-
-        <!-- ETIQUETTE -->
-        <div class="faq-group">
-          <div class="faq-section-title"><span>🙏</span> Local Etiquette</div>
-          <div class="accordion-group">
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What are the key cultural customs to be aware of? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner"><strong>Greetings:</strong> The traditional greeting is "Ayubowan" (wishing you a long life) with palms pressed together. Shaking hands is also acceptable.<br/><br/><strong>Photography:</strong> Always ask permission before photographing people, especially monks and at religious ceremonies. Never pose in front of or turn your back to Buddha statues for photographs — it is considered deeply disrespectful.<br/><br/><strong>Tipping:</strong> Not mandatory but greatly appreciated. A standard tip for guides is LKR 1,000–2,000 per day; for drivers, LKR 500–1,000.</div></div></div>
-            <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I photograph Buddhist temples and monks? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Temple interiors and statues can generally be photographed, but always look for posted signs restricting photography (common in fresco areas). Photographing monks is welcomed with permission — approach respectfully, never touch a monk, and always accept any blessing graciously. Our guides will advise on the specific etiquette at each site.</div></div></div>
-          </div>
-        </div>
-
+  <section class="section" style="background:var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Everything You Need to Know</p>
+        <h2>Before You Travel to Sri Lanka</h2>
+        <div class="divider"></div>
+        <p>We believe informed travellers are happy travellers. Find answers to every question below — and if something
+          is missing, just ask us.</p>
       </div>
 
-      <!-- Sidebar -->
-      <div style="display:flex;flex-direction:column;gap:1.5rem;">
-        <div class="info-card">
-          <h4>Quick Facts: Sri Lanka</h4>
-          <ul>
-            <li>Capital: Sri Jayawardenepura Kotte (administrative), Colombo (commercial)</li>
-            <li>Currency: Sri Lankan Rupee (LKR)</li>
-            <li>Time Zone: GMT +5:30</li>
-            <li>Language: Sinhala, Tamil; English widely spoken</li>
-            <li>Electricity: 230V / 50Hz · Type D &amp; G plugs</li>
-            <li>Dialling code: +94</li>
-            <li>Emergency: 119 (Police) · 110 (Ambulance)</li>
-          </ul>
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:var(--space-xl);" class="reveal">
+        <div>
+
+          <!-- VISAS -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>🛂</span> Visas &amp; Entry</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Do I need a visa to visit
+                  Sri Lanka? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Most nationalities require an Electronic Travel Authorisation (ETA)
+                    before arriving in Sri Lanka. It costs approximately USD $20–35 and can be obtained online at
+                    <strong>eta.gov.lk</strong> within minutes. Citizens of Singapore, Maldives and Seychelles are
+                    exempt. A few nationalities require a traditional visa from a Sri Lankan embassy. We will advise you
+                    specifically based on your passport.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How long can I stay on a
+                  tourist visa? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">The standard tourist ETA permits a stay of up to 30 days,
+                    extendable to 90 days by applying at the Department of Immigration in Colombo. We handle this
+                    process for our guests on longer itineraries.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is the ETA process
+                  complicated? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Not at all. The process takes around 10 minutes online at
+                    eta.gov.lk. You will need a valid passport (6 months minimum validity), a return flight booking, and
+                    a credit/debit card. Approval is usually instant or within a few hours. We will send you a
+                    step-by-step guide when you confirm your booking.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BEST SEASONS -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>🌤️</span> Best Times to Visit</div>
+            <div class="season-grid" style="margin-bottom:1.5rem;">
+              <div class="season-card">
+                <div style="font-size:1.5rem;margin-bottom:.4rem;">☀️</div>
+                <div class="season-card__months">Dec – Mar</div>
+                <div class="season-card__desc">Best for the South &amp; West Coast, Cultural Triangle, and wildlife
+                  (Yala, Udawalawe)</div>
+              </div>
+              <div class="season-card">
+                <div style="font-size:1.5rem;margin-bottom:.4rem;">🌸</div>
+                <div class="season-card__months">Apr – May</div>
+                <div class="season-card__desc">Transitional season — good for tea country, birding at Sinharaja, Adam's
+                  Peak</div>
+              </div>
+              <div class="season-card">
+                <div style="font-size:1.5rem;margin-bottom:.4rem;">🌿</div>
+                <div class="season-card__months">Jun – Sep</div>
+                <div class="season-card__desc">Best for the East Coast (Trincomalee, Arugam Bay), elephant gathering at
+                  Minneriya</div>
+              </div>
+              <div class="season-card">
+                <div style="font-size:1.5rem;margin-bottom:.4rem;">🍃</div>
+                <div class="season-card__months">Oct – Nov</div>
+                <div class="season-card__desc">Transitional — whale watching begins, some areas quiet. Good value
+                  season.</div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I visit Sri Lanka
+                  year-round? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Yes — Sri Lanka is a year-round destination because the two
+                    monsoons affect different sides of the island at different times. When the southwest monsoon brings
+                    rain to Colombo and Galle (May–September), the east coast is sunny and calm. Our team will design
+                    your itinerary around the optimal weather windows for every destination you wish to visit.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">When is the best time to
+                  see the elephant gathering? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">The famous Minneriya elephant gathering — where hundreds of wild
+                    elephants congregate around the reservoir as it recedes — typically peaks between July and October,
+                    with August and September being the most spectacular months. We incorporate this into our Cultural
+                    Triangle tours during the season.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAFETY -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>🛡️</span> Safety &amp; Health</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is Sri Lanka safe for
+                  tourists? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Sri Lanka is generally a very safe destination for international
+                    travellers. The locals are famously warm and hospitable, and the country has an excellent reputation
+                    for visitor safety. Standard travel precautions apply — keep valuables secure, be mindful in busy
+                    markets, and follow your guide's advice in national parks. Our team provides a full safety briefing
+                    before every tour.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Do I need vaccinations to
+                  visit Sri Lanka? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">No vaccinations are legally required for entry. However, we
+                    recommend you are up to date on routine vaccinations (MMR, Tdap, flu). Hepatitis A and Typhoid
+                    vaccinations are advisable for those visiting rural areas or eating street food. Malaria prophylaxis
+                    may be considered for those spending extended time in the dry zone — consult your GP or a travel
+                    health clinic 6–8 weeks before departure.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is the tap water safe to
+                  drink? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">We recommend drinking only bottled or filtered water. All our
+                    partner hotels and eco-lodges provide safe drinking water, and we supply water on all guided days.
+                    To minimise plastic use, we encourage guests to carry a reusable bottle which can be refilled from
+                    filtered sources.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAYMENTS -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>💳</span> Payments &amp; Money</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What currency is used and
+                  how much cash should I carry? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">The Sri Lankan Rupee (LKR) is the local currency. US dollars and
+                    euros are widely accepted at hotels and larger restaurants. ATMs are available in all cities and
+                    most major towns. We recommend carrying some LKR for markets, small restaurants, and tips. A budget
+                    of approximately LKR 3,000–5,000 per day for personal expenses is comfortable for most travellers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How do I pay for my tour?
+                  <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">We accept bank transfers (USD, EUR, GBP), credit/debit cards (Visa,
+                    Mastercard) via our secure payment portal, and PayPal. A 30% deposit confirms your booking, with the
+                    balance due 45 days before departure. We never charge hidden fees.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CANCELLATION -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>📋</span> Cancellation &amp; Booking</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What is your cancellation
+                  policy? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner"><strong>More than 60 days before departure:</strong> Full refund
+                    minus a 5% administrative fee.<br /><br /><strong>30–60 days before departure:</strong> 50%
+                    refund.<br /><br /><strong>Under 30 days before departure:</strong> Non-refundable, but fully
+                    transferable to another departure date within 12 months at no extra charge.<br /><br />We strongly
+                    recommend travel insurance that covers cancellation for any reason.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I change my dates
+                  after booking? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Yes — date changes are free of charge up to 45 days before
+                    departure, subject to availability. Changes requested within 45 days may incur accommodation
+                    amendment fees charged by our hotel partners, which we pass on at cost with no markup.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">How far in advance should
+                  I book? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">For peak season (December–March), we recommend booking at least 3–4
+                    months in advance. Premium eco-lodges and boutique properties in Yala and Ella fill up very quickly.
+                    For shoulder season travel, 6–8 weeks is usually sufficient, though we always recommend early
+                    booking to secure your preferred accommodation.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PACKING -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>🎒</span> Packing List</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What should I pack for a
+                  Sri Lanka trip? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner"><strong>Essentials:</strong> Lightweight, breathable clothing
+                    (cotton or moisture-wicking). Long sleeves and trousers for temple visits and wildlife safaris. A
+                    light rain jacket or poncho. Comfortable, sturdy walking shoes. Sandals for beach and temple visits
+                    (easily removed).<br /><br /><strong>Health:</strong> High-SPF sunscreen, insect repellent
+                    (DEET-based for jungle areas), personal medications, and a small first aid
+                    kit.<br /><br /><strong>Temples &amp; Culture:</strong> Pack a light sarong or shawl — useful for
+                    covering shoulders and legs at religious sites. Both men and women are required to cover up at most
+                    temples.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is there a dress code for
+                  temples? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Yes. All temples and religious sites in Sri Lanka require both men
+                    and women to cover their shoulders and knees. Many sites also require shoes to be removed. We
+                    provide guidance before each visit, and sarongs are available at the entrance of most major sites
+                    for a small fee. Wearing respectful clothing at all times in rural villages is also appreciated.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ETIQUETTE -->
+          <div class="faq-group">
+            <div class="faq-section-title"><span>🙏</span> Local Etiquette</div>
+            <div class="accordion-group">
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What are the key cultural
+                  customs to be aware of? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner"><strong>Greetings:</strong> The traditional greeting is "Ayubowan"
+                    (wishing you a long life) with palms pressed together. Shaking hands is also
+                    acceptable.<br /><br /><strong>Photography:</strong> Always ask permission before photographing
+                    people, especially monks and at religious ceremonies. Never pose in front of or turn your back to
+                    Buddha statues for photographs — it is considered deeply
+                    disrespectful.<br /><br /><strong>Tipping:</strong> Not mandatory but greatly appreciated. A
+                    standard tip for guides is LKR 1,000–2,000 per day; for drivers, LKR 500–1,000.</div>
+                </div>
+              </div>
+              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I photograph Buddhist
+                  temples and monks? <span class="accordion-icon">+</span></button>
+                <div class="accordion-body">
+                  <div class="accordion-body__inner">Temple interiors and statues can generally be photographed, but
+                    always look for posted signs restricting photography (common in fresco areas). Photographing monks
+                    is welcomed with permission — approach respectfully, never touch a monk, and always accept any
+                    blessing graciously. Our guides will advise on the specific etiquette at each site.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <div class="info-card" style="background:var(--color-ivory);border:1px solid var(--color-ivory-dark);">
-          <h4 style="color:var(--color-green);">Travel Insurance</h4>
-          <p style="color:var(--color-charcoal-mid);">We strongly recommend comprehensive travel insurance that covers trip cancellation, medical evacuation, and health emergencies. Sri Lanka's healthcare in major cities is good, but rural areas can be far from hospitals.</p>
-        </div>
-        <div class="info-card" style="background:var(--color-ivory);border:1px solid var(--color-ivory-dark);">
-          <h4 style="color:var(--color-green);">Still Have Questions?</h4>
-          <p style="color:var(--color-charcoal-mid);margin-bottom:1rem;">Our team responds to all enquiries within 24 hours. We're also available on WhatsApp for quick questions.</p>
-          <a href="contact.html" class="btn btn-primary btn-sm" style="display:block;text-align:center;margin-bottom:.7rem;">Send a Message</a>
-          <a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="display:block;text-align:center;" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+
+        <!-- Sidebar -->
+        <div style="display:flex;flex-direction:column;gap:1.5rem;">
+          <div class="info-card">
+            <h4>Quick Facts: Sri Lanka</h4>
+            <ul>
+              <li>Capital: Sri Jayawardenepura Kotte (administrative), Colombo (commercial)</li>
+              <li>Currency: Sri Lankan Rupee (LKR)</li>
+              <li>Time Zone: GMT +5:30</li>
+              <li>Language: Sinhala, Tamil; English widely spoken</li>
+              <li>Electricity: 230V / 50Hz · Type D &amp; G plugs</li>
+              <li>Dialling code: +94</li>
+              <li>Emergency: 119 (Police) · 110 (Ambulance)</li>
+            </ul>
+          </div>
+          <div class="info-card" style="background:var(--color-ivory);border:1px solid var(--color-ivory-dark);">
+            <h4 style="color:var(--color-green);">Travel Insurance</h4>
+            <p style="color:var(--color-charcoal-mid);">We strongly recommend comprehensive travel insurance that covers
+              trip cancellation, medical evacuation, and health emergencies. Sri Lanka's healthcare in major cities is
+              good, but rural areas can be far from hospitals.</p>
+          </div>
+          <div class="info-card" style="background:var(--color-ivory);border:1px solid var(--color-ivory-dark);">
+            <h4 style="color:var(--color-green);">Still Have Questions?</h4>
+            <p style="color:var(--color-charcoal-mid);margin-bottom:1rem;">Our team responds to all enquiries within 24
+              hours. We're also available on WhatsApp for quick questions.</p>
+            <a href="contact.html" class="btn btn-primary btn-sm"
+              style="display:block;text-align:center;margin-bottom:.7rem;">Send a Message</a>
+            <a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="display:block;text-align:center;"
+              target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-banner"><div class="cta-banner__bg" style="background-image:url('images/ella.jpg');"></div><div class="cta-banner__overlay"></div><div class="container"><div class="cta-banner__content reveal"><p class="section-label" style="color:var(--color-gold-light);">We're Here to Help</p><h2>Any Question, Any Time</h2><p>Planning a trip is full of questions. We love answering them. Reach out and let's start planning your perfect Sri Lanka journey.</p><div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Contact Us</a><a href="tours.html" class="btn btn-outline btn-lg">Browse Tours</a></div></div></div></section>
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image:url('images/ella.jpg');"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-label" style="color:var(--color-gold-light);">We're Here to Help</p>
+        <h2>Any Question, Any Time</h2>
+        <p>Planning a trip is full of questions. We love answering them. Reach out and let's start planning your perfect
+          Sri Lanka journey.</p>
+        <div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Contact Us</a><a
+            href="tours.html" class="btn btn-outline btn-lg">Browse Tours</a></div>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html">Places</a></li><li><a class="footer__link" href="tours.html">Tours</a></li><li><a class="footer__link" href="about.html">About</a></li><li><a class="footer__link" href="gallery.html">Gallery</a></li><li><a class="footer__link" href="blog.html">Stories</a></li><li><a class="footer__link" href="contact.html">Contact</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div></div></footer>
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
-<script src="js/main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, gently delivered.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.
+          </p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a></div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html">Places</a></li>
+            <li><a class="footer__link" href="tours.html">Tours</a></li>
+            <li><a class="footer__link" href="about.html">About</a></li>
+            <li><a class="footer__link" href="gallery.html">Gallery</a></li>
+            <li><a class="footer__link" href="blog.html">Stories</a></li>
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
+          </div>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,359 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Places to Explore | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="Discover 8+ stunning destinations across Sri Lanka — from ancient heritage sites to wild national parks, golden beaches and misty tea highlands." />
+  <meta name="description"
+    content="Discover 8+ stunning destinations across Sri Lanka — from ancient heritage sites to wild national parks, golden beaches and misty tea highlands." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .dest-detail { background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; margin-bottom: var(--space-xl); box-shadow: var(--shadow-md); }
-    .dest-detail__hero { position: relative; height: 480px; overflow: hidden; }
-    .dest-detail__hero img { width: 100%; height: 100%; object-fit: cover; }
-    .dest-detail__hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,25,16,.85) 0%, transparent 60%); }
-    .dest-detail__hero-title { position: absolute; bottom: 2rem; left: 2rem; color: white; }
-    .dest-detail__hero-title h2 { color: white; }
-    .dest-detail__body { display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-xl); padding: var(--space-xl); }
-    .dest-detail__info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
-    .dest-info-chip { background: var(--color-ivory); border-radius: var(--radius-md); padding: 1rem; }
-    .dest-info-chip__label { font-size: .65rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--color-gold); margin-bottom: .3rem; }
-    .dest-info-chip__value { font-family: var(--font-serif); font-size: 1rem; color: var(--color-green); }
-    .attraction-list { display: flex; flex-direction: column; gap: .6rem; margin-top: .8rem; }
-    .attraction-item { display: flex; align-items: flex-start; gap: .7rem; font-size: .9rem; color: var(--color-charcoal-mid); }
-    .attraction-item::before { content: '✦'; color: var(--color-gold); flex-shrink: 0; font-size: .7rem; margin-top: .15rem; }
-    .dest-sidebar { display: flex; flex-direction: column; gap: 1.5rem; }
-    .sidebar-box { background: var(--color-ivory); border-radius: var(--radius-md); padding: 1.4rem; }
-    .sidebar-box h5 { font-family: var(--font-serif); color: var(--color-green); margin-bottom: .8rem; font-size: 1.1rem; }
-    .nearby-chip { display: flex; align-items: center; gap: .6rem; padding: .5rem 0; border-bottom: 1px solid var(--color-ivory-dark); font-size: .85rem; color: var(--color-charcoal-mid); }
-    .nearby-chip:last-child { border-bottom: none; }
-    .nearby-chip i { color: var(--color-gold); width: 16px; }
+    .dest-detail {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: var(--space-xl);
+      box-shadow: var(--shadow-md);
+    }
+
+    .dest-detail__hero {
+      position: relative;
+      height: 480px;
+      overflow: hidden;
+    }
+
+    .dest-detail__hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .dest-detail__hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 25, 16, .85) 0%, transparent 60%);
+    }
+
+    .dest-detail__hero-title {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      color: white;
+    }
+
+    .dest-detail__hero-title h2 {
+      color: white;
+    }
+
+    .dest-detail__body {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-xl);
+      padding: var(--space-xl);
+    }
+
+    .dest-detail__info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .dest-info-chip {
+      background: var(--color-ivory);
+      border-radius: var(--radius-md);
+      padding: 1rem;
+    }
+
+    .dest-info-chip__label {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: .3rem;
+    }
+
+    .dest-info-chip__value {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--color-green);
+    }
+
+    .attraction-list {
+      display: flex;
+      flex-direction: column;
+      gap: .6rem;
+      margin-top: .8rem;
+    }
+
+    .attraction-item {
+      display: flex;
+      align-items: flex-start;
+      gap: .7rem;
+      font-size: .9rem;
+      color: var(--color-charcoal-mid);
+    }
+
+    .attraction-item::before {
+      content: '✦';
+      color: var(--color-gold);
+      flex-shrink: 0;
+      font-size: .7rem;
+      margin-top: .15rem;
+    }
+
+    .dest-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar-box {
+      background: var(--color-ivory);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+    }
+
+    .sidebar-box h5 {
+      font-family: var(--font-serif);
+      color: var(--color-green);
+      margin-bottom: .8rem;
+      font-size: 1.1rem;
+    }
+
+    .nearby-chip {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .5rem 0;
+      border-bottom: 1px solid var(--color-ivory-dark);
+      font-size: .85rem;
+      color: var(--color-charcoal-mid);
+    }
+
+    .nearby-chip:last-child {
+      border-bottom: none;
+    }
+
+    .nearby-chip i {
+      color: var(--color-gold);
+      width: 16px;
+    }
+
     @media (max-width: 768px) {
-      .dest-detail__body { grid-template-columns: 1fr; }
-      .dest-detail__hero { height: 280px; }
+      .dest-detail__body {
+        grid-template-columns: 1fr;
+      }
+
+      .dest-detail__hero {
+        height: 280px;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links">
-      <li><a href="index.html" class="nav__link">Home</a></li>
-      <li><a href="places.html" class="nav__link active">Places</a></li>
-      <li><a href="tours.html" class="nav__link">Tours</a></li>
-      <li><a href="about.html" class="nav__link">About</a></li>
-      <li><a href="gallery.html" class="nav__link">Gallery</a></li>
-      <li><a href="blog.html" class="nav__link">Stories</a></li>
-      <li><a href="contact.html" class="nav__link">Contact</a></li>
-    </ul>
-    <div style="display:flex;align-items:center;gap:1rem;">
-      <select class="currency-selector" aria-label="Select currency"><option value="USD">$ USD</option><option value="EUR">€ EUR</option><option value="LKR">LKR</option></select>
-      <a href="contact.html" class="nav__link nav__cta">Book Now</a>
-      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-</nav>
-<div class="nav__mobile">
-  <a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a>
-</div>
-
-<!-- Page Hero -->
-<section class="page-hero" style="background-image:url('images/ella.jpg');background-size:cover;background-position:center;">
-  <div class="page-hero__overlay"></div>
-  <div class="container">
-    <div class="page-hero__content">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Places to Explore</span></nav>
-      <h1 class="page-hero__title">Places to Explore<br /><em style="font-style:italic;color:var(--color-gold-light);">Across Sri Lanka</em></h1>
-    </div>
-  </div>
-</section>
-
-<!-- Intro -->
-<section class="section-sm" style="background:var(--color-cream);">
-  <div class="container" style="max-width:800px;text-align:center;">
-    <p class="section-label">The Pearl of the Indian Ocean</p>
-    <h2 class="reveal">An Island of a Thousand Faces</h2>
-    <div class="divider"></div>
-    <p class="reveal reveal-delay-1">In an island no larger than Ireland, Sri Lanka packs more variety than most continents could manage. Ancient cities that predate Rome, cloud-draped mountains thick with tea, beaches of impossible colour, and jungles alive with leopards and elephants — every corner holds something that will stop you in your tracks.</p>
-  </div>
-</section>
-
-<!-- Filter Tabs -->
-<section class="section" style="background:var(--color-ivory);padding-top:0;">
-  <div class="container">
-    <div class="filter-tabs" data-grid-target="destinations-grid" role="tablist" aria-label="Filter destinations">
-      <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
-      <button class="filter-tab" data-filter="heritage" role="tab" aria-selected="false">Heritage &amp; Culture</button>
-      <button class="filter-tab" data-filter="nature" role="tab" aria-selected="false">Nature &amp; Wildlife</button>
-      <button class="filter-tab" data-filter="beaches" role="tab" aria-selected="false">Beaches</button>
-      <button class="filter-tab" data-filter="adventure" role="tab" aria-selected="false">Adventure</button>
-      <button class="filter-tab" data-filter="food" role="tab" aria-selected="false">Food &amp; Local Life</button>
-    </div>
-
-    <div class="destinations-grid" id="destinations-grid">
-      <!-- 1 Sigiriya -->
-      <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="sigiriya">
-        <img class="dest-card__img" src="images/hero.jpg" alt="Sigiriya Rock Fortress" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Heritage &amp; Culture</div>
-          <div class="dest-card__name">Sigiriya — The Lion Rock</div>
-          <div class="dest-card__desc">A fifth-century palace-fortress perched 200 metres above the jungle floor, adorned with frescoes and surrounded by water gardens of breathtaking ingenuity.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – Apr · Aug – Sep</span>
-            <a href="#sigiriya-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2 Kandy -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="heritage" id="kandy">
-        <img class="dest-card__img" src="images/kandy.jpg" alt="Kandy Temple" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Heritage &amp; Culture</div>
-          <div class="dest-card__name">Kandy — Sacred City</div>
-          <div class="dest-card__desc">The last royal capital of the ancient kings, home to the revered Temple of the Tooth Relic, vibrant Kandyan dance, and a shimmering lake at its heart.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round</span>
-            <a href="#kandy-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3 Ella -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="nature" id="ella">
-        <img class="dest-card__img" src="images/ella.jpg" alt="Ella Tea Country" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Nature &amp; Scenery</div>
-          <div class="dest-card__name">Ella &amp; Tea Country</div>
-          <div class="dest-card__desc">The legendary Kandy–Ella train winds through emerald estates, past misty waterfalls and the iconic Nine Arch Bridge — one of the world's most spectacular rail journeys.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Jan – Apr</span>
-            <a href="#ella-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4 Galle -->
-      <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="galle">
-        <img class="dest-card__img" src="images/galle.jpg" alt="Galle Fort" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Heritage &amp; Beaches</div>
-          <div class="dest-card__name">Galle Fort</div>
-          <div class="dest-card__desc">A UNESCO-listed Dutch colonial fort where 400 years of history live inside cobblestone lanes, boutique hotels, art galleries and the call of the muezzin at dusk.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
-            <a href="#galle-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5 Yala -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="nature" id="yala">
-        <img class="dest-card__img" src="images/yala.jpg" alt="Yala Leopard" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Nature &amp; Wildlife</div>
-          <div class="dest-card__name">Yala National Park</div>
-          <div class="dest-card__desc">Sri Lanka's most celebrated wildlife reserve, sheltering the world's highest density of leopards alongside herds of elephants, crocodiles and hundreds of bird species.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Feb – Jul</span>
-            <a href="#yala-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6 Mirissa -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="beaches" id="mirissa">
-        <img class="dest-card__img" src="images/mirissa.jpg" alt="Mirissa Beach" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Beaches</div>
-          <div class="dest-card__name">Mirissa</div>
-          <div class="dest-card__desc">A crescent of golden sand backed by coconut palms — and just offshore, blue whales and spinner dolphins ride the Indian Ocean swells in astonishing numbers.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
-            <a href="#mirissa-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 7 Anuradhapura -->
-      <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="anuradhapura">
-        <img class="dest-card__img" src="images/anuradhapura.jpg" alt="Anuradhapura Stupa" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Heritage &amp; Culture</div>
-          <div class="dest-card__name">Anuradhapura</div>
-          <div class="dest-card__desc">The first great kingdom of Sri Lanka — a vast sacred city of dagobas, moonstone carvings and the world's oldest documented tree, planted in 288 BC.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – Apr</span>
-            <a href="#anuradhapura-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 8 Adam's Peak -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="adventure" id="adams-peak">
-        <img class="dest-card__img" src="images/adams-peak.jpg" alt="Adam's Peak pilgrimage" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Adventure &amp; Pilgrimage</div>
-          <div class="dest-card__name">Adam's Peak (Sri Pada)</div>
-          <div class="dest-card__desc">A sacred 2,243m summit revered by four religions. The pre-dawn pilgrimage — thousands of lanterns spiralling the dark mountainside — is one of Asia's most moving experiences.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – May</span>
-            <a href="#adams-peak-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- 9 Colombo Food -->
-      <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="food">
-        <img class="dest-card__img" src="images/colombo.jpg" alt="Colombo street food" loading="lazy" />
-        <div class="dest-card__body">
-          <div class="dest-card__category">Food &amp; Local Life</div>
-          <div class="dest-card__name">Colombo — Flavour Capital</div>
-          <div class="dest-card__desc">Kottu roti sizzling at midnight, crab curry in century-old restaurants, Pettah market's colour and chaos — Sri Lanka's capital rewards every foodie with unforgettable sensory theatre.</div>
-          <div class="dest-card__footer">
-            <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round</span>
-            <a href="contact.html" class="dest-card__link">Book a Food Tour <i class="fa fa-arrow-right"></i></a>
-          </div>
-        </div>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link active">Places</a></li>
+        <li><a href="tours.html" class="nav__link">Tours</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <select class="currency-selector" aria-label="Select currency">
+          <option value="USD">$ USD</option>
+          <option value="EUR">€ EUR</option>
+          <option value="LKR">LKR</option>
+        </select>
+        <a href="contact.html" class="nav__link nav__cta">Book Now</a>
+        <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
     </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a
+      href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a
+      href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a
+      href="contact.html" class="nav__mobile-link">Contact</a>
   </div>
-</section>
 
-<!-- ══ Destination Detail: Sigiriya ══ -->
-<section class="section" style="background:var(--color-cream);" id="sigiriya-detail">
-  <div class="container">
-    <div class="dest-detail reveal">
-      <div class="dest-detail__hero">
-        <img src="images/hero.jpg" alt="Sigiriya Rock Fortress aerial view" loading="lazy" />
-        <div class="dest-detail__hero-overlay"></div>
-        <div class="dest-detail__hero-title">
-          <span class="section-label" style="color:var(--color-gold-light);">Heritage &amp; Culture</span>
-          <h2>Sigiriya — The Lion Rock</h2>
+  <!-- Page Hero -->
+  <section class="page-hero"
+    style="background-image:url('images/ella.jpg');background-size:cover;background-position:center;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span>Places to
+            Explore</span></nav>
+        <h1 class="page-hero__title">Places to Explore<br /><em
+            style="font-style:italic;color:var(--color-gold-light);">Across Sri Lanka</em></h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="section-sm" style="background:var(--color-cream);">
+    <div class="container" style="max-width:800px;text-align:center;">
+      <p class="section-label">The Pearl of the Indian Ocean</p>
+      <h2 class="reveal">An Island of a Thousand Faces</h2>
+      <div class="divider"></div>
+      <p class="reveal reveal-delay-1">In an island no larger than Ireland, Sri Lanka packs more variety than most
+        continents could manage. Ancient cities that predate Rome, cloud-draped mountains thick with tea, beaches of
+        impossible colour, and jungles alive with leopards and elephants — every corner holds something that will stop
+        you in your tracks.</p>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <section class="section" style="background:var(--color-ivory);padding-top:0;">
+    <div class="container">
+      <div class="filter-tabs" data-grid-target="destinations-grid" role="tablist" aria-label="Filter destinations">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-tab" data-filter="heritage" role="tab" aria-selected="false">Heritage &amp;
+          Culture</button>
+        <button class="filter-tab" data-filter="nature" role="tab" aria-selected="false">Nature &amp; Wildlife</button>
+        <button class="filter-tab" data-filter="beaches" role="tab" aria-selected="false">Beaches</button>
+        <button class="filter-tab" data-filter="adventure" role="tab" aria-selected="false">Adventure</button>
+        <button class="filter-tab" data-filter="food" role="tab" aria-selected="false">Food &amp; Local Life</button>
+      </div>
+
+      <div class="destinations-grid" id="destinations-grid">
+        <!-- 1 Sigiriya -->
+        <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="sigiriya">
+          <img class="dest-card__img" src="images/hero.jpg" alt="Sigiriya Rock Fortress" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Heritage &amp; Culture</div>
+            <div class="dest-card__name">Sigiriya — The Lion Rock</div>
+            <div class="dest-card__desc">A fifth-century palace-fortress perched 200 metres above the jungle floor,
+              adorned with frescoes and surrounded by water gardens of breathtaking ingenuity.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – Apr · Aug – Sep</span>
+              <a href="#sigiriya-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Kandy -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="heritage" id="kandy">
+          <img class="dest-card__img" src="images/kandy.jpg" alt="Kandy Temple" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Heritage &amp; Culture</div>
+            <div class="dest-card__name">Kandy — Sacred City</div>
+            <div class="dest-card__desc">The last royal capital of the ancient kings, home to the revered Temple of the
+              Tooth Relic, vibrant Kandyan dance, and a shimmering lake at its heart.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round</span>
+              <a href="#kandy-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Ella -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="nature" id="ella">
+          <img class="dest-card__img" src="images/ella.jpg" alt="Ella Tea Country" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Nature &amp; Scenery</div>
+            <div class="dest-card__name">Ella &amp; Tea Country</div>
+            <div class="dest-card__desc">The legendary Kandy–Ella train winds through emerald estates, past misty
+              waterfalls and the iconic Nine Arch Bridge — one of the world's most spectacular rail journeys.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Jan – Apr</span>
+              <a href="#ella-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Galle -->
+        <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="galle">
+          <img class="dest-card__img" src="images/galle.jpg" alt="Galle Fort" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Heritage &amp; Beaches</div>
+            <div class="dest-card__name">Galle Fort</div>
+            <div class="dest-card__desc">A UNESCO-listed Dutch colonial fort where 400 years of history live inside
+              cobblestone lanes, boutique hotels, art galleries and the call of the muezzin at dusk.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
+              <a href="#galle-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Yala -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="nature" id="yala">
+          <img class="dest-card__img" src="images/yala.jpg" alt="Yala Leopard" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Nature &amp; Wildlife</div>
+            <div class="dest-card__name">Yala National Park</div>
+            <div class="dest-card__desc">Sri Lanka's most celebrated wildlife reserve, sheltering the world's highest
+              density of leopards alongside herds of elephants, crocodiles and hundreds of bird species.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Feb – Jul</span>
+              <a href="#yala-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Mirissa -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="beaches" id="mirissa">
+          <img class="dest-card__img" src="images/mirissa.jpg" alt="Mirissa Beach" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Beaches</div>
+            <div class="dest-card__name">Mirissa</div>
+            <div class="dest-card__desc">A crescent of golden sand backed by coconut palms — and just offshore, blue
+              whales and spinner dolphins ride the Indian Ocean swells in astonishing numbers.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
+              <a href="#mirissa-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 Anuradhapura -->
+        <div class="dest-card dest-card--overlay reveal" data-category="heritage" id="anuradhapura">
+          <img class="dest-card__img" src="images/anuradhapura.jpg" alt="Anuradhapura Stupa" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Heritage &amp; Culture</div>
+            <div class="dest-card__name">Anuradhapura</div>
+            <div class="dest-card__desc">The first great kingdom of Sri Lanka — a vast sacred city of dagobas, moonstone
+              carvings and the world's oldest documented tree, planted in 288 BC.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – Apr</span>
+              <a href="#anuradhapura-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Adam's Peak -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-1" data-category="adventure" id="adams-peak">
+          <img class="dest-card__img" src="images/adams-peak.jpg" alt="Adam's Peak pilgrimage" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Adventure &amp; Pilgrimage</div>
+            <div class="dest-card__name">Adam's Peak (Sri Pada)</div>
+            <div class="dest-card__desc">A sacred 2,243m summit revered by four religions. The pre-dawn pilgrimage —
+              thousands of lanterns spiralling the dark mountainside — is one of Asia's most moving experiences.</div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – May</span>
+              <a href="#adams-peak-detail" class="dest-card__link">Learn More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 Colombo Food -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-2" data-category="food">
+          <img class="dest-card__img" src="images/colombo.jpg" alt="Colombo street food" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Food &amp; Local Life</div>
+            <div class="dest-card__name">Colombo — Flavour Capital</div>
+            <div class="dest-card__desc">Kottu roti sizzling at midnight, crab curry in century-old restaurants, Pettah
+              market's colour and chaos — Sri Lanka's capital rewards every foodie with unforgettable sensory theatre.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round</span>
+              <a href="contact.html" class="dest-card__link">Book a Food Tour <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="dest-detail__body">
+    </div>
+  </section>
+
+  <!-- ══ Destination Detail: Sigiriya ══ -->
+  <section class="section" style="background:var(--color-cream);" id="sigiriya-detail">
+    <div class="container">
+      <div class="dest-detail reveal">
+        <div class="dest-detail__hero">
+          <img src="images/hero.jpg" alt="Sigiriya Rock Fortress aerial view" loading="lazy" />
+          <div class="dest-detail__hero-overlay"></div>
+          <div class="dest-detail__hero-title">
+            <span class="section-label" style="color:var(--color-gold-light);">Heritage &amp; Culture</span>
+            <h2>Sigiriya — The Lion Rock</h2>
+          </div>
+        </div>
+        <div class="dest-detail__body">
+          <div>
+            <h3 style="margin-bottom:1rem;">The Palace in the Sky</h3>
+            <p>Few places in the world carry the weight of legend quite like Sigiriya. Built in the 5th century by King
+              Kashyapa — a ruler who chose a 200-metre granite monolith as his fortress and palace — it remains one of
+              Asia's most remarkable architectural achievements. The ancient frescoes of golden-skinned celestial
+              maidens, painted onto the rock face centuries before the Renaissance, still shine with extraordinary life.
+            </p>
+            <p style="margin-top:1rem;">The approach through the water gardens — the oldest surviving symmetrical
+              pleasure gardens in Asia — sets a tone of quiet wonder that only intensifies as you ascend through the
+              Lion Gate, past the mirror wall inscribed with a millennium of visitor poetry, to the summit plateau where
+              the entire Cultural Triangle unfolds beneath your feet.</p>
+
+            <div class="dest-detail__info-grid">
+              <div class="dest-info-chip">
+                <div class="dest-info-chip__label">Best Season</div>
+                <div class="dest-info-chip__value">Dec – Apr · Aug – Sep</div>
+              </div>
+              <div class="dest-info-chip">
+                <div class="dest-info-chip__label">UNESCO Status</div>
+                <div class="dest-info-chip__value">World Heritage Site, 1982</div>
+              </div>
+              <div class="dest-info-chip">
+                <div class="dest-info-chip__label">How to Get There</div>
+                <div class="dest-info-chip__value">3.5 hrs from Colombo</div>
+              </div>
+              <div class="dest-info-chip">
+                <div class="dest-info-chip__label">Climb Duration</div>
+                <div class="dest-info-chip__value">~1.5 hrs each way</div>
+              </div>
+            </div>
+
+            <h4 style="margin-top:1.8rem;margin-bottom:.8rem;font-size:1.1rem;">Top Attractions</h4>
+            <div class="attraction-list">
+              <div class="attraction-item">5th-century frescoes of the Cloud Maidens, still vivid after 1,500 years
+              </div>
+              <div class="attraction-item">Ancient water gardens — the oldest landscaped gardens in Asia</div>
+              <div class="attraction-item">The Mirror Wall, covered in a millennium of visitors' inscriptions</div>
+              <div class="attraction-item">Lion's Paw Gateway — the colossal entrance carved into the rock face</div>
+              <div class="attraction-item">Summit plateau with 360° views across the Cultural Triangle</div>
+            </div>
+
+            <div style="margin-top:2rem;">
+              <a href="contact.html?dest=sigiriya" class="btn btn-primary">Book a Tour Here</a>
+            </div>
+          </div>
+
+          <div class="dest-sidebar">
+            <div class="sidebar-box">
+              <h5>Nearby Places</h5>
+              <div class="nearby-chip"><i class="fa fa-landmark"></i> Dambulla Cave Temple (18 km)</div>
+              <div class="nearby-chip"><i class="fa fa-tree"></i> Minneriya National Park (30 km)</div>
+              <div class="nearby-chip"><i class="fa fa-landmark"></i> Polonnaruwa (60 km)</div>
+              <div class="nearby-chip"><i class="fa fa-landmark"></i> Anuradhapura (60 km)</div>
+            </div>
+            <div class="sidebar-box">
+              <h5>Travel Tips</h5>
+              <p style="font-size:.84rem;color:var(--color-charcoal-mid);line-height:1.7;">Climb at sunrise (open from 7
+                am) to beat the heat and the crowds. Wear sturdy shoes — the final staircase is steep. Carry water and a
+                light jacket for the summit breeze. Photography is restricted in the fresco area; respect the rules.</p>
+            </div>
+            <a href="contact.html" class="btn btn-gold" style="text-align:center;">Plan This Destination</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section-sm" style="background:var(--color-ivory);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Destination Map</p>
+        <h3>Sri Lanka at a Glance</h3>
+      </div>
+      <div class="map-section reveal">
+        <div
+          style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:var(--color-ivory-dark);border-radius:var(--radius-lg);">
+          <span style="font-size:3rem;">🗺️</span>
+          <p style="color:var(--color-charcoal-mid);font-size:.9rem;text-align:center;max-width:400px;">Interactive map
+            loads with Google Maps API.<br />Replace the iframe src with your Google Maps Embed URL.</p>
+          <a href="https://www.google.com/maps/place/Sri+Lanka" target="_blank" rel="noopener"
+            class="btn btn-ghost btn-sm">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image:url('images/ella.jpg');"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-label" style="color:var(--color-gold-light);">Ready to Explore?</p>
+        <h2>Let Us Design Your Sri Lanka Journey</h2>
+        <p>Tell us which destinations call to you, and we will weave them into a seamless, personalised itinerary.</p>
+        <div class="cta-banner__btns">
+          <a href="contact.html" class="btn btn-gold btn-lg">Plan My Trip</a>
+          <a href="tours.html" class="btn btn-outline btn-lg">Browse Tour Packages</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (shared) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, delivered gently to your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email address" aria-label="Email" required /><button
+            class="newsletter-btn">Subscribe</button></form>
+      </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean
+            since 2006.</p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a><a class="footer__social-link" href="#" aria-label="YouTube"><i
+                class="fab fa-youtube"></i></a></div>
+        </div>
         <div>
-          <h3 style="margin-bottom:1rem;">The Palace in the Sky</h3>
-          <p>Few places in the world carry the weight of legend quite like Sigiriya. Built in the 5th century by King Kashyapa — a ruler who chose a 200-metre granite monolith as his fortress and palace — it remains one of Asia's most remarkable architectural achievements. The ancient frescoes of golden-skinned celestial maidens, painted onto the rock face centuries before the Renaissance, still shine with extraordinary life.</p>
-          <p style="margin-top:1rem;">The approach through the water gardens — the oldest surviving symmetrical pleasure gardens in Asia — sets a tone of quiet wonder that only intensifies as you ascend through the Lion Gate, past the mirror wall inscribed with a millennium of visitor poetry, to the summit plateau where the entire Cultural Triangle unfolds beneath your feet.</p>
-
-          <div class="dest-detail__info-grid">
-            <div class="dest-info-chip">
-              <div class="dest-info-chip__label">Best Season</div>
-              <div class="dest-info-chip__value">Dec – Apr · Aug – Sep</div>
-            </div>
-            <div class="dest-info-chip">
-              <div class="dest-info-chip__label">UNESCO Status</div>
-              <div class="dest-info-chip__value">World Heritage Site, 1982</div>
-            </div>
-            <div class="dest-info-chip">
-              <div class="dest-info-chip__label">How to Get There</div>
-              <div class="dest-info-chip__value">3.5 hrs from Colombo</div>
-            </div>
-            <div class="dest-info-chip">
-              <div class="dest-info-chip__label">Climb Duration</div>
-              <div class="dest-info-chip__value">~1.5 hrs each way</div>
-            </div>
-          </div>
-
-          <h4 style="margin-top:1.8rem;margin-bottom:.8rem;font-size:1.1rem;">Top Attractions</h4>
-          <div class="attraction-list">
-            <div class="attraction-item">5th-century frescoes of the Cloud Maidens, still vivid after 1,500 years</div>
-            <div class="attraction-item">Ancient water gardens — the oldest landscaped gardens in Asia</div>
-            <div class="attraction-item">The Mirror Wall, covered in a millennium of visitors' inscriptions</div>
-            <div class="attraction-item">Lion's Paw Gateway — the colossal entrance carved into the rock face</div>
-            <div class="attraction-item">Summit plateau with 360° views across the Cultural Triangle</div>
-          </div>
-
-          <div style="margin-top:2rem;">
-            <a href="contact.html?dest=sigiriya" class="btn btn-primary">Book a Tour Here</a>
-          </div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Places to Explore</a></li>
+            <li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Tour Packages</a></li>
+            <li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                About Us</a></li>
+            <li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Gallery</a></li>
+            <li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                FAQ</a></li>
+            <li><a class="footer__link" href="contact.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Contact &amp; Booking</a></li>
+          </ul>
         </div>
-
-        <div class="dest-sidebar">
-          <div class="sidebar-box">
-            <h5>Nearby Places</h5>
-            <div class="nearby-chip"><i class="fa fa-landmark"></i> Dambulla Cave Temple (18 km)</div>
-            <div class="nearby-chip"><i class="fa fa-tree"></i> Minneriya National Park (30 km)</div>
-            <div class="nearby-chip"><i class="fa fa-landmark"></i> Polonnaruwa (60 km)</div>
-            <div class="nearby-chip"><i class="fa fa-landmark"></i> Anuradhapura (60 km)</div>
+        <div>
+          <h5 class="footer__col-title">Destinations</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="#sigiriya">Sigiriya</a></li>
+            <li><a class="footer__link" href="#kandy">Kandy</a></li>
+            <li><a class="footer__link" href="#ella">Ella</a></li>
+            <li><a class="footer__link" href="#galle">Galle Fort</a></li>
+            <li><a class="footer__link" href="#yala">Yala</a></li>
+            <li><a class="footer__link" href="#mirissa">Mirissa</a></li>
+            <li><a class="footer__link" href="#anuradhapura">Anuradhapura</a></li>
+            <li><a class="footer__link" href="#adams-peak">Adam's Peak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-map-marker-alt footer__contact-icon"></i><span>42 Galle
+              Road, Colombo 03</span></div>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
           </div>
-          <div class="sidebar-box">
-            <h5>Travel Tips</h5>
-            <p style="font-size:.84rem;color:var(--color-charcoal-mid);line-height:1.7;">Climb at sunrise (open from 7 am) to beat the heat and the crowds. Wear sturdy shoes — the final staircase is steep. Carry water and a light jacket for the summit breeze. Photography is restricted in the fresco area; respect the rules.</p>
-          </div>
-          <a href="contact.html" class="btn btn-gold" style="text-align:center;">Plan This Destination</a>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a
+            href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank"
+            rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Map Placeholder -->
-<section class="section-sm" style="background:var(--color-ivory);">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="section-label">Destination Map</p>
-      <h3>Sri Lanka at a Glance</h3>
-    </div>
-    <div class="map-section reveal">
-      <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:var(--color-ivory-dark);border-radius:var(--radius-lg);">
-        <span style="font-size:3rem;">🗺️</span>
-        <p style="color:var(--color-charcoal-mid);font-size:.9rem;text-align:center;max-width:400px;">Interactive map loads with Google Maps API.<br/>Replace the iframe src with your Google Maps Embed URL.</p>
-        <a href="https://www.google.com/maps/place/Sri+Lanka" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Open in Google Maps</a>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- CTA -->
-<section class="cta-banner">
-  <div class="cta-banner__bg" style="background-image:url('images/ella.jpg');"></div>
-  <div class="cta-banner__overlay"></div>
-  <div class="container">
-    <div class="cta-banner__content reveal">
-      <p class="section-label" style="color:var(--color-gold-light);">Ready to Explore?</p>
-      <h2>Let Us Design Your Sri Lanka Journey</h2>
-      <p>Tell us which destinations call to you, and we will weave them into a seamless, personalised itinerary.</p>
-      <div class="cta-banner__btns">
-        <a href="contact.html" class="btn btn-gold btn-lg">Plan My Trip</a>
-        <a href="tours.html" class="btn btn-outline btn-lg">Browse Tour Packages</a>
-      </div>
-    </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <img class="lightbox__img" src="" alt="" /><button class="lightbox__close" aria-label="Close"><i
+        class="fa fa-times"></i></button>
   </div>
-</section>
-
-<!-- Footer (shared) -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer__newsletter reveal">
-      <h4>Stay Inspired</h4>
-      <p>Travel stories and seasonal guides, delivered gently to your inbox.</p>
-      <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email address" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form>
-    </div>
-    <div class="footer__main">
-      <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean since 2006.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a><a class="footer__social-link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div></div>
-      <div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Places to Explore</a></li><li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Tour Packages</a></li><li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> About Us</a></li><li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Gallery</a></li><li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> FAQ</a></li><li><a class="footer__link" href="contact.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Contact &amp; Booking</a></li></ul></div>
-      <div><h5 class="footer__col-title">Destinations</h5><ul class="footer__links"><li><a class="footer__link" href="#sigiriya">Sigiriya</a></li><li><a class="footer__link" href="#kandy">Kandy</a></li><li><a class="footer__link" href="#ella">Ella</a></li><li><a class="footer__link" href="#galle">Galle Fort</a></li><li><a class="footer__link" href="#yala">Yala</a></li><li><a class="footer__link" href="#mirissa">Mirissa</a></li><li><a class="footer__link" href="#anuradhapura">Anuradhapura</a></li><li><a class="footer__link" href="#adams-peak">Adam's Peak</a></li></ul></div>
-      <div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-map-marker-alt footer__contact-icon"></i><span>42 Galle Road, Colombo 03</span></div><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp Us</a></div>
-    </div>
-    <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span><div class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
-  </div>
-</footer>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
-  <img class="lightbox__img" src="" alt="" /><button class="lightbox__close" aria-label="Close"><i class="fa fa-times"></i></button>
-</div>
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
-<script src="js/main.js"></script>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

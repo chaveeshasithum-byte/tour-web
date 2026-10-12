@@ -1,164 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="Meet the team behind Heritage Travels Sri Lanka — our story, our values, and our mission to share the soul of this extraordinary island responsibly." />
+  <meta name="description"
+    content="Meet the team behind Heritage Travels Sri Lanka — our story, our values, and our mission to share the soul of this extraordinary island responsibly." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .value-card { background: white; border-radius: var(--radius-lg); padding: 2rem; border-top: 4px solid var(--color-gold); box-shadow: var(--shadow-sm); transition: transform var(--transition-mid), box-shadow var(--transition-mid); }
-    .value-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-    .value-icon { font-size: 2.2rem; margin-bottom: 1rem; }
-    .value-title { font-family: var(--font-serif); font-size: 1.3rem; color: var(--color-green); margin-bottom: .7rem; }
-    .cert-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-    .cert-card { text-align: center; background: white; border-radius: var(--radius-md); padding: 1.5rem 1rem; box-shadow: var(--shadow-sm); }
-    .cert-card__icon { font-size: 2.5rem; margin-bottom: .8rem; }
-    .cert-card__name { font-family: var(--font-serif); color: var(--color-green); font-size: 1rem; margin-bottom: .3rem; }
-    .cert-card__sub { font-size: .75rem; color: var(--color-charcoal-light); }
-    @media (max-width: 768px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+    .value-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      border-top: 4px solid var(--color-gold);
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition-mid), box-shadow var(--transition-mid);
+    }
+
+    .value-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .value-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .value-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--color-green);
+      margin-bottom: .7rem;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .cert-card {
+      text-align: center;
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cert-card__icon {
+      font-size: 2.5rem;
+      margin-bottom: .8rem;
+    }
+
+    .cert-card__name {
+      font-family: var(--font-serif);
+      color: var(--color-green);
+      font-size: 1rem;
+      margin-bottom: .3rem;
+    }
+
+    .cert-card__sub {
+      font-size: .75rem;
+      color: var(--color-charcoal-light);
+    }
+
+    @media (max-width: 768px) {
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link">Tours</a></li><li><a href="about.html" class="nav__link active">About</a></li><li><a href="gallery.html" class="nav__link">Gallery</a></li><li><a href="blog.html" class="nav__link">Stories</a></li><li><a href="contact.html" class="nav__link">Contact</a></li></ul>
-    <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
-  </div>
-</nav>
-<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
-
-<section class="page-hero" style="background-image:url('images/anuradhapura.jpg');background-size:cover;background-position:center;">
-  <div class="page-hero__overlay"></div>
-  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></nav><h1 class="page-hero__title">Our Story &amp;<br/><em style="color:var(--color-gold-light);">Our Purpose</em></h1></div></div>
-</section>
-
-<!-- Our Story -->
-<section class="section about-intro">
-  <div class="container">
-    <div class="about-intro__inner">
-      <div class="about-intro__images reveal">
-        <img class="about-intro__img-main" src="images/kandy.jpg" alt="Heritage Travels founder at Kandy" loading="lazy" />
-        <img class="about-intro__img-accent" src="images/ella.jpg" alt="Tea country guide" loading="lazy" />
-        <div class="about-intro__badge"><div class="about-intro__badge-year">2006</div><div style="font-size:.72rem;opacity:.75;margin-top:.2rem;">Founded</div></div>
-      </div>
-      <div class="about-intro__text reveal reveal-delay-1">
-        <p class="section-label">Who We Are</p>
-        <h2>Born in Sri Lanka. Built for the World.</h2>
-        <div class="divider divider-left"></div>
-        <p>Heritage Travels was born in 2006 from a single conviction: that travel done well should change both the traveller and the place visited — for the better. Our founder, Nimal Perera, grew up in the shadow of Sigiriya, the son of a schoolteacher who spent weekends walking him through the ruins and stories of the ancient kings. That childhood shaped everything.</p>
-        <p>Today, our team of 24 passionate Sri Lankans — naturalists, historians, chefs, adventure guides and logistics specialists — crafts private journeys for international travellers who want more than photographs. They want to feel this island. To sit with a tea plucker at dawn. To hear a monk's chant echo through a 2,000-year-old stone chamber. To find a leopard watching them from a granite boulder at the hour before the sun sets.</p>
-        <p>We are not the largest tour company in Sri Lanka. We never want to be. We are the most devoted.</p>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link">Places</a></li>
+        <li><a href="tours.html" class="nav__link">Tours</a></li>
+        <li><a href="about.html" class="nav__link active">About</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book
+          Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
+  <div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html"
+      class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html"
+      class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html"
+      class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
 
-<!-- Stats -->
-<div class="brand-intro">
-  <div class="container">
-    <div class="brand-intro__inner">
-      <div class="brand-intro__stat"><div class="brand-intro__stat-num counter__num" data-target="18" data-suffix="+">18+</div><div class="brand-intro__stat-label">Years in Business</div></div>
-      <div class="brand-intro__divider"></div>
-      <div class="brand-intro__stat"><div class="brand-intro__stat-num counter__num" data-target="2400" data-suffix="+">2400+</div><div class="brand-intro__stat-label">Happy Travellers</div></div>
-      <div class="brand-intro__divider"></div>
-      <div class="brand-intro__stat"><div class="brand-intro__stat-num counter__num" data-target="85" data-suffix="+">85+</div><div class="brand-intro__stat-label">Curated Tours</div></div>
-      <div class="brand-intro__divider"></div>
-      <div class="brand-intro__stat"><div class="brand-intro__stat-num counter__num" data-target="42" data-suffix="">42</div><div class="brand-intro__stat-label">Countries Served</div></div>
+  <section class="page-hero"
+    style="background-image:url('images/anuradhapura.jpg');background-size:cover;background-position:center;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></nav>
+        <h1 class="page-hero__title">Our Story &amp;<br /><em style="color:var(--color-gold-light);">Our Purpose</em>
+        </h1>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Team -->
-<section class="section" style="background:var(--color-ivory);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">The People Behind Your Journey</p><h2>Meet Our Team</h2><div class="divider"></div><p>Every one of us is Sri Lankan, every one of us is passionate, and every one of us will remember your name long after your trip is over.</p></div>
-    <div class="grid-4">
-      <div class="team-card reveal">
-        <div class="team-card__img-wrap"><img class="team-card__img" src="images/hero.jpg" alt="Nimal Perera, Founder" loading="lazy" /></div>
-        <div class="team-card__body">
-          <div class="team-card__name">Nimal Perera</div>
-          <div class="team-card__role">Founder &amp; CEO</div>
-          <p class="team-card__bio">Raised in the shadow of Sigiriya, Nimal has guided travellers through Sri Lanka's ancient landscape for over 20 years. He speaks four languages and knows a leopard's favourite rock in Yala by name.</p>
+  <!-- Our Story -->
+  <section class="section about-intro">
+    <div class="container">
+      <div class="about-intro__inner">
+        <div class="about-intro__images reveal">
+          <img class="about-intro__img-main" src="images/kandy.jpg" alt="Heritage Travels founder at Kandy"
+            loading="lazy" />
+          <img class="about-intro__img-accent" src="images/ella.jpg" alt="Tea country guide" loading="lazy" />
+          <div class="about-intro__badge">
+            <div class="about-intro__badge-year">2006</div>
+            <div style="font-size:.72rem;opacity:.75;margin-top:.2rem;">Founded</div>
+          </div>
         </div>
-      </div>
-      <div class="team-card reveal reveal-delay-1">
-        <div class="team-card__img-wrap"><img class="team-card__img" src="images/kandy.jpg" alt="Priya Rajapaksa, Head Guide" loading="lazy" /></div>
-        <div class="team-card__body">
-          <div class="team-card__name">Priya Rajapaksa</div>
-          <div class="team-card__role">Head Naturalist Guide</div>
-          <p class="team-card__bio">A certified wildlife biologist and passionate birder, Priya leads our Yala and Sinharaja expeditions with infectious excitement. She has spotted over 380 bird species in Sri Lanka alone.</p>
-        </div>
-      </div>
-      <div class="team-card reveal reveal-delay-2">
-        <div class="team-card__img-wrap"><img class="team-card__img" src="images/galle.jpg" alt="Ashan De Silva, Heritage Guide" loading="lazy" /></div>
-        <div class="team-card__body">
-          <div class="team-card__name">Ashan De Silva</div>
-          <div class="team-card__role">Cultural Heritage Guide</div>
-          <p class="team-card__bio">A former archaeologist who worked on UNESCO restoration projects, Ashan brings the stones of Anuradhapura and Polonnaruwa to life with the authority of someone who has spent years reading them.</p>
-        </div>
-      </div>
-      <div class="team-card reveal reveal-delay-3">
-        <div class="team-card__img-wrap"><img class="team-card__img" src="images/colombo.jpg" alt="Dilini Fernando, Travel Designer" loading="lazy" /></div>
-        <div class="team-card__body">
-          <div class="team-card__name">Dilini Fernando</div>
-          <div class="team-card__role">Head of Travel Design</div>
-          <p class="team-card__bio">Dilini crafts each itinerary with the care of a novelist, weaving together places, timings, meals and moments into journeys that feel less like a schedule and more like a story.</p>
+        <div class="about-intro__text reveal reveal-delay-1">
+          <p class="section-label">Who We Are</p>
+          <h2>Born in Sri Lanka. Built for the World.</h2>
+          <div class="divider divider-left"></div>
+          <p>Heritage Travels was born in 2006 from a single conviction: that travel done well should change both the
+            traveller and the place visited — for the better. Our founder, Nimal Perera, grew up in the shadow of
+            Sigiriya, the son of a schoolteacher who spent weekends walking him through the ruins and stories of the
+            ancient kings. That childhood shaped everything.</p>
+          <p>Today, our team of 24 passionate Sri Lankans — naturalists, historians, chefs, adventure guides and
+            logistics specialists — crafts private journeys for international travellers who want more than photographs.
+            They want to feel this island. To sit with a tea plucker at dawn. To hear a monk's chant echo through a
+            2,000-year-old stone chamber. To find a leopard watching them from a granite boulder at the hour before the
+            sun sets.</p>
+          <p>We are not the largest tour company in Sri Lanka. We never want to be. We are the most devoted.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Values -->
-<section class="section" style="background:var(--color-cream);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">What We Stand For</p><h2>Our Values</h2><div class="divider"></div></div>
-    <div class="grid-3">
-      <div class="value-card reveal">
-        <div class="value-icon">🤝</div>
-        <div class="value-title">Authenticity</div>
-        <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We refuse to manufacture experiences. Every encounter — a village meal, a monk's conversation, a craftsman's workshop — is real, unscripted, and mutually respectful.</p>
-      </div>
-      <div class="value-card reveal reveal-delay-1">
-        <div class="value-icon">🌿</div>
-        <div class="value-title">Sustainability</div>
-        <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We carbon-offset every tour, employ only local communities, source food from local farms, and channel 5% of revenue into conservation and education projects across the island.</p>
-      </div>
-      <div class="value-card reveal reveal-delay-2">
-        <div class="value-icon">❤️</div>
-        <div class="value-title">Community</div>
-        <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We believe travel should leave a destination better than it was found. We partner with village cooperatives, women's craft collectives and grassroots conservation groups in every region we operate.</p>
+  <!-- Stats -->
+  <div class="brand-intro">
+    <div class="container">
+      <div class="brand-intro__inner">
+        <div class="brand-intro__stat">
+          <div class="brand-intro__stat-num counter__num" data-target="18" data-suffix="+">18+</div>
+          <div class="brand-intro__stat-label">Years in Business</div>
+        </div>
+        <div class="brand-intro__divider"></div>
+        <div class="brand-intro__stat">
+          <div class="brand-intro__stat-num counter__num" data-target="2400" data-suffix="+">2400+</div>
+          <div class="brand-intro__stat-label">Happy Travellers</div>
+        </div>
+        <div class="brand-intro__divider"></div>
+        <div class="brand-intro__stat">
+          <div class="brand-intro__stat-num counter__num" data-target="85" data-suffix="+">85+</div>
+          <div class="brand-intro__stat-label">Curated Tours</div>
+        </div>
+        <div class="brand-intro__divider"></div>
+        <div class="brand-intro__stat">
+          <div class="brand-intro__stat-num counter__num" data-target="42" data-suffix="">42</div>
+          <div class="brand-intro__stat-label">Countries Served</div>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- Certifications -->
-<section class="section" style="background:var(--color-ivory);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">Trust &amp; Recognition</p><h2>Certifications &amp; Awards</h2><div class="divider"></div></div>
-    <div class="cert-grid">
-      <div class="cert-card reveal"><div class="cert-card__icon">🏆</div><div class="cert-card__name">TripAdvisor Certificate of Excellence</div><div class="cert-card__sub">2019, 2021, 2022, 2023, 2024</div></div>
-      <div class="cert-card reveal reveal-delay-1"><div class="cert-card__icon">🌍</div><div class="cert-card__name">Travelife Gold Certified</div><div class="cert-card__sub">Sustainable tourism certification</div></div>
-      <div class="cert-card reveal reveal-delay-2"><div class="cert-card__icon">🇱🇰</div><div class="cert-card__name">SLTDA Registered</div><div class="cert-card__sub">Sri Lanka Tourism Development Authority</div></div>
-      <div class="cert-card reveal reveal-delay-3"><div class="cert-card__icon">⭐</div><div class="cert-card__name">Lonely Planet Featured</div><div class="cert-card__sub">Best Tour Operator, Sri Lanka 2023</div></div>
+  <!-- Team -->
+  <section class="section" style="background:var(--color-ivory);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">The People Behind Your Journey</p>
+        <h2>Meet Our Team</h2>
+        <div class="divider"></div>
+        <p>Every one of us is Sri Lankan, every one of us is passionate, and every one of us will remember your name
+          long after your trip is over.</p>
+      </div>
+      <div class="grid-4">
+        <div class="team-card reveal">
+          <div class="team-card__img-wrap"><img class="team-card__img" src="images/hero.jpg" alt="Nimal Perera, Founder"
+              loading="lazy" /></div>
+          <div class="team-card__body">
+            <div class="team-card__name">Nimal Perera</div>
+            <div class="team-card__role">Founder &amp; CEO</div>
+            <p class="team-card__bio">Raised in the shadow of Sigiriya, Nimal has guided travellers through Sri Lanka's
+              ancient landscape for over 20 years. He speaks four languages and knows a leopard's favourite rock in Yala
+              by name.</p>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-card__img-wrap"><img class="team-card__img" src="images/kandy.jpg"
+              alt="Priya Rajapaksa, Head Guide" loading="lazy" /></div>
+          <div class="team-card__body">
+            <div class="team-card__name">Priya Rajapaksa</div>
+            <div class="team-card__role">Head Naturalist Guide</div>
+            <p class="team-card__bio">A certified wildlife biologist and passionate birder, Priya leads our Yala and
+              Sinharaja expeditions with infectious excitement. She has spotted over 380 bird species in Sri Lanka
+              alone.</p>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-card__img-wrap"><img class="team-card__img" src="images/galle.jpg"
+              alt="Ashan De Silva, Heritage Guide" loading="lazy" /></div>
+          <div class="team-card__body">
+            <div class="team-card__name">Ashan De Silva</div>
+            <div class="team-card__role">Cultural Heritage Guide</div>
+            <p class="team-card__bio">A former archaeologist who worked on UNESCO restoration projects, Ashan brings the
+              stones of Anuradhapura and Polonnaruwa to life with the authority of someone who has spent years reading
+              them.</p>
+          </div>
+        </div>
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-card__img-wrap"><img class="team-card__img" src="images/colombo.jpg"
+              alt="Dilini Fernando, Travel Designer" loading="lazy" /></div>
+          <div class="team-card__body">
+            <div class="team-card__name">Dilini Fernando</div>
+            <div class="team-card__role">Head of Travel Design</div>
+            <p class="team-card__bio">Dilini crafts each itinerary with the care of a novelist, weaving together places,
+              timings, meals and moments into journeys that feel less like a schedule and more like a story.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="cta-banner"><div class="cta-banner__bg" style="background-image:url('images/mirissa.jpg');"></div><div class="cta-banner__overlay"></div><div class="container"><div class="cta-banner__content reveal"><p class="section-label" style="color:var(--color-gold-light);">Start the Conversation</p><h2>We'd Love to Hear About Your Dream Trip</h2><p>Every great journey begins with a simple message. We respond within 24 hours.</p><div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Get in Touch</a><a href="tours.html" class="btn btn-outline btn-lg">View Our Tours</a></div></div></div></section>
+  <!-- Values -->
+  <section class="section" style="background:var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">What We Stand For</p>
+        <h2>Our Values</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="grid-3">
+        <div class="value-card reveal">
+          <div class="value-icon">🤝</div>
+          <div class="value-title">Authenticity</div>
+          <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We refuse to manufacture
+            experiences. Every encounter — a village meal, a monk's conversation, a craftsman's workshop — is real,
+            unscripted, and mutually respectful.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-icon">🌿</div>
+          <div class="value-title">Sustainability</div>
+          <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We carbon-offset every tour,
+            employ only local communities, source food from local farms, and channel 5% of revenue into conservation and
+            education projects across the island.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-icon">❤️</div>
+          <div class="value-title">Community</div>
+          <p style="font-size:.9rem;color:var(--color-charcoal-mid);line-height:1.75;">We believe travel should leave a
+            destination better than it was found. We partner with village cooperatives, women's craft collectives and
+            grassroots conservation groups in every region we operate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html">Places</a></li><li><a class="footer__link" href="tours.html">Tours</a></li><li><a class="footer__link" href="gallery.html">Gallery</a></li><li><a class="footer__link" href="blog.html">Stories</a></li><li><a class="footer__link" href="faq.html">FAQ</a></li><li><a class="footer__link" href="contact.html">Contact</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div></div></footer>
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
-<script src="js/main.js"></script>
+  <!-- Certifications -->
+  <section class="section" style="background:var(--color-ivory);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Trust &amp; Recognition</p>
+        <h2>Certifications &amp; Awards</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">🏆</div>
+          <div class="cert-card__name">TripAdvisor Certificate of Excellence</div>
+          <div class="cert-card__sub">2019, 2021, 2022, 2023, 2024</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-card__icon">🌍</div>
+          <div class="cert-card__name">Travelife Gold Certified</div>
+          <div class="cert-card__sub">Sustainable tourism certification</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-card__icon">🇱🇰</div>
+          <div class="cert-card__name">SLTDA Registered</div>
+          <div class="cert-card__sub">Sri Lanka Tourism Development Authority</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-card__icon">⭐</div>
+          <div class="cert-card__name">Lonely Planet Featured</div>
+          <div class="cert-card__sub">Best Tour Operator, Sri Lanka 2023</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image:url('images/mirissa.jpg');"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-label" style="color:var(--color-gold-light);">Start the Conversation</p>
+        <h2>We'd Love to Hear About Your Dream Trip</h2>
+        <p>Every great journey begins with a simple message. We respond within 24 hours.</p>
+        <div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Get in Touch</a><a
+            href="tours.html" class="btn btn-outline btn-lg">View Our Tours</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, gently delivered.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.
+          </p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a></div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html">Places</a></li>
+            <li><a class="footer__link" href="tours.html">Tours</a></li>
+            <li><a class="footer__link" href="gallery.html">Gallery</a></li>
+            <li><a class="footer__link" href="blog.html">Stories</a></li>
+            <li><a class="footer__link" href="faq.html">FAQ</a></li>
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
+          </div>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

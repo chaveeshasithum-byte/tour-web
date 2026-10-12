@@ -1,292 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tour Packages | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="Day tours, multi-day journeys, honeymoon packages, family adventures and custom itineraries across Sri Lanka — all fully private and expertly guided." />
+  <meta name="description"
+    content="Day tours, multi-day journeys, honeymoon packages, family adventures and custom itineraries across Sri Lanka — all fully private and expertly guided." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
-    .tour-detail { background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
-    .tour-detail__layout { display: grid; grid-template-columns: 1fr 380px; gap: 0; }
-    .tour-detail__main { padding: var(--space-xl); }
-    .tour-detail__sidebar { background: var(--color-ivory); padding: var(--space-xl); display: flex; flex-direction: column; gap: 1.5rem; }
-    .tour-detail__hero { position: relative; height: 420px; overflow: hidden; }
-    .tour-detail__hero img { width: 100%; height: 100%; object-fit: cover; }
-    .tour-detail__hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,25,16,.85) 0%, transparent 55%); }
-    .tour-detail__hero-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; color: white; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; }
-    .tour-detail__hero h2 { color: white; margin-bottom: .3rem; }
-    .tour-meta-pill { display: flex; align-items: center; gap: .4rem; background: rgba(255,255,255,.15); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius-full); padding: .4rem 1rem; font-size: .78rem; color: white; }
-    .incl-excl { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
-    .incl-box h5 { font-family: var(--font-serif); color: var(--color-green); margin-bottom: 1rem; font-size: 1.1rem; }
-    .price-box { background: var(--color-green); border-radius: var(--radius-md); padding: 1.5rem; color: white; }
-    .price-box__label { font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.6); }
-    .price-box__amount { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 700; color: var(--color-gold-light); line-height: 1; margin: .3rem 0; }
-    .price-box__per { font-size: .8rem; color: rgba(255,255,255,.65); }
-    @media (max-width: 900px) { .tour-detail__layout { grid-template-columns: 1fr; } .incl-excl { grid-template-columns: 1fr; } .tour-detail__hero { height: 280px; } }
+    .tour-detail {
+      background: white;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tour-detail__layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 0;
+    }
+
+    .tour-detail__main {
+      padding: var(--space-xl);
+    }
+
+    .tour-detail__sidebar {
+      background: var(--color-ivory);
+      padding: var(--space-xl);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .tour-detail__hero {
+      position: relative;
+      height: 420px;
+      overflow: hidden;
+    }
+
+    .tour-detail__hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tour-detail__hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(10, 25, 16, .85) 0%, transparent 55%);
+    }
+
+    .tour-detail__hero-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .tour-detail__hero h2 {
+      color: white;
+      margin-bottom: .3rem;
+    }
+
+    .tour-meta-pill {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      background: rgba(255, 255, 255, .15);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: var(--radius-full);
+      padding: .4rem 1rem;
+      font-size: .78rem;
+      color: white;
+    }
+
+    .incl-excl {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .incl-box h5 {
+      font-family: var(--font-serif);
+      color: var(--color-green);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .price-box {
+      background: var(--color-green);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .price-box__label {
+      font-size: .65rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, .6);
+    }
+
+    .price-box__amount {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-gold-light);
+      line-height: 1;
+      margin: .3rem 0;
+    }
+
+    .price-box__per {
+      font-size: .8rem;
+      color: rgba(255, 255, 255, .65);
+    }
+
+    @media (max-width: 900px) {
+      .tour-detail__layout {
+        grid-template-columns: 1fr;
+      }
+
+      .incl-excl {
+        grid-template-columns: 1fr;
+      }
+
+      .tour-detail__hero {
+        height: 280px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link active">Tours</a></li><li><a href="about.html" class="nav__link">About</a></li><li><a href="gallery.html" class="nav__link">Gallery</a></li><li><a href="blog.html" class="nav__link">Stories</a></li><li><a href="contact.html" class="nav__link">Contact</a></li></ul>
-    <div style="display:flex;align-items:center;gap:1rem;"><select class="currency-selector" aria-label="Currency"><option value="USD">$ USD</option><option value="EUR">€ EUR</option><option value="LKR">LKR</option></select><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
-  </div>
-</nav>
-<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
-
-<section class="page-hero" style="background-image:url('images/hero.jpg');background-size:cover;background-position:center top;">
-  <div class="page-hero__overlay"></div>
-  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Tour Packages</span></nav><h1 class="page-hero__title">Tour Packages<br/><em style="color:var(--color-gold-light);">Crafted for You</em></h1></div></div>
-</section>
-
-<!-- Filter -->
-<section class="section-sm" style="background:var(--color-cream);">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">Find Your Journey</p><h2>Every Trip, a Masterpiece</h2><div class="divider"></div><p>Choose a category below or tell us your dream — we'll design something entirely unique around you.</p></div>
-    <div class="filter-tabs" data-grid-target="tours-grid" role="tablist">
-      <button class="filter-tab active" data-filter="all">All Tours</button>
-      <button class="filter-tab" data-filter="day">Day Tours</button>
-      <button class="filter-tab" data-filter="multi">Multi-Day</button>
-      <button class="filter-tab" data-filter="honeymoon">Honeymoon</button>
-      <button class="filter-tab" data-filter="family">Family</button>
-      <button class="filter-tab" data-filter="custom">Custom</button>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link">Places</a></li>
+        <li><a href="tours.html" class="nav__link active">Tours</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;"><select class="currency-selector" aria-label="Currency">
+          <option value="USD">$ USD</option>
+          <option value="EUR">€ EUR</option>
+          <option value="LKR">LKR</option>
+        </select><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger"
+          aria-label="Open menu"><span></span><span></span><span></span></button></div>
     </div>
-  </div>
-</section>
+  </nav>
+  <div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html"
+      class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html"
+      class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html"
+      class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
 
-<!-- Tours Grid -->
-<section style="background:var(--color-ivory);padding-bottom:var(--space-3xl);">
-  <div class="container">
-    <div class="grid-3" id="tours-grid">
-
-      <div class="package-card reveal" data-category="multi" id="cultural-triangle">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/hero.jpg" alt="Cultural Triangle" loading="lazy" /><div class="package-card__badge">Best Seller</div></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 8 Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (124 reviews)</span></div>
-          <h3 class="package-card__title">The Cultural Triangle</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Sri Lanka's UNESCO heartland: Sigiriya, Dambulla, Polonnaruwa, Anuradhapura and Kandy in one sweeping arc through 3,000 years of civilisation.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">🏯 Sigiriya</span><span class="package-card__highlight">🛕 Cave Temples</span><span class="package-card__highlight">🐘 Safari</span><span class="package-card__highlight">🍵 Tea Tour</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">From</span><span class="package-card__amount" data-price-usd="1890">$1,890</span><span class="package-card__per">per person</span></div>
-            <a href="#cultural-detail" class="btn btn-ghost btn-sm">Details</a>
-          </div>
-        </div>
+  <section class="page-hero"
+    style="background-image:url('images/hero.jpg');background-size:cover;background-position:center top;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Tour Packages</span></nav>
+        <h1 class="page-hero__title">Tour Packages<br /><em style="color:var(--color-gold-light);">Crafted for You</em>
+        </h1>
       </div>
-
-      <div class="package-card reveal reveal-delay-1" data-category="honeymoon" id="south-coast">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/mirissa.jpg" alt="South Coast" loading="lazy" /><div class="package-card__badge" style="background:var(--color-terracotta);color:white;">Honeymoon</div></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 10 Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 5.0 (89 reviews)</span></div>
-          <h3 class="package-card__title">South Coast Splendour</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Romantic Galle, whale-watching, turtle nesting beaches and candlelit dinners overlooking the Indian Ocean — the perfect honeymoon escape.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">🐋 Whale Watching</span><span class="package-card__highlight">🏰 Galle Fort</span><span class="package-card__highlight">🐢 Turtles</span><span class="package-card__highlight">🌅 Sunsets</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">From</span><span class="package-card__amount" data-price-usd="2450">$2,450</span><span class="package-card__per">per couple</span></div>
-            <a href="#south-detail" class="btn btn-ghost btn-sm">Details</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card reveal reveal-delay-2" data-category="multi" id="wild-safari">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/yala.jpg" alt="Wild Safari" loading="lazy" /><div class="package-card__badge" style="background:var(--color-green-mid);color:white;">Eco Pick</div></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 7 Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.8 (97 reviews)</span></div>
-          <h3 class="package-card__title">Wild Sri Lanka Safari</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Leopards at Yala, elephant herds at Udawalawe, rare birds in Sinharaja rainforest — a wildlife odyssey across Sri Lanka's finest protected wilderness.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">🐆 Leopard</span><span class="package-card__highlight">🐘 Elephants</span><span class="package-card__highlight">🦜 Birding</span><span class="package-card__highlight">🏕️ Eco-Lodge</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">From</span><span class="package-card__amount" data-price-usd="1650">$1,650</span><span class="package-card__per">per person</span></div>
-            <a href="#safari-detail" class="btn btn-ghost btn-sm">Details</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card reveal" data-category="family">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/anuradhapura.jpg" alt="Family Heritage" loading="lazy" /></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 12 Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (52 reviews)</span></div>
-          <h3 class="package-card__title">Family Heritage &amp; Safari</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Ancient kings and real leopards — a family adventure combining history, wildlife and beach that children and parents remember forever.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">🏯 Sigiriya</span><span class="package-card__highlight">🐘 Elephant Orphanage</span><span class="package-card__highlight">🏖️ Beach</span><span class="package-card__highlight">🚂 Train Ride</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">From</span><span class="package-card__amount" data-price-usd="3200">$3,200</span><span class="package-card__per">family of 4</span></div>
-            <a href="contact.html" class="btn btn-ghost btn-sm">Enquire</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card reveal reveal-delay-1" data-category="day">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/colombo.jpg" alt="Colombo Food Tour" loading="lazy" /></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 1 Day</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (203 reviews)</span></div>
-          <h3 class="package-card__title">Colombo Flavours &amp; Culture</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Pettah market at dawn, a spice garden, crab curry lunch at a century-old institution, and the colonial architecture of Fort by sunset.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">🌶️ Spice Garden</span><span class="package-card__highlight">🦀 Crab Curry</span><span class="package-card__highlight">🕌 Colonial Quarter</span><span class="package-card__highlight">🛒 Pettah Market</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">From</span><span class="package-card__amount" data-price-usd="120">$120</span><span class="package-card__per">per person</span></div>
-            <a href="contact.html" class="btn btn-ghost btn-sm">Book Day Tour</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="package-card reveal reveal-delay-2" data-category="custom">
-        <div class="package-card__img-wrap"><img class="package-card__img" src="images/adams-peak.jpg" alt="Custom Journey" loading="lazy" /></div>
-        <div class="package-card__body">
-          <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> Your Duration</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 100% Bespoke</span></div>
-          <h3 class="package-card__title">Design Your Own Journey</h3>
-          <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">You dream it — pilgrimages, private chef experiences, surfing lessons, photography expeditions — and we make it happen, perfectly.</p>
-          <div class="package-card__highlights"><span class="package-card__highlight">✨ Any Destination</span><span class="package-card__highlight">🎨 Your Interests</span><span class="package-card__highlight">📅 Your Dates</span><span class="package-card__highlight">💬 Free Consultation</span></div>
-          <div class="package-card__footer">
-            <div class="package-card__price"><span class="package-card__from">Starts from</span><span class="package-card__amount" data-price-usd="200">$200</span><span class="package-card__per">per day</span></div>
-            <a href="contact.html" class="btn btn-gold btn-sm">Start Planning</a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══ Tour Detail: Cultural Triangle ══ -->
-<section class="section" style="background:var(--color-cream);" id="cultural-detail">
-  <div class="container">
-    <div class="section-header reveal"><p class="section-label">Tour Detail</p><h2>The Cultural Triangle — 8 Days</h2><div class="divider"></div></div>
-    <div class="tour-detail reveal">
-      <div class="tour-detail__hero">
-        <img src="images/hero.jpg" alt="Cultural Triangle Sri Lanka" loading="lazy" />
-        <div class="tour-detail__hero-overlay"></div>
-        <div class="tour-detail__hero-info">
-          <div><span class="section-label" style="color:var(--color-gold-light);">Multi-Day Tour</span><h2>The Cultural Triangle</h2></div>
-          <div style="display:flex;gap:.7rem;flex-wrap:wrap;">
-            <span class="tour-meta-pill"><i class="fa fa-clock"></i> 8 Days / 7 Nights</span>
-            <span class="tour-meta-pill"><i class="fa fa-users"></i> 2–12 People</span>
-            <span class="tour-meta-pill"><i class="fa fa-star"></i> 4.9 / 5.0</span>
-          </div>
-        </div>
+  <!-- Filter -->
+  <section class="section-sm" style="background:var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Find Your Journey</p>
+        <h2>Every Trip, a Masterpiece</h2>
+        <div class="divider"></div>
+        <p>Choose a category below or tell us your dream — we'll design something entirely unique around you.</p>
       </div>
+      <div class="filter-tabs" data-grid-target="tours-grid" role="tablist">
+        <button class="filter-tab active" data-filter="all">All Tours</button>
+        <button class="filter-tab" data-filter="day">Day Tours</button>
+        <button class="filter-tab" data-filter="multi">Multi-Day</button>
+        <button class="filter-tab" data-filter="honeymoon">Honeymoon</button>
+        <button class="filter-tab" data-filter="family">Family</button>
+        <button class="filter-tab" data-filter="custom">Custom</button>
+      </div>
+    </div>
+  </section>
 
-      <div class="tour-detail__layout">
-        <div class="tour-detail__main">
-          <p style="font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem;">This eight-day journey traces the arc of Sri Lanka's greatest ancient civilisations — from the hydraulic genius of Anuradhapura to the sky-palace of Sigiriya, the cave frescoes of Dambulla, the royal city of Polonnaruwa and the sacred temples of Kandy. It is a journey through 3,000 years of living history, guided by scholars who breathe the stories of these stones.</p>
+  <!-- Tours Grid -->
+  <section style="background:var(--color-ivory);padding-bottom:var(--space-3xl);">
+    <div class="container">
+      <div class="grid-3" id="tours-grid">
 
-          <h4 style="margin-bottom:1rem;">Day-by-Day Itinerary</h4>
-          <div class="accordion-group">
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 1</span><span class="itinerary-day__title">Arrival in Colombo — Colonial Heritage Walk</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Your Heritage Travels representative meets you at Bandaranaike International Airport with a chilled welcome drink. Transfer to your colonial-era boutique hotel in Colombo Fort. After freshening up, an early-evening walk through the Pettah bazaar, Mount Lavinia beach, and the red-bricked façade of the Old Parliament building as the city turns golden. Welcome dinner at a heritage restaurant overlooking the Beira Lake.</p><div class="itinerary-day__activities"><div class="itinerary-activity"><span class="itinerary-activity__time">3:00 PM</span><span>Airport welcome &amp; hotel check-in</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">5:30 PM</span><span>Colombo colonial heritage walk</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">7:30 PM</span><span>Welcome dinner at Ministry of Crab (or equivalent)</span></div></div><p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> The Kingsbury Colombo or equivalent 5-star heritage hotel.</p></div></div>
+        <div class="package-card reveal" data-category="multi" id="cultural-triangle">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/hero.jpg"
+              alt="Cultural Triangle" loading="lazy" />
+            <div class="package-card__badge">Best Seller</div>
+          </div>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 8
+                Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (124 reviews)</span>
             </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 2</span><span class="itinerary-day__title">Anuradhapura — The First Kingdom</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Drive north into the Cultural Triangle. Anuradhapura was the first great capital of Sri Lanka — a city of soaring dagobas, ancient moonstone carvings and the oldest human-planted tree in the world: the Sri Maha Bodhi, grown from a cutting of the tree under which the Buddha found enlightenment, brought here in 288 BC. Walk the sacred precincts at dusk as the dagobas turn golden white against a violet sky.</p><div class="itinerary-day__activities"><div class="itinerary-activity"><span class="itinerary-activity__time">7:00 AM</span><span>Depart Colombo after breakfast</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">11:00 AM</span><span>Sri Maha Bodhi &amp; Ruwanwelisaya dagoba</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">2:00 PM</span><span>Thuparamaya &amp; Jetavanaramaya stupa</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">5:30 PM</span><span>Sunset at Tissa Wewa reservoir</span></div></div><p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> Ulagalla Resort, Anuradhapura.</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 3</span><span class="itinerary-day__title">Sigiriya — Ascending the Lion Rock</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>An early start for the climb to Sigiriya at sunrise, before the heat and the crowds arrive. Your expert guide narrates the extraordinary story of King Kashyapa as you ascend past the legendary frescoes, through the Lion's Gate, to the summit plateau where the ruins of the royal palace command a 360° panorama of jungle and glittering reservoirs. Afternoon: Dambulla Cave Temple, a UNESCO site with five cave shrines and 150 statues of the Buddha.</p><div class="itinerary-day__activities"><div class="itinerary-activity"><span class="itinerary-activity__time">6:00 AM</span><span>Sigiriya Rock climb at sunrise</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">9:30 AM</span><span>Water gardens and museum</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">2:00 PM</span><span>Dambulla Cave Temple</span></div><div class="itinerary-activity"><span class="itinerary-activity__time">5:00 PM</span><span>Village walk and local cooking class</span></div></div><p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> Aliya Resort &amp; Spa, Sigiriya.</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 4</span><span class="itinerary-day__title">Polonnaruwa — The Medieval Capital</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Explore the medieval capital of Polonnaruwa by bicycle — the best way to absorb the scale and serenity of this royal city, which flourished from the 11th to 13th centuries. Highlights include the massive Gal Vihara rock carvings, the circular Vatadage, and the reclining Buddha that inspired generations of pilgrims. Afternoon wildlife drive in Minneriya National Park for the famous Elephant Gathering (seasonal, Jul–Oct).</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 5</span><span class="itinerary-day__title">Matale Spice Country — Journey to Kandy</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Drive south through Matale's spice gardens — cinnamon, cardamom, cloves — where you can taste, smell and learn the stories of the spices that made Sri Lanka the most coveted island in the ancient world. Arrive in Kandy by afternoon. Evening: the Kandy Esala Perahera cultural show (or the permanent Kandyan dance performance), followed by a lakeside dinner.</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 6</span><span class="itinerary-day__title">Kandy — Temple, Market &amp; Tea</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Morning puja (offering) ceremony at the Temple of the Tooth Relic — a spiritual experience unlike any other. Visit the gem museum, the vibrant Kandy market, and in the afternoon, a private tour of a working tea factory in the hills above Kandy with a guided tasting of five grades of Ceylon tea.</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 7</span><span class="itinerary-day__title">Pinnawala &amp; Return to Colombo</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>Visit the famous Pinnawala Elephant Orphanage to watch the river bathing — a joyful spectacle for all ages. Drive back to Colombo with a stop at a handloom silk weaving workshop. Farewell dinner at a rooftop restaurant with views over the Indian Ocean.</p></div></div>
-            </div>
-            <div class="itinerary-day">
-              <div class="itinerary-day__header"><span class="itinerary-day__day">Day 8</span><span class="itinerary-day__title">Departure — Until Next Time</span><i class="fa fa-chevron-down itinerary-day__arrow"></i></div>
-              <div class="itinerary-day__body"><div class="itinerary-day__body-inner"><p>A leisurely breakfast before your Heritage Travels representative transfers you to the airport in time for your flight. We hope Sri Lanka has earned a permanent place in your heart.</p></div></div>
-            </div>
-          </div><!-- accordion-group -->
-
-          <!-- Inclusions / Exclusions -->
-          <div class="incl-excl">
-            <div class="incl-box">
-              <h5>✅ Inclusions</h5>
-              <div class="inclusion-list">
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Private air-conditioned vehicle &amp; driver</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Expert English-speaking cultural guide</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> 7 nights accommodation (as listed)</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Daily breakfasts, 4 dinners</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> All entrance fees &amp; permits</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Airport transfers both ways</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Cooking class &amp; tea factory visit</div>
-                <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> 24/7 Heritage Travels support</div>
-              </div>
-            </div>
-            <div class="incl-box">
-              <h5>❌ Exclusions</h5>
-              <div class="inclusion-list">
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> International flights</div>
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Travel insurance (highly recommended)</div>
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Visa fees (available on arrival)</div>
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Lunches &amp; personal beverages</div>
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Tips &amp; gratuities</div>
-                <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Personal shopping</div>
-              </div>
+            <h3 class="package-card__title">The Cultural Triangle</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Sri Lanka's UNESCO heartland:
+              Sigiriya, Dambulla, Polonnaruwa, Anuradhapura and Kandy in one sweeping arc through 3,000 years of
+              civilisation.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">🏯 Sigiriya</span><span
+                class="package-card__highlight">🛕 Cave Temples</span><span class="package-card__highlight">🐘
+                Safari</span><span class="package-card__highlight">🍵 Tea Tour</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">From</span><span
+                  class="package-card__amount" data-price-usd="1890">$1,890</span><span class="package-card__per">per
+                  person</span></div>
+              <a href="#cultural-detail" class="btn btn-ghost btn-sm">Details</a>
             </div>
           </div>
-
-          <!-- Pricing Table -->
-          <h4 style="margin:2rem 0 1rem;">Pricing by Group Size</h4>
-          <table class="pricing-table">
-            <thead><tr><th>Group Size</th><th>Price Per Person</th><th>Accommodation</th></tr></thead>
-            <tbody>
-              <tr><td>2 persons (couple)</td><td class="price-highlight" data-price-usd="1890">$1,890</td><td>Superior room</td></tr>
-              <tr><td>4–5 persons</td><td class="price-highlight" data-price-usd="1620">$1,620</td><td>Superior room</td></tr>
-              <tr><td>6–8 persons</td><td class="price-highlight" data-price-usd="1450">$1,450</td><td>Superior room</td></tr>
-              <tr><td>9–12 persons</td><td class="price-highlight" data-price-usd="1290">$1,290</td><td>Superior room</td></tr>
-            </tbody>
-          </table>
         </div>
 
-        <!-- Sidebar -->
-        <div class="tour-detail__sidebar">
-          <div class="price-box">
-            <div class="price-box__label">Starting From</div>
-            <div class="price-box__amount" data-price-usd="1890">$1,890</div>
-            <div class="price-box__per">per person · 8 Days / 7 Nights</div>
-            <a href="contact.html?tour=cultural-triangle" class="btn btn-gold" style="width:100%;justify-content:center;margin-top:1.2rem;">Book This Tour</a>
+        <div class="package-card reveal reveal-delay-1" data-category="honeymoon" id="south-coast">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/mirissa.jpg" alt="South Coast"
+              loading="lazy" />
+            <div class="package-card__badge" style="background:var(--color-terracotta);color:white;">Honeymoon</div>
           </div>
-          <div style="background:white;border-radius:var(--radius-md);padding:1.4rem;">
-            <h5 style="font-family:var(--font-serif);color:var(--color-green);margin-bottom:1rem;">Tour FAQ</h5>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 10
+                Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 5.0 (89 reviews)</span>
+            </div>
+            <h3 class="package-card__title">South Coast Splendour</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Romantic Galle,
+              whale-watching, turtle nesting beaches and candlelit dinners overlooking the Indian Ocean — the perfect
+              honeymoon escape.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">🐋 Whale Watching</span><span
+                class="package-card__highlight">🏰 Galle Fort</span><span class="package-card__highlight">🐢
+                Turtles</span><span class="package-card__highlight">🌅 Sunsets</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">From</span><span
+                  class="package-card__amount" data-price-usd="2450">$2,450</span><span class="package-card__per">per
+                  couple</span></div>
+              <a href="#south-detail" class="btn btn-ghost btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-2" data-category="multi" id="wild-safari">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/yala.jpg" alt="Wild Safari"
+              loading="lazy" />
+            <div class="package-card__badge" style="background:var(--color-green-mid);color:white;">Eco Pick</div>
+          </div>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 7
+                Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.8 (97 reviews)</span>
+            </div>
+            <h3 class="package-card__title">Wild Sri Lanka Safari</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Leopards at Yala, elephant
+              herds at Udawalawe, rare birds in Sinharaja rainforest — a wildlife odyssey across Sri Lanka's finest
+              protected wilderness.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">🐆 Leopard</span><span
+                class="package-card__highlight">🐘 Elephants</span><span class="package-card__highlight">🦜
+                Birding</span><span class="package-card__highlight">🏕️ Eco-Lodge</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">From</span><span
+                  class="package-card__amount" data-price-usd="1650">$1,650</span><span class="package-card__per">per
+                  person</span></div>
+              <a href="#safari-detail" class="btn btn-ghost btn-sm">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card reveal" data-category="family">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/anuradhapura.jpg"
+              alt="Family Heritage" loading="lazy" /></div>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 12
+                Days</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (52 reviews)</span>
+            </div>
+            <h3 class="package-card__title">Family Heritage &amp; Safari</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Ancient kings and real
+              leopards — a family adventure combining history, wildlife and beach that children and parents remember
+              forever.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">🏯 Sigiriya</span><span
+                class="package-card__highlight">🐘 Elephant Orphanage</span><span class="package-card__highlight">🏖️
+                Beach</span><span class="package-card__highlight">🚂 Train Ride</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">From</span><span
+                  class="package-card__amount" data-price-usd="3200">$3,200</span><span class="package-card__per">family
+                  of 4</span></div>
+              <a href="contact.html" class="btn btn-ghost btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-1" data-category="day">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/colombo.jpg"
+              alt="Colombo Food Tour" loading="lazy" /></div>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> 1
+                Day</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 4.9 (203 reviews)</span>
+            </div>
+            <h3 class="package-card__title">Colombo Flavours &amp; Culture</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">Pettah market at dawn, a
+              spice garden, crab curry lunch at a century-old institution, and the colonial architecture of Fort by
+              sunset.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">🌶️ Spice Garden</span><span
+                class="package-card__highlight">🦀 Crab Curry</span><span class="package-card__highlight">🕌 Colonial
+                Quarter</span><span class="package-card__highlight">🛒 Pettah Market</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">From</span><span
+                  class="package-card__amount" data-price-usd="120">$120</span><span class="package-card__per">per
+                  person</span></div>
+              <a href="contact.html" class="btn btn-ghost btn-sm">Book Day Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-2" data-category="custom">
+          <div class="package-card__img-wrap"><img class="package-card__img" src="images/adams-peak.jpg"
+              alt="Custom Journey" loading="lazy" /></div>
+          <div class="package-card__body">
+            <div class="package-card__meta"><span><i class="fa fa-clock" style="color:var(--color-gold);"></i> Your
+                Duration</span><span><i class="fa fa-star" style="color:var(--color-gold);"></i> 100% Bespoke</span>
+            </div>
+            <h3 class="package-card__title">Design Your Own Journey</h3>
+            <p style="font-size:.84rem;color:var(--color-charcoal-light);line-height:1.6;">You dream it — pilgrimages,
+              private chef experiences, surfing lessons, photography expeditions — and we make it happen, perfectly.</p>
+            <div class="package-card__highlights"><span class="package-card__highlight">✨ Any Destination</span><span
+                class="package-card__highlight">🎨 Your Interests</span><span class="package-card__highlight">📅 Your
+                Dates</span><span class="package-card__highlight">💬 Free Consultation</span></div>
+            <div class="package-card__footer">
+              <div class="package-card__price"><span class="package-card__from">Starts from</span><span
+                  class="package-card__amount" data-price-usd="200">$200</span><span class="package-card__per">per
+                  day</span></div>
+              <a href="contact.html" class="btn btn-gold btn-sm">Start Planning</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Tour Detail: Cultural Triangle ══ -->
+  <section class="section" style="background:var(--color-cream);" id="cultural-detail">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Tour Detail</p>
+        <h2>The Cultural Triangle — 8 Days</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="tour-detail reveal">
+        <div class="tour-detail__hero">
+          <img src="images/hero.jpg" alt="Cultural Triangle Sri Lanka" loading="lazy" />
+          <div class="tour-detail__hero-overlay"></div>
+          <div class="tour-detail__hero-info">
+            <div><span class="section-label" style="color:var(--color-gold-light);">Multi-Day Tour</span>
+              <h2>The Cultural Triangle</h2>
+            </div>
+            <div style="display:flex;gap:.7rem;flex-wrap:wrap;">
+              <span class="tour-meta-pill"><i class="fa fa-clock"></i> 8 Days / 7 Nights</span>
+              <span class="tour-meta-pill"><i class="fa fa-users"></i> 2–12 People</span>
+              <span class="tour-meta-pill"><i class="fa fa-star"></i> 4.9 / 5.0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-detail__layout">
+          <div class="tour-detail__main">
+            <p style="font-size:1.05rem;line-height:1.8;margin-bottom:1.5rem;">This eight-day journey traces the arc of
+              Sri Lanka's greatest ancient civilisations — from the hydraulic genius of Anuradhapura to the sky-palace
+              of Sigiriya, the cave frescoes of Dambulla, the royal city of Polonnaruwa and the sacred temples of Kandy.
+              It is a journey through 3,000 years of living history, guided by scholars who breathe the stories of these
+              stones.</p>
+
+            <h4 style="margin-bottom:1rem;">Day-by-Day Itinerary</h4>
             <div class="accordion-group">
-              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is this tour suitable for seniors? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Yes — the pace is relaxed and adaptable. Sigiriya can be challenging; alternatives are available. We tailor every tour to your physical comfort level.</div></div></div>
-              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I extend or customise this itinerary? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Absolutely. All our tours are flexible. Add a beach extension, a cooking retreat, or a wildlife leg — just let us know your vision.</div></div></div>
-              <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What is the cancellation policy? <span class="accordion-icon">+</span></button><div class="accordion-body"><div class="accordion-body__inner">Free cancellation up to 60 days before departure. 50% refund between 30–60 days. Under 30 days: non-refundable but fully transferable to another date.</div></div></div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 1</span><span
+                    class="itinerary-day__title">Arrival in Colombo — Colonial Heritage Walk</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Your Heritage Travels representative meets you at Bandaranaike International Airport with a
+                      chilled welcome drink. Transfer to your colonial-era boutique hotel in Colombo Fort. After
+                      freshening up, an early-evening walk through the Pettah bazaar, Mount Lavinia beach, and the
+                      red-bricked façade of the Old Parliament building as the city turns golden. Welcome dinner at a
+                      heritage restaurant overlooking the Beira Lake.</p>
+                    <div class="itinerary-day__activities">
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">3:00 PM</span><span>Airport
+                          welcome &amp; hotel check-in</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">5:30 PM</span><span>Colombo
+                          colonial heritage walk</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">7:30 PM</span><span>Welcome
+                          dinner at Ministry of Crab (or equivalent)</span></div>
+                    </div>
+                    <p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> The Kingsbury Colombo
+                      or equivalent 5-star heritage hotel.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 2</span><span
+                    class="itinerary-day__title">Anuradhapura — The First Kingdom</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Drive north into the Cultural Triangle. Anuradhapura was the first great capital of Sri Lanka — a
+                      city of soaring dagobas, ancient moonstone carvings and the oldest human-planted tree in the
+                      world: the Sri Maha Bodhi, grown from a cutting of the tree under which the Buddha found
+                      enlightenment, brought here in 288 BC. Walk the sacred precincts at dusk as the dagobas turn
+                      golden white against a violet sky.</p>
+                    <div class="itinerary-day__activities">
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">7:00 AM</span><span>Depart
+                          Colombo after breakfast</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">11:00 AM</span><span>Sri
+                          Maha Bodhi &amp; Ruwanwelisaya dagoba</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">2:00
+                          PM</span><span>Thuparamaya &amp; Jetavanaramaya stupa</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">5:30 PM</span><span>Sunset
+                          at Tissa Wewa reservoir</span></div>
+                    </div>
+                    <p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> Ulagalla Resort,
+                      Anuradhapura.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 3</span><span
+                    class="itinerary-day__title">Sigiriya — Ascending the Lion Rock</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>An early start for the climb to Sigiriya at sunrise, before the heat and the crowds arrive. Your
+                      expert guide narrates the extraordinary story of King Kashyapa as you ascend past the legendary
+                      frescoes, through the Lion's Gate, to the summit plateau where the ruins of the royal palace
+                      command a 360° panorama of jungle and glittering reservoirs. Afternoon: Dambulla Cave Temple, a
+                      UNESCO site with five cave shrines and 150 statues of the Buddha.</p>
+                    <div class="itinerary-day__activities">
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">6:00
+                          AM</span><span>Sigiriya Rock climb at sunrise</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">9:30 AM</span><span>Water
+                          gardens and museum</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">2:00
+                          PM</span><span>Dambulla Cave Temple</span></div>
+                      <div class="itinerary-activity"><span class="itinerary-activity__time">5:00 PM</span><span>Village
+                          walk and local cooking class</span></div>
+                    </div>
+                    <p style="margin-top:1rem;font-size:.85rem;"><strong>Accommodation:</strong> Aliya Resort &amp; Spa,
+                      Sigiriya.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 4</span><span
+                    class="itinerary-day__title">Polonnaruwa — The Medieval Capital</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Explore the medieval capital of Polonnaruwa by bicycle — the best way to absorb the scale and
+                      serenity of this royal city, which flourished from the 11th to 13th centuries. Highlights include
+                      the massive Gal Vihara rock carvings, the circular Vatadage, and the reclining Buddha that
+                      inspired generations of pilgrims. Afternoon wildlife drive in Minneriya National Park for the
+                      famous Elephant Gathering (seasonal, Jul–Oct).</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 5</span><span
+                    class="itinerary-day__title">Matale Spice Country — Journey to Kandy</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Drive south through Matale's spice gardens — cinnamon, cardamom, cloves — where you can taste,
+                      smell and learn the stories of the spices that made Sri Lanka the most coveted island in the
+                      ancient world. Arrive in Kandy by afternoon. Evening: the Kandy Esala Perahera cultural show (or
+                      the permanent Kandyan dance performance), followed by a lakeside dinner.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 6</span><span
+                    class="itinerary-day__title">Kandy — Temple, Market &amp; Tea</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Morning puja (offering) ceremony at the Temple of the Tooth Relic — a spiritual experience unlike
+                      any other. Visit the gem museum, the vibrant Kandy market, and in the afternoon, a private tour of
+                      a working tea factory in the hills above Kandy with a guided tasting of five grades of Ceylon tea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 7</span><span
+                    class="itinerary-day__title">Pinnawala &amp; Return to Colombo</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>Visit the famous Pinnawala Elephant Orphanage to watch the river bathing — a joyful spectacle for
+                      all ages. Drive back to Colombo with a stop at a handloom silk weaving workshop. Farewell dinner
+                      at a rooftop restaurant with views over the Indian Ocean.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="itinerary-day">
+                <div class="itinerary-day__header"><span class="itinerary-day__day">Day 8</span><span
+                    class="itinerary-day__title">Departure — Until Next Time</span><i
+                    class="fa fa-chevron-down itinerary-day__arrow"></i></div>
+                <div class="itinerary-day__body">
+                  <div class="itinerary-day__body-inner">
+                    <p>A leisurely breakfast before your Heritage Travels representative transfers you to the airport in
+                      time for your flight. We hope Sri Lanka has earned a permanent place in your heart.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- accordion-group -->
+
+            <!-- Inclusions / Exclusions -->
+            <div class="incl-excl">
+              <div class="incl-box">
+                <h5>✅ Inclusions</h5>
+                <div class="inclusion-list">
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Private
+                    air-conditioned vehicle &amp; driver</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Expert
+                    English-speaking cultural guide</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> 7 nights
+                    accommodation (as listed)</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Daily breakfasts, 4
+                    dinners</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> All entrance fees
+                    &amp; permits</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Airport transfers
+                    both ways</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> Cooking class &amp;
+                    tea factory visit</div>
+                  <div class="inclusion-item"><i class="fa fa-check inclusion-item__icon-yes"></i> 24/7 Heritage Travels
+                    support</div>
+                </div>
+              </div>
+              <div class="incl-box">
+                <h5>❌ Exclusions</h5>
+                <div class="inclusion-list">
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> International flights
+                  </div>
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Travel insurance
+                    (highly recommended)</div>
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Visa fees (available
+                    on arrival)</div>
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Lunches &amp; personal
+                    beverages</div>
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Tips &amp; gratuities
+                  </div>
+                  <div class="inclusion-item"><i class="fa fa-times inclusion-item__icon-no"></i> Personal shopping
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Pricing Table -->
+            <h4 style="margin:2rem 0 1rem;">Pricing by Group Size</h4>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Group Size</th>
+                  <th>Price Per Person</th>
+                  <th>Accommodation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2 persons (couple)</td>
+                  <td class="price-highlight" data-price-usd="1890">$1,890</td>
+                  <td>Superior room</td>
+                </tr>
+                <tr>
+                  <td>4–5 persons</td>
+                  <td class="price-highlight" data-price-usd="1620">$1,620</td>
+                  <td>Superior room</td>
+                </tr>
+                <tr>
+                  <td>6–8 persons</td>
+                  <td class="price-highlight" data-price-usd="1450">$1,450</td>
+                  <td>Superior room</td>
+                </tr>
+                <tr>
+                  <td>9–12 persons</td>
+                  <td class="price-highlight" data-price-usd="1290">$1,290</td>
+                  <td>Superior room</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div style="background:var(--color-green);border-radius:var(--radius-md);padding:1.4rem;color:white;">
-            <h5 style="color:var(--color-gold-light);font-family:var(--font-serif);margin-bottom:.6rem;">Need Help Deciding?</h5>
-            <p style="font-size:.84rem;color:rgba(255,255,255,.75);line-height:1.65;margin-bottom:1rem;">Our travel designers are on hand to answer every question and craft something truly personal.</p>
-            <a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="width:100%;justify-content:center;"><i class="fab fa-whatsapp"></i> Chat with Us</a>
+
+          <!-- Sidebar -->
+          <div class="tour-detail__sidebar">
+            <div class="price-box">
+              <div class="price-box__label">Starting From</div>
+              <div class="price-box__amount" data-price-usd="1890">$1,890</div>
+              <div class="price-box__per">per person · 8 Days / 7 Nights</div>
+              <a href="contact.html?tour=cultural-triangle" class="btn btn-gold"
+                style="width:100%;justify-content:center;margin-top:1.2rem;">Book This Tour</a>
+            </div>
+            <div style="background:white;border-radius:var(--radius-md);padding:1.4rem;">
+              <h5 style="font-family:var(--font-serif);color:var(--color-green);margin-bottom:1rem;">Tour FAQ</h5>
+              <div class="accordion-group">
+                <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Is this tour suitable
+                    for seniors? <span class="accordion-icon">+</span></button>
+                  <div class="accordion-body">
+                    <div class="accordion-body__inner">Yes — the pace is relaxed and adaptable. Sigiriya can be
+                      challenging; alternatives are available. We tailor every tour to your physical comfort level.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">Can I extend or
+                    customise this itinerary? <span class="accordion-icon">+</span></button>
+                  <div class="accordion-body">
+                    <div class="accordion-body__inner">Absolutely. All our tours are flexible. Add a beach extension, a
+                      cooking retreat, or a wildlife leg — just let us know your vision.</div>
+                  </div>
+                </div>
+                <div class="accordion-item"><button class="accordion-btn" aria-expanded="false">What is the cancellation
+                    policy? <span class="accordion-icon">+</span></button>
+                  <div class="accordion-body">
+                    <div class="accordion-body__inner">Free cancellation up to 60 days before departure. 50% refund
+                      between 30–60 days. Under 30 days: non-refundable but fully transferable to another date.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="background:var(--color-green);border-radius:var(--radius-md);padding:1.4rem;color:white;">
+              <h5 style="color:var(--color-gold-light);font-family:var(--font-serif);margin-bottom:.6rem;">Need Help
+                Deciding?</h5>
+              <p style="font-size:.84rem;color:rgba(255,255,255,.75);line-height:1.65;margin-bottom:1rem;">Our travel
+                designers are on hand to answer every question and craft something truly personal.</p>
+              <a href="https://wa.me/94771234567" class="btn btn-gold btn-sm"
+                style="width:100%;justify-content:center;"><i class="fab fa-whatsapp"></i> Chat with Us</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="cta-banner"><div class="cta-banner__bg" style="background-image:url('images/kandy.jpg');"></div><div class="cta-banner__overlay"></div><div class="container"><div class="cta-banner__content reveal"><p class="section-label" style="color:var(--color-gold-light);">Begin Your Story</p><h2>Every Journey Starts with a Conversation</h2><p>Reach out and tell us your dream. We'll take care of everything else.</p><div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Get a Free Quote</a><a href="places.html" class="btn btn-outline btn-lg">Explore Destinations</a></div></div></div></section>
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image:url('images/kandy.jpg');"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-label" style="color:var(--color-gold-light);">Begin Your Story</p>
+        <h2>Every Journey Starts with a Conversation</h2>
+        <p>Reach out and tell us your dream. We'll take care of everything else.</p>
+        <div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Get a Free Quote</a><a
+            href="places.html" class="btn btn-outline btn-lg">Explore Destinations</a></div>
+      </div>
+    </div>
+  </section>
 
-<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Places</a></li><li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Tours</a></li><li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> About</a></li><li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Gallery</a></li><li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> FAQ</a></li><li><a class="footer__link" href="contact.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i> Contact</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span><div class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div></div></footer>
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
-<script src="js/main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, gently delivered.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.
+          </p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a></div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Places</a></li>
+            <li><a class="footer__link" href="tours.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Tours</a></li>
+            <li><a class="footer__link" href="about.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                About</a></li>
+            <li><a class="footer__link" href="gallery.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Gallery</a></li>
+            <li><a class="footer__link" href="faq.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                FAQ</a></li>
+            <li><a class="footer__link" href="contact.html"><i class="fa fa-chevron-right" style="font-size:.6rem;"></i>
+                Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
+          </div>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a
+            href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank"><i
+              class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span>
+        <div class="footer__bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,126 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery | Heritage Travels Sri Lanka</title>
-  <meta name="description" content="A visual journey through Sri Lanka — temples, wildlife, beaches, tea country and the faces that make this island extraordinary." />
+  <meta name="description"
+    content="A visual journey through Sri Lanka — temples, wildlife, beaches, tea country and the faces that make this island extraordinary." />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="apple-touch-icon" href="images/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
-    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link">Tours</a></li><li><a href="about.html" class="nav__link">About</a></li><li><a href="gallery.html" class="nav__link active">Gallery</a></li><li><a href="blog.html" class="nav__link">Stories</a></li><li><a href="contact.html" class="nav__link">Contact</a></li></ul>
-    <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
+  <nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png"
+          alt="Heritage Travels Logo" class="nav__logo-img" />
+        <div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span
+            class="nav__logo-tagline">Sri Lanka</span></div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="places.html" class="nav__link">Places</a></li>
+        <li><a href="tours.html" class="nav__link">Tours</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+        <li><a href="blog.html" class="nav__link">Stories</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book
+          Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html"
+      class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html"
+      class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html"
+      class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
+
+  <section class="page-hero"
+    style="background-image:url('images/adams-peak.jpg');background-size:cover;background-position:center;">
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></nav>
+        <h1 class="page-hero__title">Sri Lanka Through<br /><em style="color:var(--color-gold-light);">Our Lens</em>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-cream);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Photo Gallery</p>
+        <h2>A Thousand Stories, One Island</h2>
+        <div class="divider"></div>
+        <p>Every image here was captured on an actual Heritage Travels journey. Filter by theme or simply let the images
+          take you somewhere.</p>
+      </div>
+
+      <div class="filter-tabs" data-grid-target="gallery-grid" role="tablist">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="heritage">Heritage</button>
+        <button class="filter-tab" data-filter="wildlife">Wildlife</button>
+        <button class="filter-tab" data-filter="beaches">Beaches</button>
+        <button class="filter-tab" data-filter="landscape">Landscape</button>
+        <button class="filter-tab" data-filter="food">Food &amp; Culture</button>
+      </div>
+
+      <div class="masonry-grid" id="gallery-grid" role="list">
+
+        <div class="masonry-item reveal" data-category="heritage" data-lightbox="images/hero.jpg" role="listitem"
+          tabindex="0" aria-label="Sigiriya Rock Fortress">
+          <img src="images/hero.jpg" alt="Sigiriya Rock Fortress at golden hour" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-1" data-category="heritage" data-lightbox="images/kandy.jpg"
+          role="listitem" tabindex="0" aria-label="Kandy temple">
+          <img src="images/kandy.jpg" alt="Temple of the Tooth, Kandy" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-2" data-category="wildlife" data-lightbox="images/yala.jpg"
+          role="listitem" tabindex="0" aria-label="Yala leopard">
+          <img src="images/yala.jpg" alt="Leopard resting in Yala National Park" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal" data-category="landscape" data-lightbox="images/ella.jpg" role="listitem"
+          tabindex="0" aria-label="Ella tea country">
+          <img src="images/ella.jpg" alt="Scenic train through Ella tea highlands" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-1" data-category="beaches" data-lightbox="images/mirissa.jpg"
+          role="listitem" tabindex="0" aria-label="Mirissa beach">
+          <img src="images/mirissa.jpg" alt="Mirissa beach at golden hour" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-2" data-category="heritage" data-lightbox="images/galle.jpg"
+          role="listitem" tabindex="0" aria-label="Galle Fort">
+          <img src="images/galle.jpg" alt="Galle Fort walls at sunset" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal" data-category="heritage" data-lightbox="images/anuradhapura.jpg"
+          role="listitem" tabindex="0" aria-label="Anuradhapura">
+          <img src="images/anuradhapura.jpg" alt="Anuradhapura stupa at twilight" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-1" data-category="food" data-lightbox="images/colombo.jpg"
+          role="listitem" tabindex="0" aria-label="Colombo food market">
+          <img src="images/colombo.jpg" alt="Colombo street food market" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-2" data-category="landscape" data-lightbox="images/adams-peak.jpg"
+          role="listitem" tabindex="0" aria-label="Adam's Peak">
+          <img src="images/adams-peak.jpg" alt="Adam's Peak pilgrimage trail at night" loading="lazy" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <!-- Repeated with varied sizes for masonry effect -->
+        <div class="masonry-item reveal" data-category="beaches" data-lightbox="images/mirissa.jpg" role="listitem"
+          tabindex="0" aria-label="Mirissa coastline">
+          <img src="images/mirissa.jpg" alt="Mirissa coconut palms and sea" loading="lazy"
+            style="filter:saturate(1.1);" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-1" data-category="wildlife" data-lightbox="images/yala.jpg"
+          role="listitem" tabindex="0" aria-label="Yala landscape">
+          <img src="images/yala.jpg" alt="Yala wildlife at dusk" loading="lazy" style="filter:contrast(1.05);" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+        <div class="masonry-item reveal reveal-delay-2" data-category="landscape" data-lightbox="images/ella.jpg"
+          role="listitem" tabindex="0" aria-label="Tea plantation">
+          <img src="images/ella.jpg" alt="Tea plantation mist" loading="lazy" style="filter:brightness(1.05);" />
+          <div class="masonry-item__overlay">
+            <div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-banner__bg" style="background-image:url('images/galle.jpg');"></div>
+    <div class="cta-banner__overlay"></div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <p class="section-label" style="color:var(--color-gold-light);">Your Photos Await</p>
+        <h2>Every Journey Creates New Stories</h2>
+        <p>The next breathtaking image in our gallery could be from your trip. Let us take you there.</p>
+        <div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Plan My Journey</a><a
+            href="tours.html" class="btn btn-outline btn-lg">View Tour Packages</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__newsletter reveal">
+        <h4>Stay Inspired</h4>
+        <p>Travel stories and seasonal guides, gently delivered.</p>
+        <form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email"
+            placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer__main">
+        <div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img
+              src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a>
+          <div class="footer__brand-tag">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.
+          </p>
+          <div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i
+                class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i
+                class="fab fa-tripadvisor"></i></a></div>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html">Places</a></li>
+            <li><a class="footer__link" href="tours.html">Tours</a></li>
+            <li><a class="footer__link" href="about.html">About</a></li>
+            <li><a class="footer__link" href="gallery.html">Gallery</a></li>
+            <li><a class="footer__link" href="faq.html">FAQ</a></li>
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer__col-title">Contact</h5>
+          <div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span>
+          </div>
+          <div class="footer__contact-item"><i
+              class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a
+            href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank"
+            rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <img class="lightbox__img" src="" alt="" /><button class="lightbox__close" aria-label="Close lightbox"><i
+        class="fa fa-times"></i></button>
   </div>
-</nav>
-<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
-
-<section class="page-hero" style="background-image:url('images/adams-peak.jpg');background-size:cover;background-position:center;">
-  <div class="page-hero__overlay"></div>
-  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Gallery</span></nav><h1 class="page-hero__title">Sri Lanka Through<br/><em style="color:var(--color-gold-light);">Our Lens</em></h1></div></div>
-</section>
-
-<section class="section" style="background:var(--color-cream);">
-  <div class="container">
-    <div class="section-header reveal">
-      <p class="section-label">Photo Gallery</p>
-      <h2>A Thousand Stories, One Island</h2>
-      <div class="divider"></div>
-      <p>Every image here was captured on an actual Heritage Travels journey. Filter by theme or simply let the images take you somewhere.</p>
-    </div>
-
-    <div class="filter-tabs" data-grid-target="gallery-grid" role="tablist">
-      <button class="filter-tab active" data-filter="all">All</button>
-      <button class="filter-tab" data-filter="heritage">Heritage</button>
-      <button class="filter-tab" data-filter="wildlife">Wildlife</button>
-      <button class="filter-tab" data-filter="beaches">Beaches</button>
-      <button class="filter-tab" data-filter="landscape">Landscape</button>
-      <button class="filter-tab" data-filter="food">Food &amp; Culture</button>
-    </div>
-
-    <div class="masonry-grid" id="gallery-grid" role="list">
-
-      <div class="masonry-item reveal" data-category="heritage" data-lightbox="images/hero.jpg" role="listitem" tabindex="0" aria-label="Sigiriya Rock Fortress">
-        <img src="images/hero.jpg" alt="Sigiriya Rock Fortress at golden hour" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-1" data-category="heritage" data-lightbox="images/kandy.jpg" role="listitem" tabindex="0" aria-label="Kandy temple">
-        <img src="images/kandy.jpg" alt="Temple of the Tooth, Kandy" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-2" data-category="wildlife" data-lightbox="images/yala.jpg" role="listitem" tabindex="0" aria-label="Yala leopard">
-        <img src="images/yala.jpg" alt="Leopard resting in Yala National Park" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal" data-category="landscape" data-lightbox="images/ella.jpg" role="listitem" tabindex="0" aria-label="Ella tea country">
-        <img src="images/ella.jpg" alt="Scenic train through Ella tea highlands" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-1" data-category="beaches" data-lightbox="images/mirissa.jpg" role="listitem" tabindex="0" aria-label="Mirissa beach">
-        <img src="images/mirissa.jpg" alt="Mirissa beach at golden hour" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-2" data-category="heritage" data-lightbox="images/galle.jpg" role="listitem" tabindex="0" aria-label="Galle Fort">
-        <img src="images/galle.jpg" alt="Galle Fort walls at sunset" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal" data-category="heritage" data-lightbox="images/anuradhapura.jpg" role="listitem" tabindex="0" aria-label="Anuradhapura">
-        <img src="images/anuradhapura.jpg" alt="Anuradhapura stupa at twilight" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-1" data-category="food" data-lightbox="images/colombo.jpg" role="listitem" tabindex="0" aria-label="Colombo food market">
-        <img src="images/colombo.jpg" alt="Colombo street food market" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-2" data-category="landscape" data-lightbox="images/adams-peak.jpg" role="listitem" tabindex="0" aria-label="Adam's Peak">
-        <img src="images/adams-peak.jpg" alt="Adam's Peak pilgrimage trail at night" loading="lazy" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <!-- Repeated with varied sizes for masonry effect -->
-      <div class="masonry-item reveal" data-category="beaches" data-lightbox="images/mirissa.jpg" role="listitem" tabindex="0" aria-label="Mirissa coastline">
-        <img src="images/mirissa.jpg" alt="Mirissa coconut palms and sea" loading="lazy" style="filter:saturate(1.1);" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-1" data-category="wildlife" data-lightbox="images/yala.jpg" role="listitem" tabindex="0" aria-label="Yala landscape">
-        <img src="images/yala.jpg" alt="Yala wildlife at dusk" loading="lazy" style="filter:contrast(1.05);" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-      <div class="masonry-item reveal reveal-delay-2" data-category="landscape" data-lightbox="images/ella.jpg" role="listitem" tabindex="0" aria-label="Tea plantation">
-        <img src="images/ella.jpg" alt="Tea plantation mist" loading="lazy" style="filter:brightness(1.05);" />
-        <div class="masonry-item__overlay"><div class="masonry-item__overlay-icon"><i class="fa fa-expand"></i></div></div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="cta-banner"><div class="cta-banner__bg" style="background-image:url('images/galle.jpg');"></div><div class="cta-banner__overlay"></div><div class="container"><div class="cta-banner__content reveal"><p class="section-label" style="color:var(--color-gold-light);">Your Photos Await</p><h2>Every Journey Creates New Stories</h2><p>The next breathtaking image in our gallery could be from your trip. Let us take you there.</p><div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Plan My Journey</a><a href="tours.html" class="btn btn-outline btn-lg">View Tour Packages</a></div></div></div></section>
-
-<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html">Places</a></li><li><a class="footer__link" href="tours.html">Tours</a></li><li><a class="footer__link" href="about.html">About</a></li><li><a class="footer__link" href="gallery.html">Gallery</a></li><li><a class="footer__link" href="faq.html">FAQ</a></li><li><a class="footer__link" href="contact.html">Contact</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div><a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div></div></footer>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
-  <img class="lightbox__img" src="" alt="" /><button class="lightbox__close" aria-label="Close lightbox"><i class="fa fa-times"></i></button>
-</div>
-<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
-<script src="js/main.js"></script>
+  <a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+      class="fab fa-whatsapp"></i></a>
+  <button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
