@@ -1,0 +1,424 @@
+[
+  {
+    "id": "cultural-triangle-7day",
+    "title": "The UNESCO Cultural Triangle & Royal Sanctuaries",
+    "subtitle": "An in-depth pilgrimage through three millennia of sacred kingdoms and hydraulic wonders",
+    "slug": "tour-detail.html?tour=cultural-triangle-7day",
+    "durationDays": 7,
+    "durationNights": 6,
+    "groupSizeMax": 8,
+    "theme": "Archaeology & Heritage",
+    "difficulty": "Moderate",
+    "priceUsd": 1480,
+    "rating": 4.98,
+    "reviewsCount": 42,
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Dawn over Sigiriya Rock Fortress with morning mist encircling the jungle",
+    "highlights": [
+      "Private early-morning ascent of Sigiriya before park gates open to mass tour groups",
+      "Sunset bicycle exploration through the monastic ruins of medieval Polonnaruwa",
+      "Private evening audience and chanting blessing at the Temple of the Sacred Tooth in Kandy",
+      "Dinner in a 150-year-old mud-brick village compound cooked over coconut-husk hearths"
+    ],
+    "inclusions": [
+      "6 nights in heritage boutique villas and colonial manor houses (Twin/Double share)",
+      "Daily artisan breakfasts, 4 curated regional lunches, and 5 gastronomic heritage dinners",
+      "Private air-conditioned luxury Mercedes Sprinter transport with chilled towels and botanical waters",
+      "Full-time services of a licensed National Tour Guide Lecturer & Senior Archaeologist",
+      "All VIP entry permits to UNESCO sites (Sigiriya, Polonnaruwa, Dambulla, Anuradhapura, Kandy)",
+      "5% direct contribution to the Sigiriya Craftsmen's Guild Heritage Restoration Fund"
+    ],
+    "exclusions": [
+      "International flights to/from Colombo Bandaranaike International Airport",
+      "Personal travel and medical insurance",
+      "Alcoholic beverages beyond curated tasting dinners",
+      "Discretionary gratuities for local chauffeurs and boatmen"
+    ],
+    "packingAdvice": "Loose, breathable cotton or linen clothing in white or light tones for sacred sites; slip-on sandals or walking shoes with socks for sun-heated stone terraces; sun hat and natural insect repellent.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arrival in Negombo & The Coconut Coast",
+        "description": "Meet your private historian-concierge upon arrival at Colombo International Airport. Transfer 25 minutes north to a serene 19th-century coastal manor in Negombo. Settle in with a fresh king coconut and lemongrass infusion. In the late afternoon, embark on an unhurried wooden outrigger cruise along the historic Dutch Canal, learning how spice traders shaped this coast.",
+        "meals": "Dinner included",
+        "stay": "The Wallawwa Heritage Manor, Negombo"
+      },
+      {
+        "day": 2,
+        "title": "Journey North to the Ancient Capital of Anuradhapura",
+        "description": "Drive into the dry zone heartland to Anuradhapura. In the afternoon, pay reverence at the sacred Jaya Sri Maha Bodhi tree, listening to the rhythmic murmur of white-clad pilgrims. Stroll beneath the colossal white dome of Ruwanwelisaya stupa as oil lamps are lit at dusk, filling the evening air with the scent of jasmine and coconut oil.",
+        "meals": "Breakfast, Lunch, Dinner included",
+        "stay": "Ulagalla by Uga Escapes, Thirappane"
+      },
+      {
+        "day": 3,
+        "title": "Hydraulic Marvels & Monastic Forest Hermitages",
+        "description": "Explore the ancient monastic city of Ritigala, a 3rd-century BCE forest retreat where stone walking pathways wind through dense evergreen foliage. In the afternoon, witness the engineering ingenuity of the ancient reservoir networks (tanks) that transformed this arid plain into an agricultural powerhouse.",
+        "meals": "Breakfast, Lunch included",
+        "stay": "Ulagalla by Uga Escapes, Thirappane"
+      },
+      {
+        "day": 4,
+        "title": "Sigiriya Sky Citadel at Sunrise & Dambulla Caves",
+        "description": "Rise at 5:45 AM to begin our ascent of Sigiriya Rock Fortress while the morning air is crisp. Marvel at the 1,500-year-old cloud maiden frescoes and climb through the colossal Lion's Paws to the summit royal palace. In the afternoon, ascend the granite slopes of Dambulla to witness the subterranean caverns adorned with gilded statues and vibrant Buddhist ceiling murals.",
+        "meals": "Breakfast, Dinner included",
+        "stay": "Water Garden Sigiriya, Inamaluwa"
+      },
+      {
+        "day": 5,
+        "title": "Bicycle Circuit of Medieval Polonnaruwa",
+        "description": "Mount vintage heritage bicycles for an unhurried ride through the shaded stone courtyards of Polonnaruwa. Stand before the monumental rock-carved statues of Gal Vihara and examine the intricate moonstones carved with animal friezes. Evening cooking masterclass preparing heirloom black pepper curries with a local village matriarch.",
+        "meals": "Breakfast, Lunch, Dinner included",
+        "stay": "Water Garden Sigiriya, Inamaluwa"
+      },
+      {
+        "day": 6,
+        "title": "Ascent to the Royal Hill Capital of Kandy",
+        "description": "Journey through the spice hills of Matale, stopping at an organic agro-forestry garden to smell fresh green cardamom pods, cinnamon quills, and wild nutmeg. Arrive in the royal hill city of Kandy. In the evening, attend the ceremonial puja drumming inside the Temple of the Sacred Tooth Relic during VIP hours.",
+        "meals": "Breakfast, Dinner included",
+        "stay": "The Kandy House (1804 Manor), Kandy"
+      },
+      {
+        "day": 7,
+        "title": "Royal Botanical Gardens & Departure",
+        "description": "Morning private stroll through Peradeniya Royal Botanical Gardens with an ethnobotanist, admiring giant Javan fig trees and rare orchids cultivated for the Kandyan kings. Private transfer to Colombo or extend your journey south toward the coast.",
+        "meals": "Breakfast included",
+        "stay": "Departure or onward connection"
+      }
+    ]
+  },
+  {
+    "id": "southern-ramparts-3day",
+    "title": "Southern Ramparts, Dutch Bastions & Cinnamon Trails",
+    "subtitle": "Colonial maritime architecture, artisan gem workshops, and wild coastal serenity",
+    "slug": "tour-detail.html?tour=southern-ramparts-3day",
+    "durationDays": 3,
+    "durationNights": 2,
+    "groupSizeMax": 8,
+    "theme": "Colonial Heritage & Crafts",
+    "difficulty": "Easy",
+    "priceUsd": 490,
+    "rating": 4.95,
+    "reviewsCount": 29,
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Galle Dutch Fort ramparts and lighthouse over the emerald Indian Ocean",
+    "highlights": [
+      "Private walking tour with a local architectural historian through Galle Dutch Fort",
+      "Boat expedition through the tranquil backwaters of Koggala Lake to a working cinnamon islet",
+      "Traditional lacquerware and wooden mask carving workshop in Ambalangoda",
+      "Sundowner cocktails on the ramparts overlooking the Indian Ocean sunset"
+    ],
+    "inclusions": [
+      "2 nights in a restored 18th-century Dutch merchant villa inside Galle Fort",
+      "Daily artisan breakfasts and 2 bespoke seafood and plantation dinners",
+      "Private historical walking lecture and privileged access to private heritage homes",
+      "Private solar-electric boat tour on Koggala Lake and cinnamon harvesting demonstration"
+    ],
+    "exclusions": [
+      "Personal expenses and boutique shopping purchases",
+      "International airfare"
+    ],
+    "packingAdvice": "Light breathable linen shirts, comfortable walking shoes for cobblestones, polarized sunglasses, and a wide-brim hat.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Welcome to the Dutch Fort of Galle",
+        "description": "Arrive in Galle via the scenic Southern Highway. Check into your restored Dutch colonial merchant house. At 4:30 PM, meet our resident architectural conservationist for a private ramparts circuit, learning about coral-stone construction, underground Dutch sewer networks, and the trading battles between the Portuguese and VOC.",
+        "meals": "Dinner included",
+        "stay": "The Fort Printers, Galle Fort"
+      },
+      {
+        "day": 2,
+        "title": "Cinnamon Islands & Traditional Mask Ateliers",
+        "description": "Morning wooden boat excursion across Koggala Lake to a secluded cinnamon island. Watch third-generation peelers delicately strip the paper-thin inner bark of true Ceylon cinnamon (*Cinnamomum verum*). Afternoon visit to a master mask carver preserving 300-year-old Kolam theatrical folklore.",
+        "meals": "Breakfast, Lunch, Dinner included",
+        "stay": "The Fort Printers, Galle Fort"
+      },
+      {
+        "day": 3,
+        "title": "Artisan Jewellers & Farewell Coast",
+        "description": "Discover the centuries-old gem cutting and filigree craft of Galle's Moorish quarter. Conclude with an oceanfront brunch of freshly baked hoppers and tropical fruits before transfer back to Colombo.",
+        "meals": "Breakfast included",
+        "stay": "Departure"
+      }
+    ]
+  },
+  {
+    "id": "highland-tea-rail-3day",
+    "title": "Highland Tea Country & Vintage Mountain Rail",
+    "subtitle": "Victorian hill stations, emerald tea valleys, and stone railway engineering",
+    "slug": "tour-detail.html?tour=highland-tea-rail-3day",
+    "durationDays": 3,
+    "durationNights": 2,
+    "groupSizeMax": 6,
+    "theme": "Highlands & Colonial History",
+    "difficulty": "Easy to Moderate",
+    "priceUsd": 560,
+    "rating": 4.96,
+    "reviewsCount": 34,
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Nine Arches Bridge nestled amidst lush misty tea hills in Ella",
+    "highlights": [
+      "First-class observation carriage ride on the historic colonial Ceylon railway",
+      "Stay in an original 1880s planter's bungalow with log fires and high tea on the lawn",
+      "Private tea cupping masterclass with a veteran estate tea taster",
+      "Sunrise trek to the stone arches of the Demodara Viaduct"
+    ],
+    "inclusions": [
+      "2 nights at a luxury Ceylon Tea Trails heritage bungalow",
+      "All meals including traditional English afternoon tea and multi-course estate dinners",
+      "First-class reserved train tickets between Kandy / Nanu Oya and Ella",
+      "Private chauffeur-guide and 4WD estate vehicle for high-elevation viewpoints"
+    ],
+    "exclusions": [
+      "Personal items, laundry, and alcoholic cellar vintages"
+    ],
+    "packingAdvice": "Warm layers (temperatures in the mountains drop to 12°C at night), light rain jacket, walking shoes with traction.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Ascent into Little England: Nuwara Eliya",
+        "description": "Climb into the mist-shrouded central mountains. Explore Nuwara Eliya with its Tudor-style post office, colonial hill club, and manicured golf greens. Settle into your restored tea planter's bungalow with afternoon tea and freshly baked scones.",
+        "meals": "Lunch, Dinner included",
+        "stay": "Ceylon Tea Trails / Heritance Tea Factory"
+      },
+      {
+        "day": 2,
+        "title": "The Historic Train Journey to Ella & The Viaduct",
+        "description": "Board the vintage mountain train as it click-clacks over stone bridges and through mountain tunnels cut by hand in the 1880s. Disembark at Ella and walk the pine trail to the Nine Arches Bridge just as the afternoon train crosses the majestic chasm.",
+        "meals": "Breakfast, Dinner included",
+        "stay": "98 Acres Luxury Resort, Ella"
+      },
+      {
+        "day": 3,
+        "title": "Lipton's Seat Sunrise & Descent",
+        "description": "Pre-dawn 4WD ascent to Lipton's Seat where Sir Thomas Lipton once stood to oversee his verdant estate. Watch the sun illuminate five distinct southern provinces before descending through cascading waterfalls.",
+        "meals": "Breakfast included",
+        "stay": "Departure"
+      }
+    ]
+  },
+  {
+    "id": "galle-cinnamon-1day",
+    "title": "Galle Colonial Ramparts & Cinnamon Day Walk",
+    "subtitle": "A concentrated single-day exploration of UNESCO ramparts and coastal spice gardens",
+    "slug": "tour-detail.html?tour=galle-cinnamon-1day",
+    "durationDays": 1,
+    "durationNights": 0,
+    "groupSizeMax": 10,
+    "theme": "Day Walking Tour",
+    "difficulty": "Easy",
+    "priceUsd": 145,
+    "rating": 4.92,
+    "reviewsCount": 51,
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Cobblestone streets and coral stone archways of Galle Dutch Fort",
+    "highlights": [
+      "3-hour historical walking tour with an author and historian inside the 17th-century fort",
+      "Traditional southern Sri Lankan rice and curry banquet served in an open courtyard",
+      "Visit to a boutique cinnamon distillery extracting essential oils",
+      "Sunset photography session at the historic white lighthouse"
+    ],
+    "inclusions": [
+      "Pick up and drop off from Colombo or Southern coast hotels in private vehicle",
+      "Authentic multi-course lunch and artisan tea tastings",
+      "Museum admissions and expert historian guide fee"
+    ],
+    "exclusions": [
+      "Souvenirs and personal expenses"
+    ],
+    "packingAdvice": "Comfortable walking shoes, sun hat, camera.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Full Day Galle Fort & Coast",
+        "description": "Depart hotel at 7:30 AM. Arrive in Galle Fort by 9:30 AM for a fascinating 3-hour walking masterclass through VOC warehouses, the Dutch hospital, and colonial ramparts. Savor a slow 8-curry clay pot lunch. Afternoon visit to coastal cinnamon gardens before returning at sunset.",
+        "meals": "Lunch included",
+        "stay": "Day Tour Only"
+      }
+    ]
+  },
+  {
+    "id": "sigiriya-wildlife-1day",
+    "title": "Sigiriya Dawn Ascent & Ancient Minneriya Frontier",
+    "subtitle": "Conquer the 5th-century rock fortress followed by wild elephant herds in ancient reservoirs",
+    "slug": "tour-detail.html?tour=sigiriya-wildlife-1day",
+    "durationDays": 1,
+    "durationNights": 0,
+    "groupSizeMax": 8,
+    "theme": "Day Expedition",
+    "difficulty": "Moderate",
+    "priceUsd": 185,
+    "rating": 4.97,
+    "reviewsCount": 63,
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "The sheer granite pillar of Sigiriya rising into the morning sky",
+    "highlights": [
+      "Climb Sigiriya at first light before the midday sun and tourist coaches arrive",
+      "Exclusive archaeologist commentary on King Kashyapa's hydraulic engineering",
+      "Afternoon 4x4 safari through Minneriya National Park around the 3rd-century king's reservoir",
+      "Traditional farmer's lunch served in a lotus leaf under thatched pavilions"
+    ],
+    "inclusions": [
+      "VIP Sigiriya entry ticket and archaeologist guide",
+      "Private customized 4x4 open-top safari jeep with naturalist tracker",
+      "Traditional farmer's buffet lunch with fresh organic vegetable curries"
+    ],
+    "exclusions": [
+      "Camera permits if bringing commercial rigs"
+    ],
+    "packingAdvice": "Sturdy shoes with good grip for climbing, binoculars, sun cream.",
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Sigiriya & Ancient Tank Safari",
+        "description": "Early departure to Sigiriya Rock. Scale the 1,200 steps to the summit palace ruins. Enjoy a tranquil countryside lunch. At 2:30 PM, enter Minneriya National Park to observe wild Asian elephants gathering at the shores of the 1,700-year-old reservoir.",
+        "meals": "Lunch included",
+        "stay": "Day Tour Only"
+      }
+    ]
+  },
+  {
+    "id": "grand-heritage-10day",
+    "title": "Grand Heritage Journey: Monasteries, Mist & Sapphire Shores",
+    "subtitle": "The definitive luxury cultural survey of Sri Lanka from the sacred north to southern ramparts",
+    "slug": "tour-detail.html?tour=grand-heritage-10day",
+    "durationDays": 10,
+    "durationNights": 9,
+    "groupSizeMax": 8,
+    "theme": "Complete Cultural Survey",
+    "difficulty": "Moderate",
+    "priceUsd": 2640,
+    "rating": 4.99,
+    "reviewsCount": 38,
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1588598198321-9735fd52455b?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Ancient stone pillars and stupas of Anuradhapura sacred city",
+    "highlights": [
+      "Comprehensive UNESCO tour: Anuradhapura, Polonnaruwa, Sigiriya, Dambulla, Kandy, Galle Fort",
+      "Stay exclusively in Sri Lanka's finest historic manors, Relais & Châteaux retreats, and tea bungalows",
+      "Private train carriage ride through the central highlands",
+      "Private audience with a Buddhist monk for a meditation and mindfulness session in a forest hermitage",
+      "Exclusive access to private antique collections and jewelry archives in Galle"
+    ],
+    "inclusions": [
+      "9 nights in luxury heritage suites and boutique manor villas",
+      "Breakfast daily, 7 gourmet lunches, 8 fine dining dinners",
+      "Dedicated senior archaeologist escort throughout entire 10 days",
+      "Private luxury Mercedes coach with Wi-Fi, refreshments, and dedicated chauffeur"
+    ],
+    "exclusions": [
+      "International flights and travel insurance"
+    ],
+    "packingAdvice": "Dress code compliance clothing (white cotton for temples), elegant evening wear for dinner, walking shoes.",
+    "itinerary": [
+      { "day": 1, "title": "Colombo Heritage Mansions & Cinnamon Gardens", "description": "Welcome to Colombo. Heritage architecture walk through the Fort district and dinner at the Dutch Hospital.", "meals": "Dinner included", "stay": "Galle Face Hotel (1864 Suite), Colombo" },
+      { "day": 2, "title": "Sacred Anuradhapura & The Sacred Bo Tree", "description": "Journey north to Anuradhapura. Evening circumambulation of the great Ruwanwelisaya Stupa.", "meals": "Breakfast, Dinner included", "stay": "Ulagalla Luxury Estate" },
+      { "day": 3, "title": "Wilpattu Forest & Ancient Monasteries", "description": "Visit monastic ruins and ancient stone bath complexes surrounded by wilderness.", "meals": "Breakfast, Lunch, Dinner included", "stay": "Ulagalla Luxury Estate" },
+      { "day": 4, "title": "Sigiriya Sky Palace & Village Culinary Heritage", "description": "Dawn ascent of Sigiriya Fortress followed by clay-pot culinary demonstration.", "meals": "Breakfast, Lunch included", "stay": "Water Garden Sigiriya" },
+      { "day": 5, "title": "Polonnaruwa By Bicycle & Minneriya Wildlife", "description": "Cycle through medieval palaces and observe wild elephants on the ancient lake shores.", "meals": "Breakfast, Dinner included", "stay": "Water Garden Sigiriya" },
+      { "day": 6, "title": "Dambulla Caves & Royal Kandy", "description": "Explore the gilded caverns of Dambulla before ascending into the misty Kandyan hills.", "meals": "Breakfast, Dinner included", "stay": "The Kandy House" },
+      { "day": 7, "title": "Temple of the Tooth & High Mountain Train", "description": "Attend morning puja rituals before boarding the panoramic mountain train to tea country.", "meals": "Breakfast, Dinner included", "stay": "Ceylon Tea Trails" },
+      { "day": 8, "title": "Tea Plantations & Planter's Traditions", "description": "Explore the emerald hills of Hatton and private tea cupping masterclass.", "meals": "Breakfast, Lunch, Dinner included", "stay": "Ceylon Tea Trails" },
+      { "day": 9, "title": "Descent to the Colonial Ramparts of Galle", "description": "Scenic descent through rubber and spice valleys to the oceanfront ramparts of Galle Fort.", "meals": "Breakfast, Dinner included", "stay": "Amangalla, Galle Fort" },
+      { "day": 10, "title": "Farewell Ceylon Coast", "description": "Morning walking tour and bespoke gem ateliers before transfer to Colombo Airport.", "meals": "Breakfast included", "stay": "Departure" }
+    ]
+  },
+  {
+    "id": "northern-odyssey-14day",
+    "title": "The In-Depth Odyssey: Northern Citadels to Southern Ramparts",
+    "subtitle": "From the Tamil kovils of Jaffna to the Dutch bastions of Galle: an unforgettable deep dive",
+    "slug": "tour-detail.html?tour=northern-odyssey-14day",
+    "durationDays": 14,
+    "durationNights": 13,
+    "groupSizeMax": 8,
+    "theme": "Comprehensive Expedition",
+    "difficulty": "Moderate",
+    "priceUsd": 3780,
+    "rating": 5.0,
+    "reviewsCount": 21,
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Vibrant gopuram towers of Nallur Kovil in northern Jaffna",
+    "highlights": [
+      "Cross Elephant Pass into the culturally rich northern Jaffna peninsula",
+      "Boat ride to lonely coral islands in the Palk Strait with wild ponies and ancient baobab trees",
+      "Full Cultural Triangle exploration + Central Highlands + Southern Coastline",
+      "Exclusive access to master artisans: silver filigree, palmyra weaving, bronze casting, and mask carving"
+    ],
+    "inclusions": [
+      "13 nights in curated boutique heritage stays and private villas",
+      "Full board (all breakfasts, lunches, and dinners including regional tasting menus)",
+      "Dedicated historian tour leader + specialized regional guides in Jaffna and Galle",
+      "All island ferry tickets, national park permits, and VIP temple passes"
+    ],
+    "exclusions": [
+      "International flights and visas"
+    ],
+    "packingAdvice": "Light breathable shirts, respectful dress for both Buddhist temples and Hindu kovils, sun protection.",
+    "itinerary": [
+      { "day": 1, "title": "Arrival in Colombo", "description": "Welcome dinner and briefing on the island's 2,500-year multi-cultural chronicle.", "meals": "Dinner included", "stay": "Colombo Heritage Hotel" },
+      { "day": 2, "title": "Northbound Express to Jaffna", "description": "Journey past the salt flats and palmyra groves across Elephant Pass to vibrant Jaffna.", "meals": "Breakfast, Dinner included", "stay": "Fox Resort Jaffna" },
+      { "day": 3, "title": "Nallur Kovil & Coral Stone Fortresses", "description": "Attend morning puja at Nallur Kandaswamy temple and explore the coral star fort.", "meals": "Breakfast, Lunch, Dinner included", "stay": "Fox Resort Jaffna" },
+      { "day": 4, "title": "Islands of the Palk Strait (Nainativu & Delft)", "description": "Ferry crossing to Delft Island to see the wild horses brought by Portuguese seafarers.", "meals": "Breakfast, Lunch included", "stay": "Fox Resort Jaffna" },
+      { "day": 5, "title": "Sacred Anuradhapura", "description": "Travel south to the ancient Buddhist cradle of Anuradhapura.", "meals": "Breakfast, Dinner included", "stay": "Ulagalla Estate" },
+      { "day": 6, "title": "Ritigala & Ancient Reservoirs", "description": "Forest monastery climb and hydraulic heritage tour.", "meals": "Breakfast, Lunch included", "stay": "Ulagalla Estate" },
+      { "day": 7, "title": "Sigiriya Sunrise & Polonnaruwa", "description": "Climb the lion rock at dawn; bicycle medieval Polonnaruwa in the afternoon.", "meals": "Breakfast, Dinner included", "stay": "Water Garden Sigiriya" },
+      { "day": 8, "title": "Dambulla Caves & Matale Spice Gardens", "description": "Subterranean painted caves and aromatic agro-forestry estate.", "meals": "Breakfast, Lunch included", "stay": "The Kandy House" },
+      { "day": 9, "title": "Royal Kandy & Temple of the Tooth", "description": "Audience hall, tooth relic puja, and lakeside heritage walks.", "meals": "Breakfast, Dinner included", "stay": "The Kandy House" },
+      { "day": 10, "title": "Mountain Rail to Nuwara Eliya", "description": "Classic blue train journey into the mist-veiled tea country.", "meals": "Breakfast, Dinner included", "stay": "Tea Trails Bungalow" },
+      { "day": 11, "title": "Tea Heritage & Nine Arches Bridge", "description": "Plucker traditions and viaduct photography in Ella.", "meals": "Breakfast, Lunch, Dinner included", "stay": "Tea Trails Bungalow" },
+      { "day": 12, "title": "Descent to Galle Dutch Fort", "description": "Travel down through southern palm groves to the 17th-century ramparts.", "meals": "Breakfast, Dinner included", "stay": "The Fort Printers" },
+      { "day": 13, "title": "Ramparts, Cinnamon & Living Ateliers", "description": "Private walking circuit and sunset farewell dinner overlooking the Indian Ocean.", "meals": "Breakfast, Dinner included", "stay": "The Fort Printers" },
+      { "day": 14, "title": "Homeward Journey", "description": "Private transfer to Colombo Airport.", "meals": "Breakfast included", "stay": "Departure" }
+    ]
+  },
+  {
+    "id": "classical-ceylon-8day",
+    "title": "Classical Ceylon: Palaces, Spices & Colonial Bastions",
+    "subtitle": "The ultimate 8-day introduction for couples and first-time cultural travelers",
+    "slug": "tour-detail.html?tour=classical-ceylon-8day",
+    "durationDays": 8,
+    "durationNights": 7,
+    "groupSizeMax": 8,
+    "theme": "Culture, Gastronomy & Living History",
+    "difficulty": "Easy to Moderate",
+    "priceUsd": 1850,
+    "rating": 4.97,
+    "reviewsCount": 47,
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "The historic lakeside city of Kandy surrounded by verdant hill peaks",
+    "highlights": [
+      "Ascend Sigiriya Rock Fortress at sunrise and unwind in luxury private pool villas",
+      "Participate in an authentic evening drumming ceremony at Kandy's Temple of the Tooth",
+      "Scenic tea country drive with private tasting of rare silver tip white teas",
+      "Sunset champagne toast on the granite ramparts of Galle Fort overlooking the sea"
+    ],
+    "inclusions": [
+      "7 nights in selected 5-star heritage retreats and luxury colonial mansions",
+      "Breakfast daily, 5 curated gourmet lunches, and 6 specialty dinners",
+      "Private executive chauffeur-historian guide throughout the circuit",
+      "All VIP monuments admissions, entrance passes, and government heritage levies"
+    ],
+    "exclusions": [
+      "International flights and personal incidental expenses"
+    ],
+    "packingAdvice": "Smart-casual linen outfits, sun hat, comfortable flat walking shoes.",
+    "itinerary": [
+      { "day": 1, "title": "Arrival in Colombo / Negombo", "description": "Meet your private historian-guide and unwind in a coastal coconut grove manor.", "meals": "Dinner included", "stay": "The Wallawwa" },
+      { "day": 2, "title": "The Cultural Heart: Dambulla Caves", "description": "Drive to the dry zone and marvel at Dambulla's ancient rock cave sanctuaries.", "meals": "Breakfast, Dinner included", "stay": "Water Garden Sigiriya" },
+      { "day": 3, "title": "Sigiriya Rock Citadel & Village Living", "description": "Conquer Sigiriya at dawn; evening organic farm-to-table banquet.", "meals": "Breakfast, Lunch, Dinner included", "stay": "Water Garden Sigiriya" },
+      { "day": 4, "title": "Spice Hills of Matale & Royal Kandy", "description": "Discover medicinal herbal flora en route to the hill capital.", "meals": "Breakfast, Dinner included", "stay": "The Kandy House" },
+      { "day": 5, "title": "Sacred Tooth Relic & Tea Valleys", "description": "Morning temple ceremony followed by a drive into the emerald tea hills.", "meals": "Breakfast, Lunch included", "stay": "Ceylon Tea Trails" },
+      { "day": 6, "title": "Planter's Country & Descent to Galle", "description": "Tea cupping masterclass before continuing south to Galle Dutch Fort.", "meals": "Breakfast, Dinner included", "stay": "Amangalla / Fort Printers" },
+      { "day": 7, "title": "Galle Ramparts & Cinnamon Backwaters", "description": "Historic walking tour and private boat cruise across Koggala Lake.", "meals": "Breakfast, Dinner included", "stay": "Amangalla / Fort Printers" },
+      { "day": 8, "title": "Colombo & Homeward Journey", "description": "Final morning souvenir and craft browsing before airport transfer.", "meals": "Breakfast included", "stay": "Departure" }
+    ]
+  }
+]

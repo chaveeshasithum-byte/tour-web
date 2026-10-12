@@ -1,0 +1,258 @@
+/* ==========================================================================
+   HERITAGE TRAVELS — BASE STYLES & RESET (Phase 2)
+   Curated Cultural & Heritage Expeditions (Sri Lanka)
+   ========================================================================== */
+
+/* ── 1. Google Fonts Imports ── */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* ── 2. Universal Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-charcoal);
+  background-color: var(--color-sandstone);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── 3. Subtle Paper-Grain Background Texture Overlay ── */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: var(--z-background);
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* ── 4. Skip-to-Content for A11y ── */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1.5rem;
+  background: var(--color-teal);
+  color: var(--color-ivory);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  z-index: 9999;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top var(--duration-fast);
+  border: 2px solid var(--color-gold);
+}
+.skip-link:focus {
+  top: 1.5rem;
+}
+
+/* ── 5. Focus & Selection States ── */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--color-terracotta);
+  color: var(--color-ivory);
+}
+
+/* ── 6. Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: var(--leading-tight);
+  color: var(--color-charcoal);
+  letter-spacing: var(--tracking-tight);
+}
+
+h1, .text-display {
+  font-size: var(--text-display);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+h5 {
+  font-size: var(--text-lg);
+}
+
+h6 {
+  font-size: var(--text-base);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  max-width: 68ch;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+.lead {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-charcoal-muted);
+}
+
+.script-accent {
+  font-family: var(--font-script);
+  font-size: 1.6em;
+  color: var(--color-gold);
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+
+/* ── 7. Media & Embeds ── */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Heritage Arch Shape Mask */
+.arch-frame {
+  border-radius: var(--arch-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--color-ivory);
+  transition: transform var(--duration-normal) var(--ease-out-smooth), box-shadow var(--duration-normal);
+}
+.arch-frame-sm {
+  border-radius: var(--arch-radius-sm);
+}
+
+/* ── 8. Layout Containers & Grid ── */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 2.5rem);
+  padding-right: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.container-narrow {
+  max-width: var(--container-narrow);
+}
+
+.container-wide {
+  max-width: var(--container-wide);
+}
+
+/* 12-Column Responsive Grid */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-6);
+}
+
+.col-12 { grid-column: span 12; }
+.col-8  { grid-column: span 8; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+@media (max-width: 1024px) {
+  .col-8, .col-4 { grid-column: span 12; }
+  .col-6 { grid-column: span 12; }
+  .col-3 { grid-column: span 6; }
+}
+
+@media (max-width: 640px) {
+  .col-3 { grid-column: span 12; }
+}
+
+/* Section Wrapper */
+.section {
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+  position: relative;
+}
+
+.section-sandstone {
+  background-color: var(--color-sandstone);
+}
+
+.section-sandstone-light {
+  background-color: var(--color-sandstone-light);
+}
+
+.section-teal {
+  background-color: var(--color-teal);
+  color: var(--color-ivory);
+}
+.section-teal h1, .section-teal h2, .section-teal h3, .section-teal h4 {
+  color: var(--color-ivory);
+}
+.section-teal p {
+  color: rgba(255, 253, 248, 0.85);
+}
+
+.section-ivory {
+  background-color: var(--color-ivory);
+}
+
+/* ── 9. Ornamental Dividers ── */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem auto 2.5rem;
+  width: 100%;
+  max-width: 240px;
+}
+.gold-divider::before, .gold-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+.gold-divider .divider-icon {
+  color: var(--color-gold);
+  font-size: 0.875rem;
+  display: inline-flex;
+}
+
+/* ── 10. Motion Accessibility ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

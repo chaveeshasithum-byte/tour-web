@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rev-1",
+    "name": "Lady Eleanor & Charles Sterling",
+    "location": "Edinburgh, United Kingdom",
+    "countryFlag": "🇬🇧",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80",
+    "tour": "The UNESCO Cultural Triangle & Royal Sanctuaries (7 Days)",
+    "date": "March 2026",
+    "rating": 5,
+    "quote": "Standing alone at the summit of Sigiriya at 6:30 AM before the gates opened to the general public was a spiritual experience we will cherish forever. Our historian-guide Dr. Karunaratne brought five centuries of stone alive with intimate poetic detail. Unmatched luxury, flawless pacing, and genuine warmth.",
+    "verified": true
+  },
+  {
+    "id": "rev-2",
+    "name": "Marcus & Elena Vance",
+    "location": "San Francisco, United States",
+    "countryFlag": "🇺🇸",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    "tour": "Grand Heritage Journey: Monasteries & Mist (10 Days)",
+    "date": "January 2026",
+    "rating": 5,
+    "quote": "As an architect, I was skeptical of traditional travel agencies that rush travelers from bus to monument. Heritage Travels is completely different. The small group of six meant we had private access to colonial archives, monks' chambers, and organic village dinners that tourists simply never see.",
+    "verified": true
+  },
+  {
+    "id": "rev-3",
+    "name": "Dr. Sophie Laurent",
+    "location": "Lyon, France",
+    "countryFlag": "🇫🇷",
+    "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+    "tour": "Southern Ramparts, Dutch Bastions & Cinnamon Trails (3 Days)",
+    "date": "February 2026",
+    "rating": 5,
+    "quote": "The sunset walk on Galle's coral ramparts with our architectural guide opened my eyes to the incredible maritime encounters of the 17th century. The boutique villa within the fort walls was sublime, and the cinnamon peeling demonstration in Koggala was authentic poetry.",
+    "verified": true
+  },
+  {
+    "id": "rev-4",
+    "name": "Kenji & Tomoko Takahashi",
+    "location": "Kyoto, Japan",
+    "countryFlag": "🇯🇵",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    "tour": "Classical Ceylon: Palaces, Spices & Bastions (8 Days)",
+    "date": "November 2025",
+    "rating": 5,
+    "quote": "The evening ceremony at the Temple of the Sacred Tooth in Kandy moved us to tears. The sound of the drums echoing off ancient timber columns felt connected across millennia. We deeply appreciated Heritage Travels' reverence for sacred spaces and the local community.",
+    "verified": true
+  },
+  {
+    "id": "rev-5",
+    "name": "Hamish & Claire Macarthur",
+    "location": "Melbourne, Australia",
+    "countryFlag": "🇦🇺",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "tour": "Highland Tea Country & Vintage Mountain Rail (3 Days)",
+    "date": "December 2025",
+    "rating": 5,
+    "quote": "Riding the vintage train through tea terraces followed by high tea by a crackling fireplace in an authentic planter's bungalow felt like stepping into an editorial magazine from the 1920s. Every single detail was orchestrated with effortless grace.",
+    "verified": true
+  },
+  {
+    "id": "rev-6",
+    "name": "Beatrix von Hohenberg",
+    "location": "Munich, Germany",
+    "countryFlag": "🇩🇪",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+    "tour": "The In-Depth Odyssey: Northern Citadels to Southern Ramparts (14 Days)",
+    "date": "August 2025",
+    "rating": 5,
+    "quote": "To journey all the way from the remote golden kovils of Jaffna through the ancient cities to Galle Fort in the care of Heritage Travels was the trip of a lifetime. The 8-guest limit created an intimate salon atmosphere among fascinating travelers.",
+    "verified": true
+  },
+  {
+    "id": "rev-7",
+    "name": "David & Sarah Chen-Miller",
+    "location": "Vancouver, Canada",
+    "countryFlag": "🇨🇦",
+    "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=200&q=80",
+    "tour": "The UNESCO Cultural Triangle & Royal Sanctuaries (7 Days)",
+    "date": "July 2025",
+    "rating": 5,
+    "quote": "Our two teenage daughters were captivated from day one. Instead of boring museum lectures, our guide showed them how ancient hydraulic valves operated and taught them to spot leopard tracks in Ritigala. The best cultural holiday we have ever taken.",
+    "verified": true
+  },
+  {
+    "id": "rev-8",
+    "name": "Reto & Maya Schweizer",
+    "location": "Zurich, Switzerland",
+    "countryFlag": "🇨🇭",
+    "avatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=200&q=80",
+    "tour": "Southern Ramparts, Dutch Bastions & Cinnamon Trails (3 Days)",
+    "date": "April 2025",
+    "rating": 5,
+    "quote": "Every boutique stay was handpicked with exquisite taste. Outstanding food, immaculate private vehicles, and a philosophy that truly honors local craft communities. We will definitely return with Heritage Travels next winter.",
+    "verified": true
+  }
+]

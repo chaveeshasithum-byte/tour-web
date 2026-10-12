@@ -1,0 +1,67 @@
+[
+  {
+    "category": "Visas & Entry",
+    "questions": [
+      {
+        "q": "What are the visa requirements for international visitors to Sri Lanka?",
+        "a": "Most international passport holders (including UK, EU, USA, Canada, Australia, and Japan) can easily obtain an Electronic Travel Authorization (ETA) online prior to departure through the official immigration portal (www.eta.gov.lk). Standard tourist visas permit a 30-day stay with double entry and can be extended in Colombo if you wish to prolong your journey."
+      },
+      {
+        "q": "How far in advance should we confirm our bespoke or small-group tour?",
+        "a": "Because our small-group departures are strictly capped at 8 to 10 guests and utilize historic manor houses and private tea bungalows with limited room counts, we recommend reserving your journey 3 to 6 months in advance for peak months (December through April and July/August)."
+      }
+    ]
+  },
+  {
+    "category": "Weather & Seasons",
+    "questions": [
+      {
+        "q": "When is the best time of year to explore cultural and heritage sites in Sri Lanka?",
+        "a": "Sri Lanka is a year-round destination blessed by two opposing monsoon systems. The Cultural Triangle (Sigiriya, Polonnaruwa, Dambulla) and the southwestern coast (Galle, Colombo) enjoy pristine sunny days from December through April. From May through September, while the southwest sees rain, the east coast (Trincomalee, Passikudah) and northern Jaffna enjoy warm, dry sunshine. The central highlands remain comfortably temperate (16°C – 22°C) throughout the year."
+      },
+      {
+        "q": "Is the Cultural Triangle uncomfortably hot during daytime explorations?",
+        "a": "The dry zone can reach 30°C to 34°C by midday. For this reason, Heritage Travels designs all site expeditions at sunrise (such as climbing Sigiriya at 6:30 AM before the sun climbs) and late afternoon, leaving the warmest midday hours for leisurely courtyard lunches, private pool relaxation, and air-conditioned heritage museum visits."
+      }
+    ]
+  },
+  {
+    "category": "Temple Etiquette & Dress",
+    "questions": [
+      {
+        "q": "What is the proper etiquette and dress code when visiting Buddhist and Hindu temples?",
+        "a": "When entering sacred grounds (such as the Temple of the Sacred Tooth or ancient stupa terraces in Anuradhapura), both men and women must cover their shoulders and knees. White or light-colored attire is traditional and warmly appreciated by locals. Footwear and hats must be removed before entering sacred sand courtyards (we recommend bringing a pair of thick cotton socks to walk comfortably on sun-warmed granite flagstones). Never pose with your back turned directly to a Buddha statue for photographs."
+      },
+      {
+        "q": "Can I take photographs inside temples and ancient sites?",
+        "a": "Photography of external architecture, stupas, and landscape gardens is generally permitted and welcomed. However, flash photography is strictly prohibited near ancient wall paintings (such as the Sigiriya frescoes and Dambulla cave murals) to preserve fragile natural mineral pigments. Inside inner sanctums during religious puja ceremonies, our guide will advise when to put cameras away to honor sacred privacy."
+      }
+    ]
+  },
+  {
+    "category": "Health & Logistics",
+    "questions": [
+      {
+        "q": "What vehicle and transport standards do you maintain?",
+        "a": "We operate exclusively with our private fleet of luxury Mercedes-Benz Sprinter vans (configured with custom captain chairs, panoramic windows, and onboard Wi-Fi) and executive sedans. All vehicles feature climate control, continuous cool drinking water in glass carafes, organic lemongrass towels, and first-aid kits."
+      },
+      {
+        "q": "How do you cater to dietary requirements and allergies?",
+        "a": "Sri Lankan culinary heritage is naturally diverse, featuring vibrant plant-based dishes, coconut milk curries, fresh seafood, and heirloom grains. We liaise directly with boutique hotel executive chefs prior to your arrival to cater flawlessly to vegan, vegetarian, gluten-free, nut-free, or specific dietary preferences."
+      }
+    ]
+  },
+  {
+    "category": "Currency & Booking",
+    "questions": [
+      {
+        "q": "What currencies do you accept, and how do payments work?",
+        "a": "Our standard quotes are generated in US Dollars (USD), but our real-time portal and bank transfers support EUR (€), GBP (£), AUD ($), and LKR (Rs). We accept secure online credit card payments (Visa, Mastercard, Amex) and direct wire transfers into our licensed Sri Lanka Tourism Board bonded account. A 25% deposit secures your private itinerary, with the balance due 30 days prior to arrival."
+      },
+      {
+        "q": "What is your cancellation policy?",
+        "a": "We understand that plans can change. For individual bookings, cancellations received 31 days or more prior to departure receive a 100% refund (less any non-refundable boutique hotel deposits or train ticket issuances) or a 100% credit toward any future journey within 24 months."
+      }
+    ]
+  }
+]

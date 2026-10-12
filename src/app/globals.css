@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #F5F1E9;
+    --bg-cream: #EBE5DA;
+    --text-charcoal: #252720;
+    --text-stone: #77756D;
+    --heritage-olive: #6C7357;
+    --heritage-olive-dark: #4D533B;
+    --antique-gold: #A88C5A;
+    --border-warm: #DCD4C6;
+    --white: #FFFFFF;
+  }
+
+  body {
+    background-color: var(--bg-ivory);
+    color: var(--text-charcoal);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', serif;
+  }
+}
+
+/* Custom editorial helpers */
+.bg-ivory { background-color: #F5F1E9; }
+.bg-cream { background-color: #EBE5DA; }
+.bg-charcoal { background-color: #252720; }
+.text-charcoal { color: #252720; }
+.text-stone-muted { color: #77756D; }
+.bg-olive { background-color: #6C7357; }
+.bg-olive-dark { background-color: #4D533B; }
+.text-olive { color: #6C7357; }
+.bg-gold { background-color: #A88C5A; }
+.text-gold { color: #A88C5A; }
+.border-warm { border-color: #DCD4C6; }
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Image zoom effect on hover */
+.img-zoom {
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.img-zoom:hover {
+  transform: scale(1.03);
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Stories | Heritage Travels Sri Lanka</title>
+  <meta name="description" content="Read our travel stories — hidden gems, cultural guides, food trails, wildlife diaries and honest tips for exploring Sri Lanka from those who know it best." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .featured-article { display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-xl); align-items: center; background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: var(--space-xl); }
+    .featured-article__img { height: 480px; overflow: hidden; }
+    .featured-article__img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .featured-article:hover .featured-article__img img { transform: scale(1.04); }
+    .featured-article__body { padding: var(--space-xl); }
+    .featured-article__tag { font-size: .65rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--color-gold); margin-bottom: .6rem; }
+    .featured-article__title { font-family: var(--font-serif); font-size: 2rem; color: var(--color-green); line-height: 1.25; margin-bottom: 1rem; }
+    .featured-article__title:hover { color: var(--color-terracotta); }
+    .featured-article__excerpt { color: var(--color-charcoal-mid); line-height: 1.8; margin-bottom: 1.5rem; }
+    .article-meta { display: flex; align-items: center; gap: 1rem; font-size: .78rem; color: var(--color-charcoal-light); }
+    .article-meta__avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--color-gold-pale); }
+    /* Article page template */
+    .article-hero { position: relative; height: 60vh; min-height: 400px; }
+    .article-hero img { width: 100%; height: 100%; object-fit: cover; }
+    .article-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,25,16,.9) 0%, transparent 55%); }
+    .article-hero__title { position: absolute; bottom: 0; left: 0; right: 0; padding: 3rem; }
+    .article-hero__title h1 { color: white; font-size: clamp(1.8rem, 4vw, 3rem); }
+    .article-body { max-width: 760px; margin: 0 auto; padding: var(--space-xl) var(--space-lg); }
+    .article-body p { font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.5rem; color: var(--color-charcoal-mid); }
+    .article-body h2 { margin: 2rem 0 1rem; }
+    .article-body h3 { margin: 1.5rem 0 .8rem; }
+    .article-tip { background: var(--color-gold-pale); border-left: 4px solid var(--color-gold); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 1.2rem 1.4rem; margin: 1.5rem 0; }
+    .article-tip strong { color: var(--color-terracotta); }
+    @media (max-width: 768px) { .featured-article { grid-template-columns: 1fr; } .featured-article__img { height: 260px; } .featured-article__body { padding: 1.5rem; } }
+  </style>
+</head>
+<body>
+
+<nav class="nav nav--transparent" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Heritage Travels Home"><img src="images/logo-emblem.png" alt="Heritage Travels Logo" class="nav__logo-img" /><div class="nav__logo-text"><span class="nav__logo-name">Heritage Travels</span><span class="nav__logo-tagline">Sri Lanka</span></div></a>
+    <ul class="nav__links"><li><a href="index.html" class="nav__link">Home</a></li><li><a href="places.html" class="nav__link">Places</a></li><li><a href="tours.html" class="nav__link">Tours</a></li><li><a href="about.html" class="nav__link">About</a></li><li><a href="gallery.html" class="nav__link">Gallery</a></li><li><a href="blog.html" class="nav__link active">Stories</a></li><li><a href="contact.html" class="nav__link">Contact</a></li></ul>
+    <div style="display:flex;align-items:center;gap:1rem;"><a href="contact.html" class="nav__link nav__cta">Book Now</a><button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button></div>
+  </div>
+</nav>
+<div class="nav__mobile"><a href="index.html" class="nav__mobile-link">Home</a><a href="places.html" class="nav__mobile-link">Places</a><a href="tours.html" class="nav__mobile-link">Tours</a><a href="about.html" class="nav__mobile-link">About</a><a href="gallery.html" class="nav__mobile-link">Gallery</a><a href="blog.html" class="nav__mobile-link">Stories</a><a href="contact.html" class="nav__mobile-link">Contact</a></div>
+
+<section class="page-hero" style="background-image:url('images/ella.jpg');background-size:cover;background-position:center;">
+  <div class="page-hero__overlay"></div>
+  <div class="container"><div class="page-hero__content"><nav class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Travel Stories</span></nav><h1 class="page-hero__title">Travel Stories<br/><em style="color:var(--color-gold-light);">&amp; Hidden Gems</em></h1></div></div>
+</section>
+
+<section class="section" style="background:var(--color-cream);">
+  <div class="container">
+    <div class="section-header reveal"><p class="section-label">From Our Guides &amp; Travellers</p><h2>Stories Worth Reading</h2><div class="divider"></div></div>
+
+    <!-- Featured Article -->
+    <a href="#article-sigiriya" class="featured-article reveal" style="display:grid;text-decoration:none;">
+      <div class="featured-article__img"><img src="images/hero.jpg" alt="Sigiriya at sunrise" loading="lazy" /></div>
+      <div class="featured-article__body">
+        <div class="featured-article__tag">Heritage &amp; Culture</div>
+        <div class="featured-article__title">Why Sigiriya at Sunrise is Worth Every Step of the Climb</div>
+        <p class="featured-article__excerpt">Most visitors arrive mid-morning when the heat is punishing and the queues are long. But if you climb Sigiriya in the first hour after the gates open — before the mist has lifted from the jungle — you will have the 5th-century palace to yourself and a view that belongs to another world entirely.</p>
+        <div class="article-meta">
+          <img class="article-meta__avatar" src="images/kandy.jpg" alt="Nimal Perera" />
+          <div>
+            <div style="font-weight:600;color:var(--color-green);font-size:.85rem;">Nimal Perera</div>
+            <div>Founder · 8 min read · December 2024</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Blog Grid -->
+    <div class="filter-tabs" data-grid-target="blog-grid" role="tablist" style="margin-top:3rem;">
+      <button class="filter-tab active" data-filter="all">All Stories</button>
+      <button class="filter-tab" data-filter="tips">Travel Tips</button>
+      <button class="filter-tab" data-filter="culture">Culture</button>
+      <button class="filter-tab" data-filter="wildlife">Wildlife</button>
+      <button class="filter-tab" data-filter="food">Food</button>
+      <button class="filter-tab" data-filter="hidden">Hidden Gems</button>
+    </div>
+
+    <div class="grid-3" id="blog-grid">
+
+      <div class="blog-card reveal" data-category="wildlife">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/yala.jpg" alt="Yala leopard" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Wildlife</div>
+          <a href="#article-yala"><h3 class="blog-card__title">How to Find a Leopard in Yala — A Naturalist's Guide</h3></a>
+          <p class="blog-card__excerpt">There is no guaranteed sighting in the wild. But there is a strategy, a patience, and a way of reading the landscape that dramatically improves your odds.</p>
+          <div class="blog-card__footer"><span>Priya Rajapaksa · 6 min read</span><span>Nov 2024</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-1" data-category="food">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/colombo.jpg" alt="Sri Lankan food" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Food &amp; Local Life</div>
+          <a href="#article-food"><h3 class="blog-card__title">10 Sri Lankan Dishes You Must Eat Before You Leave</h3></a>
+          <p class="blog-card__excerpt">From kottu roti hammered at midnight to the fiery depths of a real crab curry — a guide to eating like a local on the island of spices.</p>
+          <div class="blog-card__footer"><span>Dilini Fernando · 5 min read</span><span>Oct 2024</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-2" data-category="tips">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/ella.jpg" alt="Tea country train" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Travel Tips</div>
+          <a href="#article-train"><h3 class="blog-card__title">How to Book the Ella Train (and Which Seat to Choose)</h3></a>
+          <p class="blog-card__excerpt">The Kandy–Ella train is one of the most beautiful rail journeys on earth. Here is everything you need to know to ride it in comfort — and awe.</p>
+          <div class="blog-card__footer"><span>Ashan De Silva · 4 min read</span><span>Sep 2024</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" data-category="culture">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/kandy.jpg" alt="Kandy ceremony" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Culture</div>
+          <a href="#article-temple"><h3 class="blog-card__title">Attending a Puja at the Temple of the Tooth: What to Expect</h3></a>
+          <p class="blog-card__excerpt">The drum beats begin an hour before sunrise. The air fills with incense. Thousands of white-clad devotees move silently through ancient corridors. This is the Kandy puja — and it changes you.</p>
+          <div class="blog-card__footer"><span>Nimal Perera · 5 min read</span><span>Aug 2024</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-1" data-category="hidden">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/anuradhapura.jpg" alt="Anuradhapura at dawn" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Hidden Gems</div>
+          <a href="#article-anuradhapura"><h3 class="blog-card__title">Anuradhapura at Dawn: The Sacred City That Most Tourists Miss</h3></a>
+          <p class="blog-card__excerpt">Arrive at the Sri Maha Bodhi before 6 am, when the white-robed pilgrims lay their lotus offerings in silence and the air smells of temple flowers and dew-soaked stone.</p>
+          <div class="blog-card__footer"><span>Ashan De Silva · 7 min read</span><span>Jul 2024</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal reveal-delay-2" data-category="tips">
+        <div class="blog-card__img-wrap"><img class="blog-card__img" src="images/adams-peak.jpg" alt="Adam's Peak climb" loading="lazy" /></div>
+        <div class="blog-card__body">
+          <div class="blog-card__category">Travel Tips</div>
+          <a href="#article-adams-peak"><h3 class="blog-card__title">Climbing Adam's Peak: The Complete Guide for First-Timers</h3></a>
+          <p class="blog-card__excerpt">What to wear, when to start, where to stop for tea, and why the shadow of Sri Pada cast across the clouds at sunrise is the most beautiful thing many travellers have ever witnessed.</p>
+          <div class="blog-card__footer"><span>Priya Rajapaksa · 8 min read</span><span>Jun 2024</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ Article Template: Sigiriya ══ -->
+<section style="background:var(--color-ivory);" id="article-sigiriya">
+  <div class="article-hero">
+    <img src="images/hero.jpg" alt="Sigiriya Rock Fortress at sunrise" loading="lazy" />
+    <div class="article-hero__overlay"></div>
+    <div class="article-hero__title container">
+      <span class="section-label" style="color:var(--color-gold-light);">Heritage &amp; Culture · December 2024</span>
+      <h1>Why Sigiriya at Sunrise is Worth Every Step of the Climb</h1>
+    </div>
+  </div>
+  <div class="article-body reveal">
+    <div class="article-meta" style="margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--color-ivory-dark);">
+      <img class="article-meta__avatar" src="images/kandy.jpg" alt="Nimal Perera" />
+      <div><div style="font-weight:600;color:var(--color-green);font-size:.9rem;">Nimal Perera · Founder, Heritage Travels</div><div style="font-size:.78rem;color:var(--color-charcoal-light);">8 min read · Published December 2024</div></div>
+    </div>
+
+    <p>Most visitors arrive at Sigiriya between 9 and 11 am. By then, the sun is already fierce, the temperature is climbing toward 33°C, and the narrow staircases are thick with tour groups. The experience is still extraordinary — it is Sigiriya, after all — but it is a version of extraordinary that requires considerable effort to access.</p>
+
+    <p>The gates open at 7 am. If you can arrange transport to be there at opening, you will step into a different world entirely.</p>
+
+    <h2>The Morning Mist</h2>
+    <p>In the early hours, a low mist sits between the jungle canopy and the flat horizon — a visual effect that makes the rock appear to float. The water gardens at the base are utterly still, mirroring the surrounding palms and the great stone sentinel above them. There are almost no other visitors. The sound is birdsong, frogs, the occasional rustle of a mongoose in the undergrowth.</p>
+
+    <div class="article-tip">
+      <strong>Heritage Travels Tip:</strong> Book a guided early access visit — our Cultural Triangle package includes a 6:30 am arrival at Sigiriya to ensure you have the first hour almost entirely to yourself.
+    </div>
+
+    <h2>The Frescoes Are Alive in Soft Light</h2>
+    <p>The famous Sigiriya frescoes — the Apsaras, or celestial maidens — have survived 1,500 years of monsoons and time. In the raking light of early morning, the pigments glow with a warmth that later-day direct sunlight simply bleaches out. Stand in front of them in the cool morning air and you understand immediately why generations of visitors scratched poetry into the Mirror Wall about their beauty.</p>
+
+    <h2>The Summit at Sunrise</h2>
+    <p>If you begin the climb at 7 am, you will reach the summit plateau by approximately 8:15 — just as the sun clears the eastern treeline and throws long shadows across the ruins of King Kashyapa's palace. The view is extraordinary at any hour. At this one, with mist still trailing through the jungle below, it is transcendent.</p>
+
+    <p>A guide who was born near Sigiriya will not simply tell you what you are looking at. They will tell you what it means — the hydraulic engineering genius of those water gardens, the political desperation of a king who chose a rock as his fortress, the tragic end of an empire built for one paranoid man's survival.</p>
+
+    <div style="display:flex;gap:1rem;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--color-ivory-dark);flex-wrap:wrap;">
+      <a href="places.html#sigiriya" class="btn btn-ghost">Explore Sigiriya</a>
+      <a href="contact.html?tour=cultural-triangle" class="btn btn-primary">Book a Cultural Triangle Tour</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner"><div class="cta-banner__bg" style="background-image:url('images/hero.jpg');"></div><div class="cta-banner__overlay"></div><div class="container"><div class="cta-banner__content reveal"><p class="section-label" style="color:var(--color-gold-light);">Your Story Starts Here</p><h2>Sri Lanka Is Waiting to Be Discovered</h2><p>Let Heritage Travels write your chapter of the island's endless story.</p><div class="cta-banner__btns"><a href="contact.html" class="btn btn-gold btn-lg">Plan My Trip</a><a href="tours.html" class="btn btn-outline btn-lg">See Our Tours</a></div></div></div></section>
+
+<footer class="footer"><div class="container"><div class="footer__newsletter reveal"><h4>Stay Inspired</h4><p>Travel stories and seasonal guides, gently delivered.</p><form class="newsletter-form" onsubmit="return false;"><input class="newsletter-input" type="email" placeholder="Your email" aria-label="Email" required /><button class="newsletter-btn">Subscribe</button></form></div><div class="footer__main"><div><a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home"><img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" /></a><div class="footer__brand-tag">Sri Lanka · Est. 2006</div><p class="footer__brand-desc">Crafting immersive, responsible journeys across the Pearl of the Indian Ocean.</p><div class="footer__social"><a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a></div></div><div><h5 class="footer__col-title">Quick Links</h5><ul class="footer__links"><li><a class="footer__link" href="places.html">Places</a></li><li><a class="footer__link" href="tours.html">Tours</a></li><li><a class="footer__link" href="about.html">About</a></li><li><a class="footer__link" href="gallery.html">Gallery</a></li><li><a class="footer__link" href="faq.html">FAQ</a></li><li><a class="footer__link" href="contact.html">Contact</a></li></ul></div><div><h5 class="footer__col-title">Contact</h5><div class="footer__contact-item"><i class="fa fa-phone footer__contact-icon"></i><span>+94 77 123 4567</span></div><div class="footer__contact-item"><i class="fa fa-envelope footer__contact-icon"></i><span>hello@heritagetravels.lk</span></div></div></div><div class="footer__bottom"><span>© 2025 Heritage Travels (Pvt) Ltd.</span></div></div></footer>
+<a class="whatsapp-float" href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button class="back-to-top" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

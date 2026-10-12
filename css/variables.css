@@ -1,0 +1,149 @@
+/* ==========================================================================
+   HERITAGE TRAVELS — DESIGN SYSTEM VARIABLES (Phase 2)
+   Curated Cultural & Heritage Expeditions (Sri Lanka)
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. COLOR PALETTE
+     ------------------------------------------------------------------------ */
+  /* Primary & Accents */
+  --color-terracotta:         #B5533C; /* Primary accent, primary CTAs */
+  --color-terracotta-dark:    #963F2C; /* Active / hover state */
+  --color-terracotta-light:   #C9725C; /* Soft terracotta for badges */
+  --color-terracotta-tint:    rgba(181, 83, 60, 0.12);
+
+  /* Deep Tones */
+  --color-teal:               #1F4E4F; /* Deep Teal: headers, footer, dark sections */
+  --color-teal-dark:          #143536; /* Midnight Teal: deep contrast, text on light teal */
+  --color-teal-light:         #2D6B6C; /* Interactive teal accent */
+  --color-teal-tint:          rgba(31, 78, 79, 0.08);
+
+  /* Canvas & Surfaces */
+  --color-sandstone:          #F3E9DC; /* Sandstone: main background */
+  --color-sandstone-light:    #FAF4EB; /* Soft sandstone variant for layered sections */
+  --color-sandstone-dark:     #E5D7C3; /* Hairlines, subtle borders */
+  --color-ivory:              #FFFDF8; /* Ivory: card backgrounds, surfaces, modals */
+  --color-white:              #FFFFFF; /* Pure white highlights */
+
+  /* Highlights & Ornamental */
+  --color-gold:               #C9A24D; /* Antique Gold: highlights, icons, dividers, stars */
+  --color-gold-light:         #DFC07A; /* Pale gold glow */
+  --color-gold-dark:          #A8812E; /* Deep antique bronze */
+  --color-gold-tint:          rgba(201, 162, 77, 0.15);
+
+  /* Typography / Neutrals (WCAG AA Compliant) */
+  --color-charcoal:           #2B2B2B; /* Body text (11.5:1 contrast against Ivory) */
+  --color-charcoal-muted:     #5C5750; /* Secondary text, captions, metadata */
+  --color-charcoal-light:     #8C857B; /* Subtle disabled/placeholder text */
+  --color-border-subtle:      rgba(43, 43, 43, 0.1);
+  --color-border-gold:        rgba(201, 162, 77, 0.4);
+
+  /* Gradients & Image Text Overlays */
+  --gradient-overlay-dark:    linear-gradient(180deg, rgba(20, 53, 54, 0.25) 0%, rgba(20, 53, 54, 0.72) 65%, rgba(20, 53, 54, 0.94) 100%);
+  --gradient-overlay-card:    linear-gradient(180deg, rgba(31, 78, 79, 0.04) 0%, rgba(20, 53, 54, 0.5) 50%, rgba(20, 53, 54, 0.92) 100%);
+  --gradient-overlay-hero:    linear-gradient(180deg, rgba(20, 53, 54, 0.45) 0%, rgba(20, 53, 54, 0.65) 50%, rgba(20, 53, 54, 0.92) 100%);
+  --gradient-gold:            linear-gradient(135deg, #DFC07A 0%, #C9A24D 50%, #A8812E 100%);
+  --gradient-terracotta:      linear-gradient(135deg, #C9725C 0%, #B5533C 100%);
+
+  /* ------------------------------------------------------------------------
+     2. TYPOGRAPHY SYSTEM (Fluid scale, 1.25 modular ratio)
+     ------------------------------------------------------------------------ */
+  --font-serif:               'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans:                'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-script:              'Alex Brush', 'Playfair Display', cursive;
+
+  /* Fluid Modular Type Scale (clamp formulas) */
+  --text-xs:                  clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem); /* 12px - 13px */
+  --text-sm:                  clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem); /* 14px - 15px */
+  --text-base:                clamp(1rem, 0.96rem + 0.2vw, 1.125rem);       /* 16px - 18px */
+  --text-lg:                  clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);    /* 18px - 21.6px */
+  --text-xl:                  clamp(1.35rem, 1.25rem + 0.5vw, 1.65rem);     /* 21.6px - 26.4px */
+  --text-2xl:                 clamp(1.65rem, 1.5rem + 0.75vw, 2.1rem);      /* 26.4px - 33.6px */
+  --text-3xl:                 clamp(2.1rem, 1.85rem + 1.2vw, 2.75rem);      /* 33.6px - 44px */
+  --text-4xl:                 clamp(2.6rem, 2.2rem + 2vw, 3.6rem);          /* 41.6px - 57.6px */
+  --text-display:             clamp(3.1rem, 2.5rem + 3vw, 4.6rem);          /* 49.6px - 73.6px */
+
+  --leading-tight:            1.15;
+  --leading-snug:             1.3;
+  --leading-normal:           1.6;
+  --leading-relaxed:          1.8;
+
+  --tracking-tight:           -0.02em;
+  --tracking-normal:          0em;
+  --tracking-wide:            0.08em;
+  --tracking-widest:          0.18em;
+
+  /* ------------------------------------------------------------------------
+     3. SPACING SYSTEM (8px baseline)
+     ------------------------------------------------------------------------ */
+  --space-1:                  0.25rem;  /* 4px */
+  --space-2:                  0.5rem;   /* 8px */
+  --space-3:                  0.75rem;  /* 12px */
+  --space-4:                  1rem;     /* 16px */
+  --space-5:                  1.25rem;  /* 20px */
+  --space-6:                  1.5rem;   /* 24px */
+  --space-8:                  2rem;     /* 32px */
+  --space-10:                 2.5rem;   /* 40px */
+  --space-12:                 3rem;     /* 48px */
+  --space-16:                 4rem;     /* 64px */
+  --space-20:                 5rem;     /* 80px */
+  --space-24:                 6rem;     /* 96px */
+  --space-32:                 8rem;     /* 128px */
+  --space-36:                 9rem;     /* 144px */
+
+  /* Section Padding */
+  --section-padding-y:        clamp(4rem, 7vw, 7.5rem); /* 64px mobile - 120px desktop */
+  --container-max-width:      1200px;
+  --container-narrow:         840px;
+  --container-wide:           1380px;
+
+  /* ------------------------------------------------------------------------
+     4. RADII & SHAPES (12-20px cards, Heritage Arches)
+     ------------------------------------------------------------------------ */
+  --radius-xs:                4px;
+  --radius-sm:                8px;
+  --radius-md:                12px;
+  --radius-lg:                16px;
+  --radius-xl:                20px;
+  --radius-2xl:               32px;
+  --radius-full:              9999px;
+  
+  /* Heritage Arch Masks */
+  --arch-radius:              160px 160px 16px 16px;
+  --arch-radius-sm:           100px 100px 12px 12px;
+  --arch-radius-lg:           220px 220px 20px 20px;
+
+  /* ------------------------------------------------------------------------
+     5. ELEVATION & SHADOWS
+     ------------------------------------------------------------------------ */
+  --shadow-sm:                0 2px 8px rgba(31, 78, 79, 0.05);
+  --shadow-md:                0 8px 24px rgba(31, 78, 79, 0.08);
+  --shadow-lg:                0 16px 40px rgba(31, 78, 79, 0.12);
+  --shadow-xl:                0 24px 60px rgba(20, 53, 54, 0.18);
+  --shadow-gold:              0 8px 25px rgba(201, 162, 77, 0.25);
+  --shadow-terracotta:        0 8px 25px rgba(181, 83, 60, 0.28);
+
+  /* ------------------------------------------------------------------------
+     6. MOTION & TRANSITIONS
+     ------------------------------------------------------------------------ */
+  --ease-out-smooth:          cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:              cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:            180ms;
+  --duration-normal:          320ms;
+  --duration-slow:            550ms;
+  --duration-luxurious:       800ms;
+
+  /* ------------------------------------------------------------------------
+     7. Z-INDEX SYSTEM
+     ------------------------------------------------------------------------ */
+  --z-background:             -1;
+  --z-base:                   1;
+  --z-card-overlay:           5;
+  --z-sticky:                 100;
+  --z-navbar:                 500;
+  --z-drawer:                 600;
+  --z-modal-backdrop:         900;
+  --z-modal:                  950;
+  --z-toast:                  1000;
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Lanka — Emerald Adventures &amp; Living History | Heritage Travels</title>
+  <meta name="description" content="Discover Sri Lanka: misty tea highlands, ancient rock citadels, leopard-filled wilderness, and golden tropical shores. Crafted private tours and itineraries." />
+  <meta property="og:title" content="Sri Lanka — Emerald Adventures & Living History" />
+  <meta property="og:description" content="Explore ancient temples, misty tea country, wildlife safaris, and pristine coastlines in Sri Lanka." />
+  <meta property="og:image" content="images/sri-lanka-hero.jpg" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+
+  <!-- Google Fonts: Montserrat + Cormorant Garamond + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="lp-page">
+
+  <!-- ══════════════════════════════════════════
+       HERO (LONELY PLANET DESTINATION STYLE)
+  ══════════════════════════════════════════ -->
+  <section class="lp-hero" aria-label="Sri Lanka Destination Hero">
+    <!-- Top Floating Header -->
+    <header class="lp-header" role="banner">
+      <!-- Left: Search Box -->
+      <div class="lp-search-box">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="search" class="lp-search-input" id="lpSearch" placeholder="Search Sri Lanka and beyond" aria-label="Search Sri Lanka and beyond" />
+      </div>
+
+      <!-- Center: Brand Logo -->
+      <a href="index.html" class="lp-brand" aria-label="Heritage Travels Homepage">
+        <img src="images/logo-tight.png" alt="Heritage Travels Logo" style="height:48px; width:auto; border-radius:6px; border:1px solid rgba(215, 196, 166, 0.4); box-shadow: 0 4px 12px rgba(0,0,0,0.25);" />
+      </a>
+
+      <!-- Right: Navigation Menu -->
+      <nav aria-label="Hero navigation">
+        <ul class="lp-nav-menu">
+          <li class="lp-nav-item active">
+            <a href="places.html" class="lp-nav-link">Destinations</a>
+            <div class="lp-nav-active-bar" aria-hidden="true"></div>
+          </li>
+          <li class="lp-nav-item">
+            <a href="tours.html" class="lp-nav-link">Tour Packages</a>
+          </li>
+          <li class="lp-nav-item">
+            <a href="about.html" class="lp-nav-link">About Us</a>
+          </li>
+          <li class="lp-nav-item">
+            <a href="gallery.html" class="lp-nav-link">Gallery</a>
+          </li>
+          <li class="lp-nav-item">
+            <a href="contact.html" class="lp-nav-book-btn">Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Center Destination Typography & Call To Action -->
+    <div class="lp-hero-center">
+      <h1 class="lp-title">Sri Lanka</h1>
+      <p class="lp-tagline">is emerald adventures &amp; living history</p>
+
+      <div class="lp-pill-wrapper">
+        <button class="lp-pill-btn" id="citiesDropdownBtn" aria-expanded="false" aria-haspopup="true">
+          CITIES &amp; HIGHLANDS <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div class="lp-pill-dropdown" id="citiesDropdown">
+          <a href="#highlands" class="lp-dropdown-item">
+            <span>🌿 Central Highlands (Ella &amp; Nuwara Eliya)</span>
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="#cultural-triangle" class="lp-dropdown-item">
+            <span>🏛️ Cultural Triangle (Sigiriya &amp; Kandy)</span>
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="#southern-coast" class="lp-dropdown-item">
+            <span>🌊 Southern Coast (Galle &amp; Mirissa)</span>
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="#wildlife" class="lp-dropdown-item">
+            <span>🐆 Wild Safaris (Yala &amp; Udawalawe)</span>
+            <i class="fa fa-arrow-right"></i>
+          </a>
+          <a href="places.html" class="lp-dropdown-item" style="border-top: 1px solid #E5E7EB; margin-top: 0.4rem; padding-top: 0.8rem; color: #2563EB;">
+            <span>View All 8+ Destinations</span>
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar: Video Trigger & Weather/Season Pill -->
+    <div class="lp-hero-bottom">
+      <!-- Left: Watch Video -->
+      <a href="#videoModal" class="lp-video-trigger" id="openVideoBtn" role="button" aria-label="Watch introductory video of Sri Lanka">
+        <div class="lp-video-circle">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+        <div class="lp-video-label">
+          <span class="lp-video-label-sub">WATCH</span>
+          <span class="lp-video-label-main">INTRO VIDEO</span>
+        </div>
+      </a>
+
+      <!-- Right: Real-time Weather & Travel Pill -->
+      <div class="lp-quick-info">
+        <div class="lp-info-item">
+          <i class="fa fa-sun" aria-hidden="true"></i>
+          <span>24°C Central Highlands</span>
+        </div>
+        <div style="width: 1px; height: 16px; background: rgba(255,255,255,0.3);"></div>
+        <div class="lp-info-item">
+          <i class="fa fa-calendar-check" aria-hidden="true"></i>
+          <span>Prime Season: Nov – Apr</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       VIDEO MODAL (LIGHTBOX)
+  ══════════════════════════════════════════ -->
+  <div class="lp-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Sri Lanka travel video">
+    <div class="lp-modal-content">
+      <button class="lp-modal-close" id="closeVideoBtn" aria-label="Close video player">&times;</button>
+      <iframe id="videoIframe" src="https://www.youtube-nocookie.com/embed/1la40WpLMT0?autoplay=0&rel=0" title="Sri Lanka 4K Cinematic Travel Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       SECTION: SRI LANKA AT A GLANCE
+  ══════════════════════════════════════════ -->
+  <section class="section" id="overview" style="background: var(--color-canvas);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">THE PEARL OF THE INDIAN OCEAN</p>
+        <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: clamp(2rem, 4vw, 3.2rem); letter-spacing: -0.02em;">
+          An Island of Endless Wonder
+        </h2>
+        <div class="divider"></div>
+        <p style="font-size: 1.1rem; line-height: 1.8; max-width: 720px; margin: 1rem auto 0; color: var(--color-charcoal-mid);">
+          Sri Lanka packs thousands of years of living history, misty tea-carpeted mountains, world-class wildlife, and golden palm-fringed coastlines into a compact island where every journey is unforgettable.
+        </p>
+      </div>
+
+      <!-- 4 Core Pillars Grid -->
+      <div class="grid-4" style="margin-top: 3.5rem;">
+        <div class="card reveal" style="padding: 2rem; border-radius: 16px; background: #FFFFFF; border: 1px solid var(--color-frame-hairline); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🍃</div>
+          <h4 style="font-family: var(--font-sans); font-weight: 700; margin-bottom: 0.5rem;">Central Highlands</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--color-charcoal-mid);">
+            Misty tea estates, colonial hill stations, plunging waterfalls, and the legendary Kandy-to-Ella scenic train.
+          </p>
+        </div>
+
+        <div class="card reveal reveal-delay-1" style="padding: 2rem; border-radius: 16px; background: #FFFFFF; border: 1px solid var(--color-frame-hairline); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🏛️</div>
+          <h4 style="font-family: var(--font-sans); font-weight: 700; margin-bottom: 0.5rem;">Ancient Kingdoms</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--color-charcoal-mid);">
+            Sigiriya's Sky Palace, giant stupas of Anuradhapura, cave monasteries of Dambulla, and sacred Kandy.
+          </p>
+        </div>
+
+        <div class="card reveal reveal-delay-2" style="padding: 2rem; border-radius: 16px; background: #FFFFFF; border: 1px solid var(--color-frame-hairline); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🐆</div>
+          <h4 style="font-family: var(--font-sans); font-weight: 700; margin-bottom: 0.5rem;">Wild Safaris</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--color-charcoal-mid);">
+            Highest leopard density on earth in Yala, vast elephant herds in Minneriya, and endemic tropical birds.
+          </p>
+        </div>
+
+        <div class="card reveal reveal-delay-3" style="padding: 2rem; border-radius: 16px; background: #FFFFFF; border: 1px solid var(--color-frame-hairline); box-shadow: var(--shadow-sm);">
+          <div style="font-size: 2.2rem; margin-bottom: 1rem;">🌊</div>
+          <h4 style="font-family: var(--font-sans); font-weight: 700; margin-bottom: 0.5rem;">Golden Coastlines</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: var(--color-charcoal-mid);">
+            Dutch colonial ramparts of Galle Fort, whale watching in Mirissa, and quiet surf bays bathed in sunset.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SECTION: TOP REGIONS & DESTINATIONS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="highlands" style="background: var(--color-ivory); border-top: 1px solid var(--color-frame-hairline);">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">CURATED EXPLORATIONS</p>
+        <h2 style="font-family: var(--font-sans); font-weight: 800; font-size: clamp(2rem, 3.8vw, 3rem);">
+          Iconic Destinations in Sri Lanka
+        </h2>
+        <div class="divider"></div>
+        <p style="color: var(--color-charcoal-mid);">Handcrafted routes connecting the island's most evocative landscapes.</p>
+      </div>
+
+      <div class="destinations-grid" style="margin-top: 3rem;">
+        <!-- Destination 1: Ella -->
+        <div class="dest-card dest-card--overlay dest-card--large reveal">
+          <img class="dest-card__img" src="images/ella.jpg" alt="Demodara Nine Arches Bridge Ella" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Central Highlands</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Ella &amp; Tea Country</div>
+            <div class="dest-card__desc">
+              Watch the blue train snake across the Nine Arches Bridge, hike Little Adam's Peak, and sip single-origin Ceylon tea directly from historic hillside plantations.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round · Cool</span>
+              <a href="places.html#ella" class="dest-card__link">Explore Ella <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 2: Sigiriya -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-1" id="cultural-triangle">
+          <img class="dest-card__img" src="images/hero.jpg" alt="Sigiriya Lion Rock Fortress" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Cultural Triangle</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Sigiriya Rock Citadel</div>
+            <div class="dest-card__desc">
+              King Kashyapa's 5th-century palace in the sky, rising 200 meters above emerald jungle canopy with ancient frescoes and water gardens.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
+              <a href="places.html#sigiriya" class="dest-card__link">Explore Sigiriya <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 3: Galle Fort -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-2" id="southern-coast">
+          <img class="dest-card__img" src="images/galle.jpg" alt="Galle Fort Lighthouse" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Southern Coast</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Galle Dutch Fort</div>
+            <div class="dest-card__desc">
+              Living UNESCO World Heritage ramparts with 17th-century cobblestone lanes, boutique jewelers, colonial verandas, and ocean sunset bastions.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Dec – Apr</span>
+              <a href="places.html#galle" class="dest-card__link">Explore Galle <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 4: Yala Wildlife -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-3" id="wildlife">
+          <img class="dest-card__img" src="images/yala.jpg" alt="Leopard Safari Yala" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Wildlife Safari</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Yala National Park</div>
+            <div class="dest-card__desc">
+              Track the elusive Sri Lankan leopard, sloth bears, and herds of wild elephants through thorn scrub, lagoons, and dramatic ocean coastline.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Feb – Jul</span>
+              <a href="places.html#yala" class="dest-card__link">Explore Yala <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 5: Kandy -->
+        <div class="dest-card dest-card--overlay reveal">
+          <img class="dest-card__img" src="images/kandy.jpg" alt="Temple of the Tooth Kandy" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Heritage Capital</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Kandy Sacred City</div>
+            <div class="dest-card__desc">
+              The hill country royal capital, home to the sacred Temple of the Tooth Relic, serene Kandy Lake, and lush Peradeniya Royal Botanic Gardens.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Year-round</span>
+              <a href="places.html#kandy" class="dest-card__link">Explore Kandy <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 6: Mirissa Beach -->
+        <div class="dest-card dest-card--overlay reveal reveal-delay-1">
+          <img class="dest-card__img" src="images/mirissa.jpg" alt="Mirissa Coconut Tree Hill" loading="lazy" />
+          <div class="dest-card__body">
+            <div class="dest-card__category">Tropical Coast</div>
+            <div class="dest-card__name" style="font-family: var(--font-sans); font-weight: 800;">Mirissa &amp; South Coast</div>
+            <div class="dest-card__desc">
+              Famed Coconut Tree Hill, serene crescent beaches, seafood dining under lanterns, and blue whale watching in the warm Indian Ocean.
+            </div>
+            <div class="dest-card__footer">
+              <span class="dest-card__season"><i class="fa fa-sun"></i> Nov – Apr</span>
+              <a href="places.html#mirissa" class="dest-card__link">Explore Mirissa <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CALL TO ACTION BANNER
+  ══════════════════════════════════════════ -->
+  <section class="cta-banner" style="background: linear-gradient(135deg, var(--color-green) 0%, #0F2018 100%);">
+    <div class="container text-center reveal">
+      <p class="section-label" style="color: var(--color-gold-light);">READY FOR YOUR JOURNEY?</p>
+      <h2 style="color: #FFFFFF; font-family: var(--font-sans); font-weight: 800; font-size: clamp(2.4rem, 4.5vw, 3.8rem); margin-bottom: 1.2rem;">
+        Let Us Handcraft Your Sri Lanka Escape
+      </h2>
+      <p style="color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto 2.5rem; font-size: 1.1rem; line-height: 1.8;">
+        Private luxury chauffeurs, heritage villa bookings, licensed naturalist guides, and 24/7 dedicated concierge service from arrival to farewell.
+      </p>
+      <div style="display: inline-flex; gap: 1.2rem; flex-wrap: wrap; justify-content: center;">
+        <a href="contact.html" class="btn btn-gold btn-lg" style="font-family: var(--font-sans); font-weight: 700; border-radius: 9999px;">
+          Plan My Sri Lanka Trip
+        </a>
+        <a href="tours.html" class="btn btn-outline btn-lg" style="font-family: var(--font-sans); font-weight: 700; border-radius: 9999px;">
+          View Curated Tour Packages
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+        <div>
+          <a href="index.html" class="footer__logo-link" aria-label="Heritage Travels Home">
+            <img src="images/logo-tight.png" alt="Heritage Travels Logo" class="footer__logo-img" />
+          </a>
+          <div class="footer__brand-tag" style="margin-top:0.3rem; margin-bottom:0.75rem;">Sri Lanka · Est. 2006</div>
+          <p class="footer__brand-text">
+            Crafting private, culturally immersive, and luxury journeys across the wonders of Sri Lanka since 2006.
+          </p>
+          <div class="footer__socials">
+            <a class="footer__social-link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="footer__social-link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="footer__social-link" href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+            <a class="footer__social-link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="footer__col-title" style="font-family: var(--font-sans); font-weight: 700;">Explore Regions</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="places.html#ella">Central Highlands</a></li>
+            <li><a class="footer__link" href="places.html#sigiriya">Cultural Triangle</a></li>
+            <li><a class="footer__link" href="places.html#galle">Southern Beaches</a></li>
+            <li><a class="footer__link" href="places.html#yala">Wildlife Safaris</a></li>
+            <li><a class="footer__link" href="places.html#kandy">Sacred Kandy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer__col-title" style="font-family: var(--font-sans); font-weight: 700;">Quick Links</h5>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="index.html">Heritage Home</a></li>
+            <li><a class="footer__link" href="sri-lanka.html">Sri Lanka Landing</a></li>
+            <li><a class="footer__link" href="tours.html">Tour Packages</a></li>
+            <li><a class="footer__link" href="about.html">About Our Mission</a></li>
+            <li><a class="footer__link" href="gallery.html">Photo Gallery</a></li>
+            <li><a class="footer__link" href="faq.html">Travel FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer__col-title" style="font-family: var(--font-sans); font-weight: 700;">Contact Concierge</h5>
+          <div class="footer__contact-item">
+            <i class="fa fa-map-marker-alt footer__contact-icon"></i>
+            <span>42 Galle Road, Colombo 03, Sri Lanka</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa fa-phone footer__contact-icon"></i>
+            <span>+94 77 123 4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="fa fa-envelope footer__contact-icon"></i>
+            <span>hello@heritagetravels.lk</span>
+          </div>
+          <a href="https://wa.me/94771234567" class="btn btn-gold btn-sm" style="margin-top:1rem;display:inline-flex;gap:.4rem;border-radius:9999px;" target="_blank" rel="noopener">
+            <i class="fab fa-whatsapp"></i> WhatsApp Concierge
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Heritage Travels Sri Lanka. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Cities & Highlands Dropdown toggle
+    const dropdownBtn = document.getElementById('citiesDropdownBtn');
+    const dropdownMenu = document.getElementById('citiesDropdown');
+    if (dropdownBtn && dropdownMenu) {
+      dropdownBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle('show');
+        dropdownBtn.setAttribute('aria-expanded', dropdownMenu.classList.contains('show'));
+      });
+      document.addEventListener('click', (e) => {
+        if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+          dropdownMenu.classList.remove('show');
+          dropdownBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+
+    // Video Modal Handlers
+    const openVideoBtn = document.getElementById('openVideoBtn');
+    const closeVideoBtn = document.getElementById('closeVideoBtn');
+    const videoModal = document.getElementById('videoModal');
+    const videoIframe = document.getElementById('videoIframe');
+
+    if (openVideoBtn && videoModal) {
+      openVideoBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        videoModal.classList.add('active');
+      });
+      if (closeVideoBtn) {
+        closeVideoBtn.addEventListener('click', () => {
+          videoModal.classList.remove('active');
+        });
+      }
+      videoModal.addEventListener('click', (e) => {
+        if (e.target === videoModal) {
+          videoModal.classList.remove('active');
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+          videoModal.classList.remove('active');
+        }
+      });
+    }
+
+    // Search filter trigger
+    const searchInput = document.getElementById('lpSearch');
+    if (searchInput) {
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          window.location.href = `places.html?q=${encodeURIComponent(searchInput.value)}`;
+        }
+      });
+    }
+  </script>
+</body>
+</html>
